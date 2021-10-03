@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 757.0, 330.0, 150.0, 20.0 ],
+					"text" : "get_event <id>"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-49",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -644,8 +655,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 735.0, 285.0, 150.0, 20.0 ],
-					"text" : "get_preset id onset"
+					"patching_rect" : [ 718.0, 263.0, 150.0, 20.0 ],
+					"text" : "get_preset <id> <onset>"
 				}
 
 			}
@@ -656,7 +667,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 705.0, 315.0, 254.0, 22.0 ],
+					"patching_rect" : [ 705.0, 285.0, 254.0, 22.0 ],
 					"text" : "get_preset 615703ec2a541b703d7fcd76 1500"
 				}
 
@@ -664,7 +675,15 @@
 , 			{
 				"box" : 				{
 					"data" : 					{
-						"615a039b48b0ef07dc9c39fc" : "group/reverb/param_1"
+						"6112e50f93a7ee6ef54ba48e" : "group/subgroup_x/reverb/param_1",
+						"614df8fdc1c726a97b510ed3" : "group/subgroup_x/reverb/werwerwerwerwer",
+						"6112e54030e9462db4d32c88" : "group_2/delay/volume",
+						"6112e56648b8a7c523437e95" : "group_2/delay/dry-wet",
+						"6112e546df2c14d1321b8085" : "group_2/chorus/depth",
+						"6113e2b9030681dcbc9b8edc" : "group_3/flanger/depth",
+						"6113e3090842ffc7e32c166a" : "group_3/flanger/shape",
+						"6149a17bab7c5724b5ace89d" : "group_4/harmonizer/param_1",
+						"614c8e5be41c64bf5c94684c" : "group_5/kmbuto/param_3"
 					}
 ,
 					"id" : "obj-2",
@@ -686,13 +705,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-55",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 600.0, 540.0, 167.0, 49.0 ],
-					"text" : "\"presetvalues presetvalues\" 615a039b48b0ef07dc9c39fc \"0.16\""
+					"patching_rect" : [ 600.0, 540.0, 167.0, 62.0 ],
+					"text" : "randomID 615a1f7b55eee64c0fd140cb 615a1f7ba0aa1cce93d65a7d 615a1f7b2ef630fbe51cddbb"
 				}
 
 			}
@@ -772,7 +791,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 675.0, 255.0, 95.0, 22.0 ],
+					"patching_rect" : [ 675.0, 225.0, 95.0, 22.0 ],
 					"text" : "get_randomID 3"
 				}
 
@@ -830,17 +849,6 @@
 , 			{
 				"box" : 				{
 					"data" : 					{
-						"615703ec2a541b703d7fcd76" : 						{
-							"presets" : 							{
-								"615a039b48b0ef07dc9c39fc" : 								{
-									"value" : "0.16",
-									"name" : "param_1"
-								}
-
-							}
-,
-							"onset" : 1500
-						}
 
 					}
 ,
@@ -961,41 +969,114 @@
 , 			{
 				"box" : 				{
 					"data" : 					{
-						"name" : "devices",
-						"id" : "615a0374e5b98d6a867eca4c",
+						"name" : "DEVICES",
+						"id" : "6112e4ea1b46f9daa3e155fe",
 						"type" : "main",
 						"is_open" : 1,
 						"children" : [ 							{
-								"name" : "group",
+								"name" : "GROUP",
 								"type" : "group",
-								"id" : "615a03744cfdb53a0187784f",
+								"id" : "6112e4ea12f3891478508ab9",
 								"is_open" : 1,
 								"children" : [ 									{
-										"name" : "reverb",
-										"id" : "615a039b66be35da6858a660",
-										"type" : "device",
+										"name" : "SUBGROUP_X",
+										"id" : "6112e506fbeb3f67d2ba22e9",
+										"type" : "group",
+										"is_open" : 1,
 										"children" : [ 											{
-												"name" : "i/o",
-												"id" : "615a039bdfddb7313493c306",
+												"name" : "Reverb",
+												"id" : "6112e50fb2d26c534a074ca4",
+												"type" : "device",
+												"is_open" : 1,
+												"children" : [ 													{
+														"name" : "I/O",
+														"id" : "6112e50fe54a1674578ba0b1",
+														"type" : "io",
+														"is_open" : 0,
+														"children" : [ 															{
+																"name" : "input",
+																"id" : "6112e50f504243c0a899a2fc",
+																"type" : "input",
+																"is_open" : 0,
+																"children" : [ 																	{
+																		"name" : "0",
+																		"id" : "6112e50fb4f28cc7224c49f3",
+																		"type" : "input_value"
+																	}
+ ]
+															}
+, 															{
+																"name" : "output",
+																"id" : "6112e50fea132d413148a968",
+																"type" : "output",
+																"children" : [ 																	{
+																		"name" : "0",
+																		"id" : "6112e50ff8688150f8681f5f",
+																		"type" : "output_value"
+																	}
+ ]
+															}
+ ]
+													}
+, 													{
+														"name" : "Parameters",
+														"id" : "6112e50f5c9deff97ed6f045",
+														"type" : "parameter",
+														"is_open" : 1,
+														"children" : [ 															{
+																"name" : "param_1",
+																"id" : "6112e50f93a7ee6ef54ba48e",
+																"type" : "parameter_name"
+															}
+, 															{
+																"name" : "Werwerwerwerwer",
+																"id" : "614df8fdc1c726a97b510ed3",
+																"type" : "parameter_name",
+																"path" : "GROUP/SUBGROUP_X/Reverb/Werwerwerwerwer"
+															}
+ ]
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "GROUP_2",
+								"id" : "6112e539daa1bf4620754b4e",
+								"type" : "group",
+								"is_open" : 0,
+								"children" : [ 									{
+										"name" : "Delay",
+										"id" : "6112e540eb0b4994ad60a93d",
+										"type" : "device",
+										"is_open" : 0,
+										"children" : [ 											{
+												"name" : "I/O",
+												"id" : "6112e5400669bf636d2bc221",
 												"type" : "io",
+												"is_open" : 1,
 												"children" : [ 													{
 														"name" : "input",
-														"id" : "615a039ba92cfdb7b875f34d",
+														"id" : "6112e5406d5248bee565010e",
 														"type" : "input",
+														"is_open" : 1,
 														"children" : [ 															{
 																"name" : "0",
-																"id" : "615a039bf3b8b89d3575e242",
+																"id" : "6112e5403040f4cf790ff415",
 																"type" : "input_value"
 															}
  ]
 													}
 , 													{
 														"name" : "output",
-														"id" : "615a039b8516141dee721454",
+														"id" : "6112e540a12ba8d41b7862b9",
 														"type" : "output",
+														"is_open" : 1,
 														"children" : [ 															{
 																"name" : "0",
-																"id" : "615a039bf5b0f21ca5f462d6",
+																"id" : "6112e5408cdecbe4a7127e73",
 																"type" : "output_value"
 															}
  ]
@@ -1004,11 +1085,232 @@
 											}
 , 											{
 												"name" : "Parameters",
-												"id" : "615a039b8340af2b7469ca3e",
+												"id" : "6112e5404ec3d2679c5cdb53",
 												"type" : "parameter",
+												"is_open" : 1,
+												"children" : [ 													{
+														"name" : "volume",
+														"id" : "6112e54030e9462db4d32c88",
+														"type" : "parameter_name"
+													}
+, 													{
+														"name" : "Dry-wet",
+														"id" : "6112e56648b8a7c523437e95",
+														"type" : "parameter_name"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "Chorus",
+										"id" : "6112e546d21f589dc4f06e70",
+										"type" : "device",
+										"is_open" : 0,
+										"children" : [ 											{
+												"name" : "I/O",
+												"id" : "6112e546c127d88806f5c0e1",
+												"type" : "io",
+												"children" : [ 													{
+														"name" : "input",
+														"id" : "6112e5461d733aa61e695468",
+														"type" : "input",
+														"children" : [ 															{
+																"name" : "0",
+																"id" : "6112e546fd58b0103c446813",
+																"type" : "input_value"
+															}
+ ]
+													}
+, 													{
+														"name" : "output",
+														"id" : "6112e546abb244d9ccbb8654",
+														"type" : "output",
+														"children" : [ 															{
+																"name" : "0",
+																"id" : "6112e5467b4579014e1c4290",
+																"type" : "output_value"
+															}
+ ]
+													}
+ ]
+											}
+, 											{
+												"name" : "Parameters",
+												"id" : "6112e546bd12194cdbf4d18c",
+												"type" : "parameter",
+												"is_open" : 1,
+												"children" : [ 													{
+														"name" : "depth",
+														"id" : "6112e546df2c14d1321b8085",
+														"type" : "parameter_name"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "GROUP_3",
+								"id" : "6113e2ab846b761d4a9a337c",
+								"type" : "group",
+								"is_open" : 0,
+								"children" : [ 									{
+										"name" : "Flanger",
+										"id" : "6113e2b95a0e079345cbdae5",
+										"type" : "device",
+										"is_open" : 1,
+										"children" : [ 											{
+												"name" : "I/O",
+												"id" : "6113e2b9c8eeb2512dee03db",
+												"type" : "io",
+												"children" : [ 													{
+														"name" : "input",
+														"id" : "6113e2b90c3d7a3453e7b359",
+														"type" : "input",
+														"children" : [ 															{
+																"name" : "0",
+																"id" : "6113e2b9e4e39caa278f52a8",
+																"type" : "input_value"
+															}
+ ]
+													}
+, 													{
+														"name" : "output",
+														"id" : "6113e2b94a5196723a51c2fd",
+														"type" : "output",
+														"children" : [ 															{
+																"name" : "0",
+																"id" : "6113e2b9e89dafd343596fea",
+																"type" : "output_value"
+															}
+ ]
+													}
+ ]
+											}
+, 											{
+												"name" : "Parameters",
+												"id" : "6113e2b98ac1027b7275402b",
+												"type" : "parameter",
+												"is_open" : 0,
+												"children" : [ 													{
+														"name" : "depth",
+														"id" : "6113e2b9030681dcbc9b8edc",
+														"type" : "parameter_name"
+													}
+, 													{
+														"name" : "Shape",
+														"id" : "6113e3090842ffc7e32c166a",
+														"type" : "parameter_name"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "GROUP_4",
+								"id" : "6149a16b74a01658ddc92b70",
+								"type" : "group",
+								"is_open" : 0,
+								"children" : [ 									{
+										"name" : "Harmonizer",
+										"id" : "6149a17b905f5fa3ab61e731",
+										"type" : "device",
+										"is_open" : 1,
+										"children" : [ 											{
+												"name" : "I/O",
+												"id" : "6149a17b76b5b59731224497",
+												"type" : "io",
+												"is_open" : 0,
+												"children" : [ 													{
+														"name" : "input",
+														"id" : "6149a17b363d1a6727a06a75",
+														"type" : "input",
+														"children" : [ 															{
+																"name" : "0",
+																"id" : "6149a17b1591a513f287c907",
+																"type" : "input_value"
+															}
+ ]
+													}
+, 													{
+														"name" : "output",
+														"id" : "6149a17bc2ba3303af059c84",
+														"type" : "output",
+														"children" : [ 															{
+																"name" : "0",
+																"id" : "6149a17b0fe20731926cee99",
+																"type" : "output_value"
+															}
+ ]
+													}
+ ]
+											}
+, 											{
+												"name" : "Parameters",
+												"id" : "6149a17bf47b7c1c10cb3e87",
+												"type" : "parameter",
+												"is_open" : 0,
 												"children" : [ 													{
 														"name" : "param_1",
-														"id" : "615a039b48b0ef07dc9c39fc",
+														"id" : "6149a17bab7c5724b5ace89d",
+														"type" : "parameter_name"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "GROUP_5",
+								"id" : "614c8e4e371d14db79f3ab79",
+								"type" : "group",
+								"is_open" : 0,
+								"children" : [ 									{
+										"name" : "Kmbuto",
+										"id" : "614c8e5b7cdf5902a50a16dd",
+										"type" : "device",
+										"is_open" : 0,
+										"children" : [ 											{
+												"name" : "I/O",
+												"id" : "614c8e5b5cbed7d233610c14",
+												"type" : "io",
+												"children" : [ 													{
+														"name" : "input",
+														"id" : "614c8e5b44bd29624f31f60f",
+														"type" : "input",
+														"children" : [ 															{
+																"name" : "0",
+																"id" : "614c8e5b6f78c988a00333d2",
+																"type" : "input_value"
+															}
+ ]
+													}
+, 													{
+														"name" : "output",
+														"id" : "614c8e5b01c27bd11661115d",
+														"type" : "output",
+														"children" : [ 															{
+																"name" : "0",
+																"id" : "614c8e5bb4291d151dc9318b",
+																"type" : "output_value"
+															}
+ ]
+													}
+ ]
+											}
+, 											{
+												"name" : "Parameters",
+												"id" : "614c8e5ba94f01a3a4a6aeb2",
+												"type" : "parameter",
+												"is_open" : 0,
+												"children" : [ 													{
+														"name" : "param_3",
+														"id" : "614c8e5be41c64bf5c94684c",
 														"type" : "parameter_name"
 													}
  ]
@@ -1075,7 +1377,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 60.0, 270.0, 509.0, 240.0 ],
+					"patching_rect" : [ 60.0, 270.0, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1091,8 +1393,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1796,7 +2096,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "www",
 				"bootpath" : "~/Documents/jqtree_test_max_interfaces/meig-system/bin",
-				"patcherrelativepath" : "../bin",
+				"patcherrelativepath" : "../../jqtree_test_max_interfaces/meig-system/bin",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
