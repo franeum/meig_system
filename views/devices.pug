@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href="/bootstrap/dist/css/bootstrap.min.css")
+  link(rel='stylesheet', href="/bootstrap/dist/css/bootstrap.css")
+  script(src="/bootstrap/dist/js/bootstrap.bundle.min.js")
+  link(rel='stylesheet', href="/css/jqtree-sections.css")
+  body(id="whole_doc" class='container') 
+    button(id="button_load_data") Load Data  
+    button(id="button_add_group") Add Group 
+    button(id="button_add_device") Add Device 
+    button(id="button_add_parameter") Add Parameter 
+    button(id="button_get_tree") Get Tree  
+    button(id="button_find_parameters") Get Parameters 
+    button(id="button_reverse_path") Get Path  
+    div(id="tree1")
+    ul(id="myMenu1" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dLabel")
+      li(class="edit")
+        a(href="#edit")
+          i(class="icon-edit") Edit 
+      li(class="delete")
+        a(href="#delete")
+          i(class="icon-remove") Delete
+      li(class="divider")
+      li(class="add")
+        a(href="#add")
+          i(class="icon-plus") Add
+
+    ul(id="myMenu2" class="dropdown-menu" role="menu" aria-labelledby="dLabel")
+      li(class="edit")
+        a(href="#edit")
+          i(class="icon-edit") Edit
+      li(class="delete")
+        a(href="#delete")
+          i(class="icon-remove") Delete
+
+    script(type="module", src="/js/deviceTree.js")

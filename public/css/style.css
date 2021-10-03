@@ -1,0 +1,19 @@
+body {
+    padding: 10px;
+    font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00b7ff;
+}
+
+.myMenuStyle {
+    position: absolute;
+    background-color: #eee;
+    border: 1px solid #000;
+    list-style: none;
+}
+
+.myMenuStyle>li {
+    background-color: #eee;
+}

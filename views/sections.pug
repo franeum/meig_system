@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href="/css/jqtree-sections.css")
+  body 
+    button(onclick="add_section()") Add Section 
+    div(id="tree1")
+    script(type="module", src="/js/sectionTree.js")
+
+

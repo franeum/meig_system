@@ -1,0 +1,113 @@
+// section
+const Max = require("max-api");
+const Tree = require("tree-model");
+const tree = new Tree();
+const utils = require("./utils");
+
+/*************************************************************
+ * GET PRESET PAGE
+ ************************************************************/
+
+exports.get_preset = (req, res) => {
+    const { id, onset } = req.query;
+
+    res.render("presets", {
+        id: id,
+        onset: onset,
+    });
+};
+
+/*************************************************************
+ * GET PRESET VALUES
+ ************************************************************/
+
+exports.get_preset_values = (req, res) => {
+    const { id } = req.query;
+    let preset_values = undefined;
+
+    Max.getDict("presets")
+        .then((data) => {
+            Max.post("presets", data);
+            //if (data[id].presets) preset_values = data[id].presets;
+            if (data[id])
+                if (data[id].presets) preset_values = data[id].presets;
+        })
+        .catch((err) => Max.post("errore sui presets"));
+
+    Max.getDict("devices")
+        .then((data) => {
+            const root = tree.parse(data);
+
+            root.all().forEach((node) => {
+                if (node.model.type == "io") node.drop();
+            });
+
+            root.all().forEach((node) => {
+                if (node.model.type == "device")
+                    remove_parameter_container(node);
+            });
+
+            root.all().forEach((node) => {
+                node.model.is_selected = false;
+                if (node.model.type == "parameter_name") {
+                    const _id = node.model.id;
+                    let value = 0;
+
+                    if (preset_values) {
+                        if (preset_values[_id])
+                            value = preset_values[_id].value;
+                    }
+
+                    node.model.value = value;
+                }
+            });
+
+            root.all().forEach((node) => {
+                node.model.is_open = true;
+            });
+
+            res.json([root.model]);
+        })
+        .catch(() => {
+            Max.post("errore sui devices");
+        });
+};
+
+// utilities
+
+const remove_parameter_container = (node) => {
+    const children = node.model.children[0].children;
+    node.model.children = children;
+};
+
+/*************************************************************
+ * POST PRESET
+ ************************************************************/
+
+exports.post_preset = (req, res) => {
+    const { presets, id, onset } = req.body;
+
+    Max.updateDict("presets", id, {
+        presets: JSON.parse(presets),
+        onset: parseInt(onset),
+    })
+        .then(() => {
+            const p_sets = JSON.parse(presets);
+            let ids = [];
+            let values = [];
+
+            Object.keys(p_sets).forEach((idx) => {
+                values.push(p_sets[idx].value);
+                ids.push(idx);
+            });
+
+            const out = ["presetvalues presetvalues"]
+                .concat(ids)
+                .concat(values);
+
+            Max.outlet(out);
+            //Max.post(ids);
+        })
+        .catch((err) => Max.post(err));
+    res.send("ok");
+};

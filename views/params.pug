@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href="/css/jqtree-sections.css")
+  body(id="whole_doc" class='container') 
+    button(id="button_send_data") Send data 
+    div(id="id_container" hidden)=id   
+    div(id="tree1")
+
+    script(type="module", src="/js/params.js")

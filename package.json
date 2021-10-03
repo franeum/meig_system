@@ -1,0 +1,27 @@
+{
+    "name": "meig-system",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/www",
+        "dev": "nodemon ./bin/www"
+    },
+    "dependencies": {
+        "bootstrap": "^5.1.0",
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "express": "~4.16.1",
+        "http-errors": "~1.6.3",
+        "jqtree": "^1.6.1",
+        "jquery": "^3.6.0",
+        "jquery-mousewheel": "^3.1.13",
+        "morgan": "~1.9.1",
+        "pug": "^3.0.2",
+        "tree-model": "^1.0.7"
+    },
+    "devDependencies": {
+        "jsdoc": "^3.6.5",
+        "jsdoc-http-plugin": "^0.3.2",
+        "jsdoc-to-markdown": "^6.0.1"
+    }
+}
