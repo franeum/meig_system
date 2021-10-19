@@ -46,6 +46,33 @@ Max.addHandler("post_params", (_id) => {
 });
 
 /****************************************************************
+ * get_all_params (get all params from device tree)
+ ****************************************************************/
+
+Max.addHandler("get_all_params", (_id) => {
+    //param_id = [];
+
+    Max.getDict("paths")
+        .then((data) => {
+            let param_names = [];
+            let param_ids = [];
+
+            Object.keys(data).forEach((e) => {
+                param_ids.push(e);
+                param_names.push(data[e]);
+            });
+
+            param_names = param_names.join(" ");
+            param_ids = param_ids.join(" ");
+
+            const formatted =
+                "paramslist [ " + param_ids + " ] [ " + param_names + " ]";
+            Max.outlet(formatted);
+        })
+        .catch((error) => Max.outlet(error));
+});
+
+/****************************************************************
  * get_randomID(n)
  ****************************************************************/
 
