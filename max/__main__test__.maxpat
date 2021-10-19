@@ -40,13 +40,35 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"data" : 					{
+
+					}
+,
+					"id" : "obj-80",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 30.0, 735.0, 175.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 1,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict history_devices @embed 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-79",
-					"linecount" : 5,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 947.0, 375.0, 150.0, 74.0 ],
-					"text" : "TUTTI I DATI INVIATI A MAX SARANNO DI TIPO STRINGA E VERRANNO PARSATI CON FROMSYMBOL"
+					"patching_rect" : [ 947.0, 495.0, 150.0, 100.0 ],
+					"text" : "TUTTI I DATI INVIATI A MAX SARANNO DI TIPO STRINGA E VERRANNO PARSATI CON FROMSYMBOL (fatti: paramslist, event_list, presetvalues)"
 				}
 
 			}
@@ -138,7 +160,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 947.0, 270.0, 308.0, 87.0 ],
+					"patching_rect" : [ 947.0, 390.0, 308.0, 87.0 ],
 					"text" : "PARAMETERS LIST\n- get_all_params (NOT YET IMPLEMENTED)\n- inviare lista parametri quando viene modificato il device tree\n- la paramslist è preceduta dal selettore paramslist (1 volta?)"
 				}
 
@@ -146,12 +168,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-59",
-					"linecount" : 15,
+					"linecount" : 16,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 947.0, 45.0, 371.0, 208.0 ],
-					"text" : "- salva i dizionari\n- crea un sistema di \"apertura\"\n- all'apertura si apre il device tree\n\nDEVICE TREE\n- non si possono cambiare i nomi di alcuni nodi fissi\n- mancano audio e video sotto i/o\n- gruppi sotto parameters? (TODO in future)\n- implementare cancellazione un nodo (con i sottonodi)\n- implementare\n- grassetto per i campi non modificabili\n- gestire azione MOVE sui nodi (lo spostamento deve essere controllato, non si può spostare un gruppo sotto un device)\n- implementare UNDO (history)\n- eliminare tutti i pulsanti?"
+					"patching_rect" : [ 947.0, 45.0, 371.0, 221.0 ],
+					"text" : "- salva i dizionari\n- crea un sistema di \"apertura\"\n- all'apertura si apre il device tree\n\nDEVICE TREE\n- mandare fuori ids current e ids previous (lltre che i names)\n- non si possono cambiare i nomi di alcuni nodi fissi\n- mancano audio e video sotto i/o\n- gruppi sotto parameters? (TODO in future)\n- implementare cancellazione un nodo (con i sottonodi)\n- implementare\n- grassetto per i campi non modificabili\n- gestire azione MOVE sui nodi (lo spostamento deve essere controllato, non si può spostare un gruppo sotto un device)\n- implementare UNDO (history)\n- eliminare tutti i pulsanti?"
 				}
 
 			}
@@ -407,7 +429,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -857.0, 236.0, 462.0, 720.0 ],
+						"rect" : [ -1135.0, 201.0, 474.0, 720.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -805,8 +827,11 @@
 					"data" : 					{
 						"6112e50f93a7ee6ef54ba48e" : "group/subgroup_x/reverb/param_1",
 						"614df8fdc1c726a97b510ed3" : "group/subgroup_x/reverb/werwerwerwerwer",
-						"6112e54030e9462db4d32c88" : "group_2/delay/volume",
+						"616ea8f4020b4b01921117ef" : "group/subgroup_x/reverb/nuovo2",
 						"6112e56648b8a7c523437e95" : "group_2/delay/dry-wet",
+						"6112e54030e9462db4d32c88" : "group_2/delay/volume",
+						"616ea9c17eeca0ba34e94011" : "group_2/delay/ciaociao",
+						"616eaa2f4771d8ed43ee0a22" : "group_2/delay/mbutus",
 						"6112e546df2c14d1321b8085" : "group_2/chorus/depth",
 						"6113e2b9030681dcbc9b8edc" : "group_3/flanger/depth",
 						"6113e3090842ffc7e32c166a" : "group_3/flanger/shape",
@@ -833,13 +858,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-55",
-					"linecount" : 22,
+					"linecount" : 28,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 600.0, 570.0, 167.0, 303.0 ],
-					"text" : "\"paramslist [ 6112e50f93a7ee6ef54ba48e 614df8fdc1c726a97b510ed3 6112e54030e9462db4d32c88 6112e56648b8a7c523437e95 6112e546df2c14d1321b8085 6113e2b9030681dcbc9b8edc 6113e3090842ffc7e32c166a 6149a17bab7c5724b5ace89d 614c8e5be41c64bf5c94684c ] [ group/subgroup_x/reverb/param_1 group/subgroup_x/reverb/werwerwerwerwer group_2/delay/volume group_2/delay/dry-wet group_2/chorus/depth group_3/flanger/depth group_3/flanger/shape group_4/harmonizer/param_1 group_5/kmbuto/param_3 ]\""
+					"patching_rect" : [ 600.0, 570.0, 167.0, 384.0 ],
+					"text" : "\"paramslist [ 6112e50f93a7ee6ef54ba48e 614df8fdc1c726a97b510ed3 616ea8f4020b4b01921117ef 6112e56648b8a7c523437e95 6112e54030e9462db4d32c88 616ea9c17eeca0ba34e94011 616eaa2f4771d8ed43ee0a22 6112e546df2c14d1321b8085 6113e2b9030681dcbc9b8edc 6113e3090842ffc7e32c166a 6149a17bab7c5724b5ace89d 614c8e5be41c64bf5c94684c ] [ group/subgroup_x/reverb/param_1 group/subgroup_x/reverb/werwerwerwerwer group/subgroup_x/reverb/nuovo2 group_2/delay/dry-wet group_2/delay/volume group_2/delay/ciaociao group_2/delay/mbutus group_2/chorus/depth group_3/flanger/depth group_3/flanger/shape group_4/harmonizer/param_1 group_5/kmbuto/param_3 ]\""
 				}
 
 			}
@@ -952,32 +977,16 @@
 				"box" : 				{
 					"data" : 					{
 						"615703ec2a541b703d7fcd76" : [ 							{
-								"id" : "6112e50f93a7ee6ef54ba48e",
-								"path" : "GROUP/SUBGROUP_X/Reverb/param_1"
-							}
-, 							{
-								"id" : "614df8fdc1c726a97b510ed3",
-								"path" : "GROUP/SUBGROUP_X/Reverb/Werwerwerwerwer"
-							}
-, 							{
-								"id" : "6112e54030e9462db4d32c88",
-								"path" : "GROUP_2/Delay/volume"
-							}
-, 							{
-								"id" : "6112e56648b8a7c523437e95",
-								"path" : "GROUP_2/Delay/Dry-wet"
-							}
-, 							{
 								"id" : "6112e546df2c14d1321b8085",
 								"path" : "GROUP_2/Chorus/depth"
 							}
 , 							{
-								"id" : "6113e2b9030681dcbc9b8edc",
-								"path" : "GROUP_3/Flanger/depth"
+								"id" : "6149a17bab7c5724b5ace89d",
+								"path" : "GROUP_4/Harmonizer/param_1"
 							}
 , 							{
-								"id" : "6113e3090842ffc7e32c166a",
-								"path" : "GROUP_3/Flanger/Shape"
+								"id" : "614c8e5be41c64bf5c94684c",
+								"path" : "GROUP_5/Kmbuto/param_3"
 							}
  ]
 					}
@@ -1013,14 +1022,29 @@
 									"name" : "Werwerwerwerwer"
 								}
 ,
-								"6112e54030e9462db4d32c88" : 								{
-									"value" : "0.14",
-									"name" : "volume"
+								"616ea8f4020b4b01921117ef" : 								{
+									"value" : "0",
+									"name" : "nuovo2"
 								}
 ,
 								"6112e56648b8a7c523437e95" : 								{
 									"value" : "0.09",
 									"name" : "Dry-wet"
+								}
+,
+								"6112e54030e9462db4d32c88" : 								{
+									"value" : "0.14",
+									"name" : "volume"
+								}
+,
+								"616ea9c17eeca0ba34e94011" : 								{
+									"value" : "0",
+									"name" : "ciaociao"
+								}
+,
+								"616eaa2f4771d8ed43ee0a22" : 								{
+									"value" : "0",
+									"name" : "mbutus"
 								}
 ,
 								"6112e546df2c14d1321b8085" : 								{
@@ -1190,7 +1214,7 @@
 												"name" : "Reverb",
 												"id" : "6112e50fb2d26c534a074ca4",
 												"type" : "device",
-												"is_open" : 0,
+												"is_open" : 1,
 												"children" : [ 													{
 														"name" : "I/O",
 														"id" : "6112e50fe54a1674578ba0b1",
@@ -1226,7 +1250,7 @@
 														"name" : "Parameters",
 														"id" : "6112e50f5c9deff97ed6f045",
 														"type" : "parameter",
-														"is_open" : 0,
+														"is_open" : 1,
 														"children" : [ 															{
 																"name" : "param_1",
 																"id" : "6112e50f93a7ee6ef54ba48e",
@@ -1237,6 +1261,11 @@
 																"id" : "614df8fdc1c726a97b510ed3",
 																"type" : "parameter_name",
 																"path" : "GROUP/SUBGROUP_X/Reverb/Werwerwerwerwer"
+															}
+, 															{
+																"name" : "nuovo2",
+																"id" : "616ea8f4020b4b01921117ef",
+																"type" : "parameter_name"
 															}
  ]
 													}
@@ -1291,15 +1320,25 @@
 												"name" : "Parameters",
 												"id" : "6112e5404ec3d2679c5cdb53",
 												"type" : "parameter",
-												"is_open" : 0,
+												"is_open" : 1,
 												"children" : [ 													{
+														"name" : "Dry-wet",
+														"id" : "6112e56648b8a7c523437e95",
+														"type" : "parameter_name"
+													}
+, 													{
 														"name" : "volume",
 														"id" : "6112e54030e9462db4d32c88",
 														"type" : "parameter_name"
 													}
 , 													{
-														"name" : "Dry-wet",
-														"id" : "6112e56648b8a7c523437e95",
+														"name" : "ciaociao",
+														"id" : "616ea9c17eeca0ba34e94011",
+														"type" : "parameter_name"
+													}
+, 													{
+														"name" : "mbutus",
+														"id" : "616eaa2f4771d8ed43ee0a22",
 														"type" : "parameter_name"
 													}
  ]

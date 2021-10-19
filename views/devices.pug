@@ -5,6 +5,18 @@ block content
   link(rel='stylesheet', href="/bootstrap/dist/css/bootstrap.css")
   script(src="/bootstrap/dist/js/bootstrap.bundle.min.js")
   link(rel='stylesheet', href="/css/jqtree-sections.css")
+  <style type="text/css">
+    .myMenuStyle {
+      position: 'absolute';
+      background-color: #eee;
+      border: 1px solid #000;
+      list-style: none;
+    }
+
+    .myMenuStyle>li {
+      background-color: #eee;
+    }
+  </style>
   body(id="whole_doc" class='container') 
     button(id="button_load_data") Load Data  
     button(id="button_add_group") Add Group 

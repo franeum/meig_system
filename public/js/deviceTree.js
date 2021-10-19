@@ -207,23 +207,6 @@ const get_tree = () => {
     });
 };
 
-$("#tree1").jqTreeContextMenu(
-    () => {
-        return $("#myMenu1");
-    },
-    {
-        edit: function (node) {
-            alert("Edit node: " + node.name);
-        },
-        delete: function (node) {
-            alert("Delete node: " + node.name);
-        },
-        add: function (node) {
-            alert("Add node: " + node.name);
-        },
-    }
-);
-
 const findNodesByType = (type) => {
     let nodes = [];
 
@@ -256,3 +239,36 @@ const prev = (node, arr) => {
         prev(current, arr);
     }
 };
+
+// CONTEXTUAL MENU'S
+
+const mymenu1 = {
+    edit: (node) => {
+        alert("Edit node: " + node.name);
+    },
+    delete: (node) => {
+        alert("Delete node: " + node.name);
+    },
+    add: (node) => {
+        alert("Add node: " + node.name);
+    },
+};
+
+$("#tree1").jqTreeContextMenu(() => {
+    return $("#myMenu1");
+}, mymenu1);
+
+/*
+context menu:
+- devicesMenu: add group
+- groupMenu: addSubGroup, addDevice, rename, remove
+- deviceMenu: addParameter, addDeviceAfter, rename, remove
+
+tasto destro su DEVICE:
+- rename this Device
+- delete this Device
+- add a Parameter to this Device
+- enable i|o for this Device (così per i device in cui non serve potrebbe essere nascosta con valori di default 0)
+- add a new Device (beofre/after this Device)
+
+*/

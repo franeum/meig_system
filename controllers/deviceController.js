@@ -46,16 +46,25 @@ exports.post_tree = (req, res) => {
             res.json(err);
         });
 
-    // JSON.stringify(root.model)
-    /*
-    const root = tree.parse(data);
-    const parameters = [];
-    const nodes = findAllByType(root, "parameter_name");
-    nodes.map((node) => {
-        node.model.path = findPathName(node);
-        parameters.push(node.model);
-    });
-    */
+    Max.getDict("paths")
+        .then((data) => {
+            let param_names = [];
+            let param_ids = [];
+
+            Object.keys(data).forEach((e) => {
+                param_ids.push(e);
+                param_names.push(data[e]);
+            });
+
+            param_names = param_names.join(" ");
+            param_ids = param_ids.join(" ");
+
+            const formatted =
+                "paramslist [ " + param_ids + " ] [ " + param_names + " ]";
+
+            Max.outlet(formatted);
+        })
+        .catch((error) => Max.outlet(error));
 };
 
 /*************************************************************
