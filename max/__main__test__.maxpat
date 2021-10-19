@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1031.0, 787.0 ],
+		"rect" : [ -1886.0, 79.0, 1031.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 688.0, 198.0, 265.0, 20.0 ],
+					"text" : "get_random n -> n: quanti randomID generare"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-21",
 					"maxclass" : "comment",
@@ -82,8 +93,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -272,8 +283,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -469,14 +480,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 570.0, 81.0, 469.0, 771.0 ],
+						"rect" : [ -1128.0, 145.0, 605.0, 768.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -504,6 +515,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-8",
@@ -563,7 +575,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 45.0, 135.0, 510.0, 570.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 465.0, 765.0 ],
+									"presentation_rect" : [ 0.0, 0.0, 603.0, 765.0 ],
 									"rendermode" : 0,
 									"url" : "http://127.0.0.1:3000/api/v1/preset/tree?id=615703ec2a541b703d7fcd76&onset=1500"
 								}
@@ -705,13 +717,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-55",
-					"linecount" : 4,
+					"linecount" : 13,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 600.0, 540.0, 167.0, 62.0 ],
-					"text" : "randomID 615a1f7b55eee64c0fd140cb 615a1f7ba0aa1cce93d65a7d 615a1f7b2ef630fbe51cddbb"
+					"patching_rect" : [ 600.0, 540.0, 167.0, 183.0 ],
+					"text" : "presetvalues presetvalues \" [ \" 6112e50f93a7ee6ef54ba48e 614df8fdc1c726a97b510ed3 6112e54030e9462db4d32c88 6112e56648b8a7c523437e95 6112e546df2c14d1321b8085 6113e2b9030681dcbc9b8edc 6113e3090842ffc7e32c166a 6149a17bab7c5724b5ace89d 614c8e5be41c64bf5c94684c \" ][ \" 0.09 0 0.14 0.09 127 0.16 0 0 0 \" ] \""
 				}
 
 			}
@@ -849,6 +861,57 @@
 , 			{
 				"box" : 				{
 					"data" : 					{
+						"615703ec2a541b703d7fcd76" : 						{
+							"presets" : 							{
+								"6112e50f93a7ee6ef54ba48e" : 								{
+									"value" : "0.09",
+									"name" : "param_1"
+								}
+,
+								"614df8fdc1c726a97b510ed3" : 								{
+									"value" : "0",
+									"name" : "Werwerwerwerwer"
+								}
+,
+								"6112e54030e9462db4d32c88" : 								{
+									"value" : "0.14",
+									"name" : "volume"
+								}
+,
+								"6112e56648b8a7c523437e95" : 								{
+									"value" : "0.09",
+									"name" : "Dry-wet"
+								}
+,
+								"6112e546df2c14d1321b8085" : 								{
+									"value" : "127",
+									"name" : "depth"
+								}
+,
+								"6113e2b9030681dcbc9b8edc" : 								{
+									"value" : "0.16",
+									"name" : "depth"
+								}
+,
+								"6113e3090842ffc7e32c166a" : 								{
+									"value" : "0",
+									"name" : "Shape"
+								}
+,
+								"6149a17bab7c5724b5ace89d" : 								{
+									"value" : "0",
+									"name" : "param_1"
+								}
+,
+								"614c8e5be41c64bf5c94684c" : 								{
+									"value" : "0",
+									"name" : "param_3"
+								}
+
+							}
+,
+							"onset" : 1500
+						}
 
 					}
 ,
@@ -1371,6 +1434,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-47",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "n4m.monitor.maxpat",
 					"numinlets" : 1,
@@ -1389,14 +1453,16 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 60.0, 225.0, 542.0, 22.0 ],
+					"patching_rect" : [ 60.0, 225.0, 397.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
-					"text" : "node.script /Users/neum/Documents/jqtree_test_max_interfaces/meig-system/bin/www @autostart 1"
+					"text" : "node.script /Users/neum/Documents/meig_system/bin/www @autostart 1"
 				}
 
 			}
@@ -1977,7 +2043,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
-					"midpoints" : [ 592.5, 253.0, 69.5, 253.0 ],
+					"midpoints" : [ 447.5, 253.0, 69.5, 253.0 ],
 					"source" : [ "obj-48", 1 ]
 				}
 
@@ -2095,26 +2161,26 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "www",
-				"bootpath" : "~/Documents/jqtree_test_max_interfaces/meig-system/bin",
-				"patcherrelativepath" : "../../jqtree_test_max_interfaces/meig-system/bin",
+				"bootpath" : "~/Documents/meig_system/bin",
+				"patcherrelativepath" : "../bin",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "n4m.monitor.maxpat",
-				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
+				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "resize_n4m_monitor_patcher.js",
-				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
+				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fit_jweb_to_bounds.js",
-				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
+				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
