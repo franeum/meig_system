@@ -94,7 +94,7 @@ exports.post_list = (req, res) => {
 
     Max.updateDict("parameters_list", id, filtered)
         .then(() => {
-            let ids = ["event_params", "event_params"];
+            let ids = ["event_params", "event_params", "[ "];
             let paths = [];
 
             filtered.forEach((elem) => {
@@ -102,7 +102,10 @@ exports.post_list = (req, res) => {
                 paths.push(elem.path);
             });
 
-            Max.outlet(ids.concat(paths));
+            const out = ids.concat(" ] [").concat(paths).concat(" ]");
+
+            //Max.outlet(ids.concat(paths));
+            Max.outlet(out);
             res.send("ok");
         })
         .catch((err) => {

@@ -106,7 +106,7 @@ exports.post_preset = (req, res) => {
             const out = ["presetvalues", "presetvalues"]
                 .concat([" [ "])
                 .concat(ids)
-                .concat([" ][ "])
+                .concat([" ] [ "])
                 .concat(values)
                 .concat([" ] "]);
 
