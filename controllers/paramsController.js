@@ -102,7 +102,8 @@ exports.post_list = (req, res) => {
                 paths.push(elem.path);
             });
 
-            const out = ids.concat(" ] [").concat(paths).concat(" ]");
+            //const out = ids.concat(" ] [").concat(paths).concat(" ]");
+            const out = ids.join(" ") + " ] [" + paths.join(" ") + " ]";
 
             //Max.outlet(ids.concat(paths));
             Max.outlet(out);

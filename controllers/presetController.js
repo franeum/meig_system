@@ -97,18 +97,18 @@ exports.post_preset = (req, res) => {
             let values = [];
 
             Object.keys(p_sets).forEach((idx) => {
-                let v = parseFloat(p_sets[idx].value);
+                let v = p_sets[idx].value;
 
                 values.push(v);
                 ids.push(idx);
             });
 
-            const out = ["presetvalues", "presetvalues"]
-                .concat([" [ "])
-                .concat(ids)
-                .concat([" ] [ "])
-                .concat(values)
-                .concat([" ] "]);
+            const out =
+                "presetvalues presetvalues [ " +
+                ids.join(" ") +
+                " ] [ " +
+                values.join(" ") +
+                " ]";
 
             Max.outlet(out);
             //Max.post(ids);
