@@ -2,21 +2,14 @@ extends layout
 
 block content
   link(rel='stylesheet', href="/bootstrap/dist/css/bootstrap.min.css")
-  link(rel='stylesheet', href="/bootstrap/dist/css/bootstrap.css")
+  link(rel='stylesheet', href="/bootstrap-icons/font/bootstrap-icons.css")
+  //link(rel='stylesheet', href="/bootstrap/dist/css/bootstrap.css")
   script(src="/bootstrap/dist/js/bootstrap.bundle.min.js")
   link(rel='stylesheet', href="/css/jqtree-sections.css")
-  <style type="text/css">
-    .myMenuStyle {
-      position: 'absolute';
-      background-color: #eee;
-      border: 1px solid #000;
-      list-style: none;
-    }
-
-    .myMenuStyle>li {
-      background-color: #eee;
-    }
-  </style>
+  link(rel='stylesheet', href="/css/mymenustyle.css")
+  <script defer src="/@fortawesome/fontawesome-free/js/brands.js"></script>
+  <script defer src="/@fortawesome/fontawesome-free/js/solid.js"></script>
+  <script defer src="/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
   body(id="whole_doc" class='container') 
     button(id="button_load_data") Load Data  
     button(id="button_add_group") Add Group 
@@ -25,25 +18,38 @@ block content
     button(id="button_get_tree") Get Tree  
     button(id="button_find_parameters") Get Parameters 
     button(id="button_reverse_path") Get Path  
+    button(id="button_undo") Undo 
     div(id="tree1")
-    ul(id="myMenu1" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dLabel")
-      li(class="edit")
-        a(href="#edit")
-          i(class="icon-edit") Edit 
-      li(class="delete")
-        a(href="#delete")
-          i(class="icon-remove") Delete
-      li(class="divider")
-      li(class="add")
-        a(href="#add")
-          i(class="icon-plus") Add
+    //
+      ul(id="myMenu1" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
+        li(class="edit")
+          //a(href="#edit") 
+          i(class="bi-alarm")  
+          btn(class="btn-outline-secondary") Edit 
+        li(class="delete")
+          //a(href="#delete")
+          i(class="icon-remove")
+          btn(class="btn-outline-secondary") Remove 
+        hr 
+        li(class="add")
+          //a(href="#add")
+          i(class="icon-plus") 
+          btn(class ="btn-outline-secondary") Add 
 
-    ul(id="myMenu2" class="dropdown-menu" role="menu" aria-labelledby="dLabel")
-      li(class="edit")
-        a(href="#edit")
-          i(class="icon-edit") Edit
-      li(class="delete")
-        a(href="#delete")
-          i(class="icon-remove") Delete
+      ul(id="myMenu2" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu")
+        li(class="edit")
+          a(href="#edit")
+            i(class="icon-edit") Edit
+        li(class="delete")
+          a(href="#delete")
+            i(class="icon-remove") Delete
+    ul(id="myMenu1" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
+      each value in [["Edit","fas fa-edit","#edit"],["Remove","fas fa-minus","#delete"],["Add","fas fa-plus","#add"]]
+        li
+          .row  
+            .col-2 
+              i(class=value[1]) 
+            .col-4
+              a(class="btn-outline-secondary" href=value[2])=value[0] 
 
     script(type="module", src="/js/deviceTree.js")

@@ -36,4 +36,17 @@ router.post("/tree", device.post_tree);
  **/
 router.get("/loadtree", device.get_loadtree);
 
+/*************************************************************
+ * GET UNDO
+ ************************************************************/
+/**
+ * get undo
+ *
+ * @name /device/undo
+ * @path {GET} /device/undo
+ **/
+router.get("/undo", device.get_undo);
+
+router.get("/stack", device.get_stack);
+
 module.exports = router;

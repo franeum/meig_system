@@ -9,7 +9,7 @@ let selected_node = undefined;
 // GLOBAL EVENTS
 
 $(() => {
-    $("#button_load_data").click(() => {
+    $("#button_load_data").on("click", () => {
         load_data();
     });
 
@@ -17,7 +17,7 @@ $(() => {
         add_group();
     });
 
-    $("#button_add_device").click(() => {
+    $("#button_add_device").on("click", () => {
         add_device();
     });
 
@@ -35,6 +35,14 @@ $(() => {
 
     $("#button_reverse_path").click(() => {
         reverse_path();
+    });
+
+    $("#button_remove_node").click(() => {
+        remove_node();
+    });
+
+    $("#button_undo").on("click", () => {
+        perform_undo();
     });
 });
 
@@ -65,6 +73,7 @@ $(() => {
 });
 
 const create_init_tree = () => {
+    console.log("creating init tree...");
     $("#tree1").tree({
         dataUrl: MAIN_URI + "/device/loadtree",
         dragAndDrop: true,
@@ -195,6 +204,16 @@ const add_parameter = () => {
     }
 };
 
+// REMOVING NODE
+
+const remove_node = (node) => {
+    $("#tree1").tree("removeNode", node);
+
+    get_tree();
+};
+
+// GET TREE
+
 const get_tree = () => {
     const whole_tree = $("#tree1").tree("toJson");
 
@@ -204,6 +223,13 @@ const get_tree = () => {
         data: {
             devices: whole_tree,
         },
+    });
+};
+
+const perform_undo = () => {
+    $.get({
+        url: MAIN_URI + "/device/undo",
+        success: load_data(),
     });
 };
 
@@ -247,7 +273,8 @@ const mymenu1 = {
         alert("Edit node: " + node.name);
     },
     delete: (node) => {
-        alert("Delete node: " + node.name);
+        //alert("Delete node: " + node.name);
+        remove_node(node);
     },
     add: (node) => {
         alert("Add node: " + node.name);

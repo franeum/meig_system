@@ -1,7 +1,10 @@
 // device
+//const { post } = require("jquery");
 const Max = require("max-api");
 const TreeModel = require("tree-model");
 const tree = new TreeModel();
+const { Stack } = require("./stack");
+const device_history = new Stack();
 
 /*************************************************************
  * GET SECTION PAGE && DEFAULT_TREE
@@ -18,9 +21,47 @@ exports.get_page_tree = (req, res) => {
 exports.post_tree = (req, res) => {
     const parsed = JSON.parse(req.body.devices)[0];
 
-    Max.setDict("devices", parsed)
+    Max.getDict("devices")
+        .then((data) => {
+            if (device_history.isEmpty()) {
+                device_history.push(data);
+                console.log("STACK VUOTO");
+            } else {
+                const last = device_history.peek();
+                if (JSON.stringify(last) !== JSON.stringify(data)) {
+                    device_history.push(data);
+                    console.log("STACK UPDATED");
+                }
+            }
+            update_device_tree(parsed);
+            get_paths();
+            res.send("ok");
+        })
+        .catch((err) => {
+            Max.post(err);
+            res.send("error");
+        });
+};
+
+/*************************************************************
+ * update stack
+ ************************************************************/
+
+const update_stack = () => {
+    Max.getDict("devices")
+        .then((data) => {})
+        .catch((err) => console.log(err));
+};
+
+/*************************************************************
+ * update_device_tree (called by get path)
+ ************************************************************/
+
+const update_device_tree = (parsed_json) => {
+    Max.setDict("devices", parsed_json)
         .then((data) => {
             //Max.post(data);
+            Max.post("I DATI CI SONO");
 
             const root = tree.parse(data);
             const paths = {};
@@ -34,18 +75,25 @@ exports.post_tree = (req, res) => {
 
             Max.setDict("paths", paths)
                 .then(() => {
-                    res.send("ok");
+                    console.log("ok");
                 })
                 .catch((err) => {
-                    res.json(err);
+                    console.log(err);
                 });
 
             //res.send("ok");
         })
         .catch((err) => {
-            res.json(err);
+            Max.post("I DATI NON CI SONO");
+            console.log(err);
         });
+};
 
+/*************************************************************
+ * GET PATHS
+ ************************************************************/
+
+const get_paths = () => {
     Max.getDict("paths")
         .then((data) => {
             let param_names = [];
@@ -81,6 +129,19 @@ exports.get_loadtree = (req, res) => {
         });
 };
 
+/*************************************************************
+ * GET UNDO
+ ************************************************************/
+
+exports.get_undo = (req, res) => {
+    console.log("called undo");
+    const last = device_history.pop();
+    console.log(last);
+    update_device_tree(last);
+    //device_history.printStack();
+    res.render("devices");
+};
+
 /****************************************************************
  * findPathName(node) => find Path from root to node
  ****************************************************************/
@@ -98,4 +159,10 @@ const findPathName = (node) => {
 
     arrPath = arrPath.join("/");
     return arrPath.toLowerCase();
+};
+
+// get stack
+
+exports.get_stack = (req, res) => {
+    res.json({ stack: device_history.getstack() });
 };

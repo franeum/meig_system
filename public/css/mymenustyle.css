@@ -1,0 +1,16 @@
+.myMenuStyle {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #000;
+    list-style: none;
+}
+
+.myMenuStyle > li {
+    background-color: #fff;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.myMenuStyle li a i {
+    font-style: normal;
+}

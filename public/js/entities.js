@@ -55,14 +55,7 @@ const create_parameter = (name, id) => {
         label: name,
         id: id,
         type: "parameter_name",
-        children: [
-            /*{
-                       label: "0",
-                       id: id,
-                       value: 0,
-                       type: 'parameter_value'
-                   }*/
-        ],
+        children: [],
     };
 };
 
@@ -78,33 +71,71 @@ const create_device = (name) => {
                 type: "io",
                 children: [
                     {
-                        label: "input",
+                        label: "audio",
                         id: genId(),
-                        type: "input",
+                        type: "audio",
                         children: [
                             {
-                                label: "0",
+                                label: "input",
                                 id: genId(),
-                                type: "input_value",
+                                type: "input",
+                                children: [
+                                    {
+                                        label: "0",
+                                        id: genId(),
+                                        type: "input_value",
+                                    },
+                                ],
+                            },
+                            {
+                                label: "output",
+                                id: genId(),
+                                type: "output",
+                                children: [
+                                    {
+                                        label: "0",
+                                        id: genId(),
+                                        type: "output_value",
+                                    },
+                                ],
                             },
                         ],
                     },
                     {
-                        label: "output",
+                        label: "video",
                         id: genId(),
-                        type: "output",
+                        type: "video",
                         children: [
                             {
-                                label: "0",
+                                label: "input",
                                 id: genId(),
-                                type: "output_value",
+                                type: "input",
+                                children: [
+                                    {
+                                        label: "0",
+                                        id: genId(),
+                                        type: "input_value",
+                                    },
+                                ],
+                            },
+                            {
+                                label: "output",
+                                id: genId(),
+                                type: "output",
+                                children: [
+                                    {
+                                        label: "0",
+                                        id: genId(),
+                                        type: "output_value",
+                                    },
+                                ],
                             },
                         ],
                     },
                 ],
             },
             {
-                label: "Parameters",
+                label: "parameters",
                 id: genId(),
                 type: "parameter",
                 children: [
