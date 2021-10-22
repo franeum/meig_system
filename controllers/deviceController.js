@@ -34,7 +34,7 @@ exports.post_tree = (req, res) => {
                 }
             }
             update_device_tree(parsed);
-            get_paths();
+            //get_paths();
             res.send("ok");
         })
         .catch((err) => {
@@ -76,6 +76,7 @@ const update_device_tree = (parsed_json) => {
             Max.setDict("paths", paths)
                 .then(() => {
                     console.log("ok");
+                    get_paths();
                 })
                 .catch((err) => {
                     console.log(err);
