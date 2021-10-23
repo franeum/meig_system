@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 834.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 925.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,23 +40,74 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"data" : 					{
-
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 639.0, 703.0, 19.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"filename" : "",
+						"parameter_enable" : 0
 					}
 ,
-					"id" : "obj-80",
+					"text" : "js"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-26",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "b_filemenu.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 30.0, 15.0, 135.0, 82.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-51",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 30.0, 735.0, 175.0, 22.0 ],
+					"patching_rect" : [ 30.0, 705.0, 73.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1,
+						"embed" : 0,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
 ,
-					"text" : "dict history_devices @embed 1"
+					"text" : "dict meigroll"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-50",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 30.0, 555.0, 81.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict metadata"
 				}
 
 			}
@@ -238,7 +289,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -941.0, 79.0, 451.0, 967.0 ],
+						"rect" : [ 34.0, 79.0, 451.0, 967.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -327,7 +378,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 0.0, 450.0, 930.0 ],
 									"rendermode" : 0,
-									"url" : "http://127.0.0.1:3000/api/v1/params/tree?id=615703ec2a541b703d7fcd76"
+									"url" : "http://127.0.0.1:3000/api/v1/params/tree?id=6174895775fd0f35add7fe11"
 								}
 
 							}
@@ -428,7 +479,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -1135.0, 201.0, 474.0, 720.0 ],
+						"rect" : [ 34.0, 201.0, 474.0, 720.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -625,7 +676,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -1128.0, 145.0, 605.0, 768.0 ],
+						"rect" : [ 34.0, 145.0, 605.0, 768.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -714,7 +765,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 0.0, 603.0, 765.0 ],
 									"rendermode" : 0,
-									"url" : "http://127.0.0.1:3000/api/v1/preset/tree?id=615703ec2a541b703d7fcd76&onset=1500"
+									"url" : "http://127.0.0.1:3000/api/v1/preset/tree?id=6174895775fd0f35add7fe11&onset=0"
 								}
 
 							}
@@ -816,62 +867,39 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 630.0, 309.0, 254.0, 22.0 ],
-					"text" : "get_preset 615703ec2a541b703d7fcd76 1500"
+					"patching_rect" : [ 630.0, 309.0, 228.0, 22.0 ],
+					"text" : "get_preset 6174895775fd0f35add7fe11 0"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"data" : 					{
-						"6112e50f93a7ee6ef54ba48e" : "group/subgroup_x/reverb/param_1",
-						"614df8fdc1c726a97b510ed3" : "group/subgroup_x/reverb/werwerwerwerwer",
-						"616ea8f4020b4b01921117ef" : "group/subgroup_x/reverb/nuovo2",
-						"617070ac931959c4d7b7d48d" : "group/subgroup_x/reverb/gain",
-						"617079244fe2f0c33293c19d" : "group/subgroup_x/reverb/vol",
-						"6112e54030e9462db4d32c88" : "group/delay/volume",
-						"616ea9c17eeca0ba34e94011" : "group/delay/ciaociao",
-						"616eaa2f4771d8ed43ee0a22" : "group/delay/mbutus",
-						"61707012ad97ae38d16f669f" : "group/delay/gain",
-						"6112e546df2c14d1321b8085" : "group_2/chorus/depth",
-						"6113e2b9030681dcbc9b8edc" : "group_3/flanger/depth",
-						"6113e3090842ffc7e32c166a" : "group_3/flanger/shape",
-						"6149a17bab7c5724b5ace89d" : "group_4/harmonizer/param_1",
-						"61709aad2bf3ce01ee93d3a1" : "group_5/rev/param_1",
-						"61709abc9331db559c30d819" : "group_5/rev/gain",
-						"61709ac4e344831f3565a2de" : "group_5/chorus/param_1",
-						"61709bba053a61790563151e" : "group_5/flanger/param_1",
-						"61709be7c4b1792bbcf5c505" : "group_5/del1/param_1",
-						"61709cf850521c3476bc4e9a" : "group_5/delay2/param_1",
-						"61709d2187bbc8de19e2eb6e" : "group_5/flanger2/param_1"
-					}
-,
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 30.0, 675.0, 122.0, 22.0 ],
+					"patching_rect" : [ 30.0, 675.0, 60.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1,
+						"embed" : 0,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
 ,
-					"text" : "dict paths @embed 1"
+					"text" : "dict paths"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-55",
-					"linecount" : 45,
+					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 600.0, 570.0, 171.0, 612.0 ],
-					"text" : "\"paramslist [ 6112e50f93a7ee6ef54ba48e 614df8fdc1c726a97b510ed3 616ea8f4020b4b01921117ef 617070ac931959c4d7b7d48d 617079244fe2f0c33293c19d 6112e54030e9462db4d32c88 616ea9c17eeca0ba34e94011 616eaa2f4771d8ed43ee0a22 61707012ad97ae38d16f669f 6112e546df2c14d1321b8085 6113e2b9030681dcbc9b8edc 6113e3090842ffc7e32c166a 6149a17bab7c5724b5ace89d 61709aad2bf3ce01ee93d3a1 61709abc9331db559c30d819 61709ac4e344831f3565a2de 61709bba053a61790563151e 61709be7c4b1792bbcf5c505 61709cf850521c3476bc4e9a 61709d2187bbc8de19e2eb6e ] [ group/subgroup_x/reverb/param_1 group/subgroup_x/reverb/werwerwerwerwer group/subgroup_x/reverb/nuovo2 group/subgroup_x/reverb/gain group/subgroup_x/reverb/vol group/delay/volume group/delay/ciaociao group/delay/mbutus group/delay/gain group_2/chorus/depth group_3/flanger/depth group_3/flanger/shape group_4/harmonizer/param_1 group_5/rev/param_1 group_5/rev/gain group_5/chorus/param_1 group_5/flanger/param_1 group_5/del1/param_1 group_5/delay2/param_1 group_5/flanger2/param_1 ]\""
+					"patching_rect" : [ 600.0, 570.0, 172.0, 102.0 ],
+					"text" : "\"paramslist [ 61748918ed013d7b61d7dc52 6174899baafc72b01fc77f9e 61748a0a1ef7f20f167e7097 ] [ group/reverb/drywet group/delay/gain group2/chorus/volume ]\""
 				}
 
 			}
@@ -952,7 +980,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 600.0, 249.0, 95.0, 22.0 ],
-					"text" : "get_randomID 3"
+					"text" : "get_randomID 1"
 				}
 
 			}
@@ -963,8 +991,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 675.0, 384.0, 220.0, 22.0 ],
-					"text" : "get_event 615703ec2a541b703d7fcd76"
+					"patching_rect" : [ 675.0, 384.0, 224.0, 22.0 ],
+					"text" : "get_event 6174895775fd0f35add7fe11"
 				}
 
 			}
@@ -982,123 +1010,37 @@
 			}
 , 			{
 				"box" : 				{
-					"data" : 					{
-						"615703ec2a541b703d7fcd76" : [ 							{
-								"id" : "6112e546df2c14d1321b8085",
-								"path" : "GROUP_2/Chorus/depth"
-							}
-, 							{
-								"id" : "6149a17bab7c5724b5ace89d",
-								"path" : "GROUP_4/Harmonizer/param_1"
-							}
-, 							{
-								"id" : "614c8e5be41c64bf5c94684c",
-								"path" : "GROUP_5/Kmbuto/param_3"
-							}
- ]
-					}
-,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 30.0, 615.0, 175.0, 22.0 ],
+					"patching_rect" : [ 30.0, 615.0, 113.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1,
+						"embed" : 0,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
 ,
-					"text" : "dict parameters_list @embed 1"
+					"text" : "dict parameters_list"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"data" : 					{
-						"615703ec2a541b703d7fcd76" : 						{
-							"presets" : 							{
-								"6112e50f93a7ee6ef54ba48e" : 								{
-									"value" : "0.09",
-									"name" : "param_1"
-								}
-,
-								"614df8fdc1c726a97b510ed3" : 								{
-									"value" : "0",
-									"name" : "Werwerwerwerwer"
-								}
-,
-								"616ea8f4020b4b01921117ef" : 								{
-									"value" : "0",
-									"name" : "nuovo2"
-								}
-,
-								"6112e56648b8a7c523437e95" : 								{
-									"value" : "0.09",
-									"name" : "Dry-wet"
-								}
-,
-								"6112e54030e9462db4d32c88" : 								{
-									"value" : "0.14",
-									"name" : "volume"
-								}
-,
-								"616ea9c17eeca0ba34e94011" : 								{
-									"value" : "0",
-									"name" : "ciaociao"
-								}
-,
-								"616eaa2f4771d8ed43ee0a22" : 								{
-									"value" : "0",
-									"name" : "mbutus"
-								}
-,
-								"6112e546df2c14d1321b8085" : 								{
-									"value" : "127",
-									"name" : "depth"
-								}
-,
-								"6113e2b9030681dcbc9b8edc" : 								{
-									"value" : "0.16",
-									"name" : "depth"
-								}
-,
-								"6113e3090842ffc7e32c166a" : 								{
-									"value" : "0",
-									"name" : "Shape"
-								}
-,
-								"6149a17bab7c5724b5ace89d" : 								{
-									"value" : "0",
-									"name" : "param_1"
-								}
-,
-								"614c8e5be41c64bf5c94684c" : 								{
-									"value" : "0",
-									"name" : "param_3"
-								}
-
-							}
-,
-							"onset" : 1500
-						}
-
-					}
-,
 					"id" : "obj-70",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 30.0, 644.0, 132.0, 22.0 ],
+					"patching_rect" : [ 30.0, 644.0, 70.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1,
+						"embed" : 0,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
 ,
-					"text" : "dict presets @embed 1"
+					"text" : "dict presets"
 				}
 
 			}
@@ -1202,832 +1144,19 @@
 			}
 , 			{
 				"box" : 				{
-					"data" : 					{
-						"name" : "DEVICES",
-						"id" : "6112e4ea1b46f9daa3e155fe",
-						"type" : "main",
-						"is_open" : 1,
-						"children" : [ 							{
-								"name" : "GROUP",
-								"type" : "group",
-								"id" : "6112e4ea12f3891478508ab9",
-								"is_open" : 0,
-								"children" : [ 									{
-										"name" : "SUBGROUP_X",
-										"id" : "6112e506fbeb3f67d2ba22e9",
-										"type" : "group",
-										"is_open" : 0,
-										"children" : [ 											{
-												"name" : "Reverb",
-												"id" : "6112e50fb2d26c534a074ca4",
-												"type" : "device",
-												"is_open" : 1,
-												"children" : [ 													{
-														"name" : "I/O",
-														"id" : "6112e50fe54a1674578ba0b1",
-														"type" : "io",
-														"is_open" : 0,
-														"children" : [ 															{
-																"name" : "input",
-																"id" : "6112e50f504243c0a899a2fc",
-																"type" : "input",
-																"is_open" : 0,
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "6112e50fb4f28cc7224c49f3",
-																		"type" : "input_value"
-																	}
- ]
-															}
-, 															{
-																"name" : "output",
-																"id" : "6112e50fea132d413148a968",
-																"type" : "output",
-																"is_open" : 0,
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "6112e50ff8688150f8681f5f",
-																		"type" : "output_value"
-																	}
- ]
-															}
- ]
-													}
-, 													{
-														"name" : "Parameters",
-														"id" : "6112e50f5c9deff97ed6f045",
-														"type" : "parameter",
-														"is_open" : 1,
-														"children" : [ 															{
-																"name" : "param_1",
-																"id" : "6112e50f93a7ee6ef54ba48e",
-																"type" : "parameter_name"
-															}
-, 															{
-																"name" : "Werwerwerwerwer",
-																"id" : "614df8fdc1c726a97b510ed3",
-																"type" : "parameter_name",
-																"path" : "GROUP/SUBGROUP_X/Reverb/Werwerwerwerwer"
-															}
-, 															{
-																"name" : "nuovo2",
-																"id" : "616ea8f4020b4b01921117ef",
-																"type" : "parameter_name"
-															}
-, 															{
-																"name" : "gain",
-																"id" : "617070ac931959c4d7b7d48d",
-																"type" : "parameter_name"
-															}
-, 															{
-																"name" : "vol",
-																"id" : "617079244fe2f0c33293c19d",
-																"type" : "parameter_name"
-															}
- ]
-													}
- ]
-											}
- ]
-									}
-, 									{
-										"name" : "Delay",
-										"id" : "6112e540eb0b4994ad60a93d",
-										"type" : "device",
-										"is_open" : 0,
-										"children" : [ 											{
-												"name" : "I/O",
-												"id" : "6112e5400669bf636d2bc221",
-												"type" : "io",
-												"is_open" : 0,
-												"children" : [ 													{
-														"name" : "input",
-														"id" : "6112e5406d5248bee565010e",
-														"type" : "input",
-														"is_open" : 0,
-														"children" : [ 															{
-																"name" : "0",
-																"id" : "6112e5403040f4cf790ff415",
-																"type" : "input_value"
-															}
- ]
-													}
-, 													{
-														"name" : "output",
-														"id" : "6112e540a12ba8d41b7862b9",
-														"type" : "output",
-														"is_open" : 1,
-														"children" : [ 															{
-																"name" : "0",
-																"id" : "6112e5408cdecbe4a7127e73",
-																"type" : "output_value"
-															}
- ]
-													}
- ]
-											}
-, 											{
-												"name" : "Parameters",
-												"id" : "6112e5404ec3d2679c5cdb53",
-												"type" : "parameter",
-												"is_open" : 0,
-												"children" : [ 													{
-														"name" : "volume",
-														"id" : "6112e54030e9462db4d32c88",
-														"type" : "parameter_name"
-													}
-, 													{
-														"name" : "ciaociao",
-														"id" : "616ea9c17eeca0ba34e94011",
-														"type" : "parameter_name"
-													}
-, 													{
-														"name" : "mbutus",
-														"id" : "616eaa2f4771d8ed43ee0a22",
-														"type" : "parameter_name"
-													}
-, 													{
-														"name" : "gain",
-														"id" : "61707012ad97ae38d16f669f",
-														"type" : "parameter_name"
-													}
- ]
-											}
- ]
-									}
- ]
-							}
-, 							{
-								"name" : "GROUP_2",
-								"id" : "6112e539daa1bf4620754b4e",
-								"type" : "group",
-								"is_open" : 0,
-								"children" : [ 									{
-										"name" : "Chorus",
-										"id" : "6112e546d21f589dc4f06e70",
-										"type" : "device",
-										"is_open" : 1,
-										"children" : [ 											{
-												"name" : "I/O",
-												"id" : "6112e546c127d88806f5c0e1",
-												"type" : "io",
-												"children" : [ 													{
-														"name" : "input",
-														"id" : "6112e5461d733aa61e695468",
-														"type" : "input",
-														"children" : [ 															{
-																"name" : "0",
-																"id" : "6112e546fd58b0103c446813",
-																"type" : "input_value"
-															}
- ]
-													}
-, 													{
-														"name" : "output",
-														"id" : "6112e546abb244d9ccbb8654",
-														"type" : "output",
-														"children" : [ 															{
-																"name" : "0",
-																"id" : "6112e5467b4579014e1c4290",
-																"type" : "output_value"
-															}
- ]
-													}
- ]
-											}
-, 											{
-												"name" : "Parameters",
-												"id" : "6112e546bd12194cdbf4d18c",
-												"type" : "parameter",
-												"is_open" : 0,
-												"children" : [ 													{
-														"name" : "depth",
-														"id" : "6112e546df2c14d1321b8085",
-														"type" : "parameter_name"
-													}
- ]
-											}
- ]
-									}
- ]
-							}
-, 							{
-								"name" : "GROUP_3",
-								"id" : "6113e2ab846b761d4a9a337c",
-								"type" : "group",
-								"is_open" : 0,
-								"children" : [ 									{
-										"name" : "Flanger",
-										"id" : "6113e2b95a0e079345cbdae5",
-										"type" : "device",
-										"is_open" : 1,
-										"children" : [ 											{
-												"name" : "I/O",
-												"id" : "6113e2b9c8eeb2512dee03db",
-												"type" : "io",
-												"children" : [ 													{
-														"name" : "input",
-														"id" : "6113e2b90c3d7a3453e7b359",
-														"type" : "input",
-														"children" : [ 															{
-																"name" : "0",
-																"id" : "6113e2b9e4e39caa278f52a8",
-																"type" : "input_value"
-															}
- ]
-													}
-, 													{
-														"name" : "output",
-														"id" : "6113e2b94a5196723a51c2fd",
-														"type" : "output",
-														"children" : [ 															{
-																"name" : "0",
-																"id" : "6113e2b9e89dafd343596fea",
-																"type" : "output_value"
-															}
- ]
-													}
- ]
-											}
-, 											{
-												"name" : "Parameters",
-												"id" : "6113e2b98ac1027b7275402b",
-												"type" : "parameter",
-												"is_open" : 0,
-												"children" : [ 													{
-														"name" : "depth",
-														"id" : "6113e2b9030681dcbc9b8edc",
-														"type" : "parameter_name"
-													}
-, 													{
-														"name" : "Shape",
-														"id" : "6113e3090842ffc7e32c166a",
-														"type" : "parameter_name"
-													}
- ]
-											}
- ]
-									}
- ]
-							}
-, 							{
-								"name" : "GROUP_4",
-								"id" : "6149a16b74a01658ddc92b70",
-								"type" : "group",
-								"is_open" : 0,
-								"children" : [ 									{
-										"name" : "Harmonizer",
-										"id" : "6149a17b905f5fa3ab61e731",
-										"type" : "device",
-										"is_open" : 1,
-										"children" : [ 											{
-												"name" : "I/O",
-												"id" : "6149a17b76b5b59731224497",
-												"type" : "io",
-												"is_open" : 0,
-												"children" : [ 													{
-														"name" : "input",
-														"id" : "6149a17b363d1a6727a06a75",
-														"type" : "input",
-														"children" : [ 															{
-																"name" : "0",
-																"id" : "6149a17b1591a513f287c907",
-																"type" : "input_value"
-															}
- ]
-													}
-, 													{
-														"name" : "output",
-														"id" : "6149a17bc2ba3303af059c84",
-														"type" : "output",
-														"children" : [ 															{
-																"name" : "0",
-																"id" : "6149a17b0fe20731926cee99",
-																"type" : "output_value"
-															}
- ]
-													}
- ]
-											}
-, 											{
-												"name" : "Parameters",
-												"id" : "6149a17bf47b7c1c10cb3e87",
-												"type" : "parameter",
-												"is_open" : 0,
-												"children" : [ 													{
-														"name" : "param_1",
-														"id" : "6149a17bab7c5724b5ace89d",
-														"type" : "parameter_name"
-													}
- ]
-											}
- ]
-									}
- ]
-							}
-, 							{
-								"name" : "group_5",
-								"id" : "617099915c0f4cecb2ff742d",
-								"type" : "group",
-								"is_open" : 1,
-								"children" : [ 									{
-										"name" : "rev",
-										"id" : "61709aad341d4eee731adb11",
-										"type" : "device",
-										"is_open" : 0,
-										"children" : [ 											{
-												"name" : "i/o",
-												"id" : "61709aadafce192750761fa0",
-												"type" : "io",
-												"children" : [ 													{
-														"name" : "audio",
-														"id" : "61709aad4250d83a3fee149a",
-														"type" : "audio",
-														"children" : [ 															{
-																"name" : "input",
-																"id" : "61709aad4a7755ad55ac4888",
-																"type" : "input",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709aad4b022de6d0284f3a",
-																		"type" : "input_value"
-																	}
- ]
-															}
-, 															{
-																"name" : "output",
-																"id" : "61709aadcc2338914d35ef17",
-																"type" : "output",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709aad4858bd3d8b8d848c",
-																		"type" : "output_value"
-																	}
- ]
-															}
- ]
-													}
-, 													{
-														"name" : "video",
-														"id" : "61709aad7413f848b48f21c9",
-														"type" : "video",
-														"children" : [ 															{
-																"name" : "input",
-																"id" : "61709aad012193b69c996a47",
-																"type" : "input",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709aad1eeadfc274d69840",
-																		"type" : "input_value"
-																	}
- ]
-															}
-, 															{
-																"name" : "output",
-																"id" : "61709aadde3f5527096171c8",
-																"type" : "output",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709aad29ffe00f0503b8fd",
-																		"type" : "output_value"
-																	}
- ]
-															}
- ]
-													}
- ]
-											}
-, 											{
-												"name" : "parameters",
-												"id" : "61709aadac7acb17057d2deb",
-												"type" : "parameter",
-												"children" : [ 													{
-														"name" : "param_1",
-														"id" : "61709aad2bf3ce01ee93d3a1",
-														"type" : "parameter_name"
-													}
-, 													{
-														"name" : "gain",
-														"id" : "61709abc9331db559c30d819",
-														"type" : "parameter_name"
-													}
- ]
-											}
- ]
-									}
-, 									{
-										"name" : "chorus",
-										"id" : "61709ac433922f940ead8a1a",
-										"type" : "device",
-										"children" : [ 											{
-												"name" : "i/o",
-												"id" : "61709ac43de4363521c6540e",
-												"type" : "io",
-												"children" : [ 													{
-														"name" : "audio",
-														"id" : "61709ac40ff84f5854235528",
-														"type" : "audio",
-														"children" : [ 															{
-																"name" : "input",
-																"id" : "61709ac4614ba9821d792fec",
-																"type" : "input",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709ac4a6e73033dafea165",
-																		"type" : "input_value"
-																	}
- ]
-															}
-, 															{
-																"name" : "output",
-																"id" : "61709ac4827878d0377878e2",
-																"type" : "output",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709ac4a118bb232c9a1164",
-																		"type" : "output_value"
-																	}
- ]
-															}
- ]
-													}
-, 													{
-														"name" : "video",
-														"id" : "61709ac47fc3d151b3431080",
-														"type" : "video",
-														"children" : [ 															{
-																"name" : "input",
-																"id" : "61709ac4f130b23391f8aaaa",
-																"type" : "input",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709ac42ae800480458dd11",
-																		"type" : "input_value"
-																	}
- ]
-															}
-, 															{
-																"name" : "output",
-																"id" : "61709ac44f5620592ac6dc21",
-																"type" : "output",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709ac4c7c4d0b8102b6d2e",
-																		"type" : "output_value"
-																	}
- ]
-															}
- ]
-													}
- ]
-											}
-, 											{
-												"name" : "parameters",
-												"id" : "61709ac4c967690a1fb54f7a",
-												"type" : "parameter",
-												"children" : [ 													{
-														"name" : "param_1",
-														"id" : "61709ac4e344831f3565a2de",
-														"type" : "parameter_name"
-													}
- ]
-											}
- ]
-									}
-, 									{
-										"name" : "flanger",
-										"id" : "61709bba7448bdfcaf4fca82",
-										"type" : "device",
-										"children" : [ 											{
-												"name" : "i/o",
-												"id" : "61709bba23d52fae322b0a97",
-												"type" : "io",
-												"children" : [ 													{
-														"name" : "audio",
-														"id" : "61709bbae5bd1791b700bfb7",
-														"type" : "audio",
-														"children" : [ 															{
-																"name" : "input",
-																"id" : "61709bba69b6faa708ca518d",
-																"type" : "input",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709bbabdf35159fbebacf0",
-																		"type" : "input_value"
-																	}
- ]
-															}
-, 															{
-																"name" : "output",
-																"id" : "61709bbac87a31cd0660e76c",
-																"type" : "output",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709bba5de9c67b436d3fac",
-																		"type" : "output_value"
-																	}
- ]
-															}
- ]
-													}
-, 													{
-														"name" : "video",
-														"id" : "61709bba7cea7cb7d766af97",
-														"type" : "video",
-														"children" : [ 															{
-																"name" : "input",
-																"id" : "61709bbac4fc6f15bbb5976a",
-																"type" : "input",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709bba7a7e8119f40f4e5a",
-																		"type" : "input_value"
-																	}
- ]
-															}
-, 															{
-																"name" : "output",
-																"id" : "61709bbaf7f742b149c9561a",
-																"type" : "output",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709bba2876fffc2399e704",
-																		"type" : "output_value"
-																	}
- ]
-															}
- ]
-													}
- ]
-											}
-, 											{
-												"name" : "parameters",
-												"id" : "61709bba925418955e2c6cf5",
-												"type" : "parameter",
-												"children" : [ 													{
-														"name" : "param_1",
-														"id" : "61709bba053a61790563151e",
-														"type" : "parameter_name"
-													}
- ]
-											}
- ]
-									}
-, 									{
-										"name" : "del1",
-										"id" : "61709be7338778a2cf2455e2",
-										"type" : "device",
-										"children" : [ 											{
-												"name" : "i/o",
-												"id" : "61709be725aa030be2c534fc",
-												"type" : "io",
-												"children" : [ 													{
-														"name" : "audio",
-														"id" : "61709be7e645dfcbb772d252",
-														"type" : "audio",
-														"children" : [ 															{
-																"name" : "input",
-																"id" : "61709be7f7a83191099129dc",
-																"type" : "input",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709be73ae26478fcc1ed0f",
-																		"type" : "input_value"
-																	}
- ]
-															}
-, 															{
-																"name" : "output",
-																"id" : "61709be7d2527b1ef166ccf6",
-																"type" : "output",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709be7982795e343b7f9af",
-																		"type" : "output_value"
-																	}
- ]
-															}
- ]
-													}
-, 													{
-														"name" : "video",
-														"id" : "61709be7a421bc4463c71882",
-														"type" : "video",
-														"children" : [ 															{
-																"name" : "input",
-																"id" : "61709be7a28844b2a9723d13",
-																"type" : "input",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709be726fad7cbd20ab001",
-																		"type" : "input_value"
-																	}
- ]
-															}
-, 															{
-																"name" : "output",
-																"id" : "61709be7a30362ce19d0c4b3",
-																"type" : "output",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709be7c563e107a366159f",
-																		"type" : "output_value"
-																	}
- ]
-															}
- ]
-													}
- ]
-											}
-, 											{
-												"name" : "parameters",
-												"id" : "61709be79ca5ea46ef4439c8",
-												"type" : "parameter",
-												"children" : [ 													{
-														"name" : "param_1",
-														"id" : "61709be7c4b1792bbcf5c505",
-														"type" : "parameter_name"
-													}
- ]
-											}
- ]
-									}
-, 									{
-										"name" : "delay2",
-										"id" : "61709cf8dd264f427183ff75",
-										"type" : "device",
-										"children" : [ 											{
-												"name" : "i/o",
-												"id" : "61709cf8ded098e49a53b75c",
-												"type" : "io",
-												"children" : [ 													{
-														"name" : "audio",
-														"id" : "61709cf82308e972ea298650",
-														"type" : "audio",
-														"children" : [ 															{
-																"name" : "input",
-																"id" : "61709cf82a145bed7ef9387c",
-																"type" : "input",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709cf877fb7b9d67932d98",
-																		"type" : "input_value"
-																	}
- ]
-															}
-, 															{
-																"name" : "output",
-																"id" : "61709cf8a830c3b916a6070f",
-																"type" : "output",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709cf8049a2af665481e5d",
-																		"type" : "output_value"
-																	}
- ]
-															}
- ]
-													}
-, 													{
-														"name" : "video",
-														"id" : "61709cf8dffa695ce9fc2b78",
-														"type" : "video",
-														"children" : [ 															{
-																"name" : "input",
-																"id" : "61709cf8554838411b94eca1",
-																"type" : "input",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709cf87aab273c12d2de12",
-																		"type" : "input_value"
-																	}
- ]
-															}
-, 															{
-																"name" : "output",
-																"id" : "61709cf8b739859f33ebb5c9",
-																"type" : "output",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709cf89b9033fde39c4ea9",
-																		"type" : "output_value"
-																	}
- ]
-															}
- ]
-													}
- ]
-											}
-, 											{
-												"name" : "parameters",
-												"id" : "61709cf8589961b23cc83b7f",
-												"type" : "parameter",
-												"children" : [ 													{
-														"name" : "param_1",
-														"id" : "61709cf850521c3476bc4e9a",
-														"type" : "parameter_name"
-													}
- ]
-											}
- ]
-									}
-, 									{
-										"name" : "flanger2",
-										"id" : "61709d216b9710b0ce3af138",
-										"type" : "device",
-										"children" : [ 											{
-												"name" : "i/o",
-												"id" : "61709d2130e4864acd2653b3",
-												"type" : "io",
-												"children" : [ 													{
-														"name" : "audio",
-														"id" : "61709d21f27872f4284a56d3",
-														"type" : "audio",
-														"children" : [ 															{
-																"name" : "input",
-																"id" : "61709d215ed7b05b01300c6e",
-																"type" : "input",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709d215eedabef3191d9e7",
-																		"type" : "input_value"
-																	}
- ]
-															}
-, 															{
-																"name" : "output",
-																"id" : "61709d213ace6b9dce0f34f7",
-																"type" : "output",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709d21f7addbc1c3cda935",
-																		"type" : "output_value"
-																	}
- ]
-															}
- ]
-													}
-, 													{
-														"name" : "video",
-														"id" : "61709d21be1d8dd499022ce5",
-														"type" : "video",
-														"children" : [ 															{
-																"name" : "input",
-																"id" : "61709d2116eef2e14e26f704",
-																"type" : "input",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709d21b4167233fe2a897f",
-																		"type" : "input_value"
-																	}
- ]
-															}
-, 															{
-																"name" : "output",
-																"id" : "61709d214e8a787b4631f109",
-																"type" : "output",
-																"children" : [ 																	{
-																		"name" : "0",
-																		"id" : "61709d219132b7329950c5cc",
-																		"type" : "output_value"
-																	}
- ]
-															}
- ]
-													}
- ]
-											}
-, 											{
-												"name" : "parameters",
-												"id" : "61709d212f931e2c634e72be",
-												"type" : "parameter",
-												"children" : [ 													{
-														"name" : "param_1",
-														"id" : "61709d2187bbc8de19e2eb6e",
-														"type" : "parameter_name"
-													}
- ]
-											}
- ]
-									}
- ]
-							}
- ]
-					}
-,
 					"id" : "obj-39",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 30.0, 584.0, 133.0, 22.0 ],
+					"patching_rect" : [ 30.0, 584.0, 71.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1,
+						"embed" : 0,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
 ,
-					"text" : "dict devices @embed 1"
+					"text" : "dict devices"
 				}
 
 			}
@@ -2087,6 +1216,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -2136,7 +1267,7 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 517.745063404915982, 1070.128371994407644, 430.66667652130127, 326.666673421859741 ]
+					"patching_rect" : [ 517.745063404915982, 1208.128371994407644, 430.66667652130127, 326.666673421859741 ]
 				}
 
 			}
@@ -2212,7 +1343,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1143.033593893051147, 1293.054089229019155, 24.0, 24.0 ]
+					"patching_rect" : [ 1181.0, 1252.631244025054912, 24.0, 24.0 ]
 				}
 
 			}
@@ -2686,7 +1817,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 1 ],
-					"midpoints" : [ 609.5, 527.399999678134918, 761.5, 527.399999678134918 ],
+					"midpoints" : [ 609.5, 527.399999678134918, 762.5, 527.399999678134918 ],
 					"order" : 0,
 					"source" : [ "obj-53", 0 ]
 				}
@@ -2838,6 +1969,55 @@
 				"name" : "fit_jweb_to_bounds.js",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "b_filemenu.maxpat",
+				"bootpath" : "~/Documents/meig_system/max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "_filemenu.js",
+				"bootpath" : "~/Documents/meig_system/max",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ftark-new.svg",
+				"bootpath" : "~/Documents/meig_system/max/icons",
+				"patcherrelativepath" : "./icons",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ftfolder-documents.svg",
+				"bootpath" : "~/Documents/meig_system/max/icons",
+				"patcherrelativepath" : "./icons",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ftfilesave.svg",
+				"bootpath" : "~/Documents/meig_system/max/icons",
+				"patcherrelativepath" : "./icons",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ftfilesaveas.svg",
+				"bootpath" : "~/Documents/meig_system/max/icons",
+				"patcherrelativepath" : "./icons",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ft14-text.svg",
+				"bootpath" : "~/Documents/meig_system/max/icons",
+				"patcherrelativepath" : "./icons",
+				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{

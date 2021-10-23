@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:cc="http://web.resource.org/cc/"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    id="svg1"
+    sodipodi:docname="filesaveas.svg"
+    viewBox="0 0 60 60"
+    sodipodi:version="0.32"
+    version="1.0"
+    y="0"
+    x="0"
+    inkscape:version="0.38.1"
+    sodipodi:docbase="/home/danny/flat/scalable/actions"
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-width="1016"
+      pagecolor="#ffffff"
+      inkscape:zoom="5.6568542"
+      inkscape:window-x="0"
+      borderopacity="1.0"
+      inkscape:cx="34.406729"
+      inkscape:cy="7.9630813"
+      inkscape:window-y="0"
+      inkscape:window-height="685"
+      inkscape:pageopacity="0.0"
+  />
+  <path
+      id="path646"
+      style="stroke-linejoin:round;fill-rule:evenodd;stroke-linecap:round;stroke-width:1pt;fill:#7f7f7f"
+      transform="matrix(1.0594 0 0 1.0594 -1.4619 -1.891)"
+      d="m8.375 6.0625c-1.108 0-2 0.892-2 2v44.844c0 1.108 0.892 2 2 2h43.062c1.108 0 2-0.892 2-2v-40.25l-6.625-6.5935h-38.437z"
+  />
+  <path
+      id="path655"
+      style="fill-rule:evenodd;stroke:#333333;stroke-width:2.5;fill:#bfbfbf"
+      d="m15.914 4.6592v13.242c0 1.353 1.188 2.442 2.665 2.442h17.908c1.477 0 2.666-1.089 2.666-2.442v-13.242l-23.239 0.0002z"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+  />
+  <rect
+      id="rect656"
+      style="fill-rule:evenodd;stroke:#333333;stroke-width:1.25;fill:#7f7f7f"
+      rx="1.3992"
+      height="9.0411"
+      width="6.5871"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+      y="7.9428"
+      x="19.516"
+  />
+  <path
+      id="path659"
+      style="stroke-linejoin:round;stroke:#333333;stroke-linecap:round;stroke-width:2.9499;fill:none"
+      transform="matrix(1.0594 0 0 1.0594 -1.4619 -1.891)"
+      d="m8.375 6.0625c-1.108 0-2 0.892-2 2v44.844c0 1.108 0.892 2 2 2h43.063c1.108 0 2-0.892 2-2v-40.25l-6.626-6.5935h-38.437z"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+  />
+  <rect
+      id="rect731"
+      style="stroke-linejoin:round;fill-rule:evenodd;fill-opacity:.75;stroke:#333333;stroke-linecap:round;stroke-width:1.25;fill:#d9d9d9"
+      rx="1.9333"
+      height="27.181"
+      width="39.66"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+      y="24.726"
+      x="10.401"
+  />
+  <path
+      id="path862"
+      style="stroke-linejoin:round;stroke:#333333;stroke-linecap:round;stroke-width:2.6316;fill:none"
+      d="m39.734 28.611h5.674m-2.702 0v19.236m-2.972 0.52h5.809"
+      sodipodi:nodetypes="cccccc"
+      transform="matrix(0.95 0 0 0.95 1.5207 1.752)"
+      sodipodi:stroke-cmyk="(0.0000000 0.0000000 0.0000000 0.80000001)"
+  />
+  <path
+      id="path854"
+      style="stroke-width:1pt;fill:#333333"
+      transform="matrix(0.95 0 0 0.95 1.5207 1.752)"
+      d="m27.818 43.315c0-0.553 0.154-1.007 0.463-1.365 0.316-0.357 0.698-0.536 1.145-0.536 0.268 0 0.524 0.049 0.767 0.146 0.244 0.09 0.569 0.236 0.975 0.439 0.414 0.195 0.755 0.337 1.023 0.426 0.268 0.09 0.593 0.134 0.975 0.134 0.373 0 0.649-0.073 0.828-0.219 0.179-0.154 0.268-0.345 0.268-0.572 0-0.204-0.057-0.37-0.17-0.5-0.114-0.13-0.264-0.235-0.451-0.317-0.187-0.089-0.451-0.199-0.792-0.329s-0.877-0.341-1.608-0.633c-0.764-0.325-1.352-0.63-1.767-0.914-0.414-0.292-0.735-0.662-0.962-1.108-0.227-0.455-0.341-1.02-0.341-1.694 0-0.763 0.203-1.486 0.609-2.168 0.414-0.682 1.003-1.231 1.766-1.645 0.772-0.422 1.653-0.633 2.644-0.633 0.422 0 0.893 0.053 1.413 0.158 0.52 0.098 1.011 0.264 1.474 0.5 0.471 0.227 0.853 0.519 1.145 0.877 0.301 0.357 0.451 0.779 0.451 1.267 0 0.316-0.073 0.605-0.219 0.865-0.138 0.251-0.333 0.446-0.585 0.584-0.244 0.13-0.516 0.195-0.816 0.195-0.163 0-0.341-0.036-0.536-0.109-0.187-0.073-0.455-0.191-0.804-0.354-0.341-0.162-0.654-0.288-0.938-0.377-0.284-0.09-0.565-0.134-0.841-0.134-0.284 0-0.528 0.069-0.731 0.207-0.195 0.138-0.292 0.345-0.292 0.621 0 0.317 0.317 0.609 0.95 0.877 0.634 0.26 1.369 0.561 2.205 0.902 0.845 0.341 1.543 0.8 2.095 1.376 0.561 0.577 0.841 1.353 0.841 2.327 0 0.894-0.223 1.677-0.67 2.351-0.447 0.666-1.056 1.178-1.827 1.535-0.764 0.358-1.596 0.536-2.498 0.536-1.323 0-2.521-0.247-3.593-0.743-1.064-0.503-1.596-1.161-1.596-1.973zm-1.048-9.21v9.624c0 0.585-0.183 1.072-0.548 1.462-0.366 0.39-0.833 0.584-1.401 0.584-0.447 0-0.825-0.121-1.133-0.365-0.301-0.244-0.528-0.536-0.682-0.877-0.439 0.536-0.926 0.918-1.462 1.145-0.528 0.236-1.158 0.353-1.888 0.353-1.113 0-2.128-0.312-3.046-0.938-0.91-0.633-1.632-1.494-2.168-2.582-0.528-1.097-0.792-2.295-0.792-3.594 0-1.283 0.264-2.469 0.792-3.557 0.536-1.097 1.262-1.958 2.18-2.583 0.918-0.633 1.929-0.95 3.034-0.95 0.739 0 1.368 0.113 1.888 0.341 0.528 0.227 1.015 0.613 1.462 1.157 0.146-0.333 0.373-0.621 0.682-0.865 0.308-0.252 0.686-0.377 1.133-0.377 0.568 0 1.035 0.195 1.401 0.584 0.365 0.382 0.548 0.861 0.548 1.438zm-6.566 1.498c-0.829 0-1.482 0.317-1.962 0.951-0.471 0.633-0.706 1.421-0.706 2.363 0 0.601 0.105 1.161 0.317 1.681 0.211 0.512 0.515 0.918 0.913 1.218 0.406 0.301 0.885 0.451 1.438 0.451 0.836 0 1.49-0.317 1.961-0.95 0.471-0.642 0.707-1.442 0.707-2.4 0-0.95-0.236-1.738-0.707-2.363-0.471-0.634-1.125-0.951-1.961-0.951z"
+  />
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >ftfilesaveas</dc:title
+        >
+        <dc:date
+          >2011-01-31T02:01:30</dc:date
+        >
+        <dc:description
+          >Originally uploaded by Danny Allen for OCAL 0.18 this icon is part of the flat theme</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/112555/ftfilesaveas-by-anonymous</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >Anonymous</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >flat</rdf:li
+            >
+            <rdf:li
+              >icon</rdf:li
+            >
+            <rdf:li
+              >theme</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>

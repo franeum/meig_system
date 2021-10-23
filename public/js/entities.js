@@ -10,21 +10,6 @@ const genId = () => {
     );
 };
 
-const init_sections = [
-    {
-        label: "score",
-        level: 0,
-        id: genId(),
-        children: [
-            {
-                label: "section",
-                id: genId(),
-                children: [],
-            },
-        ],
-    },
-];
-
 const init_devices = [
     {
         label: "devices",
@@ -152,7 +137,6 @@ const create_device = (name) => {
 };
 
 export const entity = {
-    INIT_SECTIONS: init_sections,
     INIT_DEVICES: init_devices,
     create_group: create_group,
     create_device: create_device,

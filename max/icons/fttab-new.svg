@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:cc="http://web.resource.org/cc/"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    id="svg1"
+    sodipodi:docname="tab_new.svg"
+    viewBox="0 0 60 60"
+    sodipodi:version="0.32"
+    version="1.0"
+    y="0"
+    x="0"
+    inkscape:version="0.38.1"
+    sodipodi:docbase="/home/danny/flat/scalable/actions"
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-width="1016"
+      pagecolor="#ffffff"
+      inkscape:zoom="5.6568543"
+      inkscape:window-x="0"
+      borderopacity="1.0"
+      inkscape:cx="38.378397"
+      inkscape:cy="-0.11219019"
+      inkscape:window-y="0"
+      inkscape:window-height="685"
+      inkscape:pageopacity="0.0"
+  />
+  <path
+      id="path839"
+      style="stroke-width:1pt;fill:#333333"
+      d="m12.726 15.919v-7.0275c0-0.9831 0.269-1.7818 0.806-2.3963 0.538-0.6297 1.306-0.9446 2.304-0.9446 0.999 0 1.767 0.3149 2.304 0.9446 0.553 0.6145 0.83 1.4132 0.83 2.3963v7.0275h6.935c1.014 0 1.813 0.277 2.397 0.83 0.599 0.537 0.898 1.298 0.898 2.281 0 0.998-0.299 1.774-0.898 2.327-0.584 0.553-1.383 0.829-2.397 0.829h-6.935v7.005c0 0.998-0.277 1.805-0.83 2.419-0.553 0.615-1.321 0.922-2.304 0.922s-1.751-0.307-2.304-0.922c-0.537-0.614-0.806-1.421-0.806-2.419v-7.005h-6.9357c-0.9831 0-1.7818-0.299-2.3963-0.898-0.599-0.615-0.8986-1.367-0.8986-2.258 0-0.983 0.2919-1.744 0.8756-2.281 0.5991-0.553 1.4055-0.83 2.4193-0.83h6.9357z"
+  />
+  <path
+      id="path837"
+      style="stroke-linejoin:round;fill-rule:evenodd;stroke:#4c4c4c;stroke-linecap:round;stroke-width:3.125;fill:#b3b3b3"
+      d="m6.6801 26.621l-4.2625 15.502h36.39l-8.949-15.502h-23.179z"
+      sodipodi:nodetypes="ccccc"
+      transform="translate(0 10.038)"
+      sodipodi:stroke-cmyk="(0.0000000 0.0000000 0.0000000 0.69999999)"
+  />
+  <path
+      id="path838"
+      style="stroke-linejoin:round;fill-rule:evenodd;stroke:#333333;stroke-linecap:round;stroke-width:3.125;fill:#7f7f7f"
+      d="m25.98 17.341l-4.263 15.501h36.391l-8.95-15.501h-23.178z"
+      sodipodi:nodetypes="ccccc"
+      transform="translate(0 10.038)"
+      sodipodi:stroke-cmyk="(0.0000000 0.0000000 0.0000000 0.80000001)"
+  />
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >fttab new</dc:title
+        >
+        <dc:date
+          >2011-01-31T02:06:49</dc:date
+        >
+        <dc:description
+          >Originally uploaded by Danny Allen for OCAL 0.18 this icon is part of the flat theme</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/114481/fttab-new-by-anonymous</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >Anonymous</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >flat</rdf:li
+            >
+            <rdf:li
+              >icon</rdf:li
+            >
+            <rdf:li
+              >theme</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
