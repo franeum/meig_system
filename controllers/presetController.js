@@ -26,8 +26,9 @@ exports.get_preset_values = (req, res) => {
     let preset_values = undefined;
 
     Max.getDict("presets")
-        .then((data) => {
-            Max.post("presets", data);
+        .then((d) => {
+            //Max.post("presets", data);
+            const data = d.presets;
             //if (data[id].presets) preset_values = data[id].presets;
             if (data[id])
                 if (data[id].presets) preset_values = data[id].presets;
@@ -35,7 +36,8 @@ exports.get_preset_values = (req, res) => {
         .catch((err) => Max.post("errore sui presets"));
 
     Max.getDict("devices")
-        .then((data) => {
+        .then((d) => {
+            const data = d.devices;
             const root = tree.parse(data);
 
             root.all().forEach((node) => {
@@ -87,7 +89,7 @@ const remove_parameter_container = (node) => {
 exports.post_preset = (req, res) => {
     const { presets, id, onset } = req.body;
 
-    Max.updateDict("presets", id, {
+    Max.updateDict("presets", `presets[${id}]`, {
         presets: JSON.parse(presets),
         onset: parseInt(onset),
     })

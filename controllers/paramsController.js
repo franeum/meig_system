@@ -11,9 +11,10 @@ const tree = new TreeModel();
 exports.get_page = (req, res) => {
     const { id } = req.query;
     Max.getDict("parameters_list")
-        .then((data) => {
+        .then((d) => {
+            const data = d.parameters_list;
             if (!data[id]) {
-                Max.updateDict("parameters_list", id, {})
+                Max.updateDict("parameters_list", `parameters_list[${id}]`, {})
                     .then(() => {
                         res.render("params", { id: id });
                     })
@@ -33,7 +34,8 @@ exports.get_page = (req, res) => {
 
 exports.get_list = (req, res) => {
     Max.getDict("devices")
-        .then((data) => {
+        .then((d) => {
+            const data = d.devices;
             const root = tree.parse(data);
 
             root.all().forEach((node) => {
@@ -92,7 +94,7 @@ exports.post_list = (req, res) => {
 
     Max.post(filtered.slice(2));
 
-    Max.updateDict("parameters_list", id, filtered)
+    Max.updateDict("parameters_list", `parameters_list[${id}]`, filtered)
         .then(() => {
             let ids = ["event_params", "event_params", "[ "];
             let paths = [];

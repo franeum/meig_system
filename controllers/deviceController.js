@@ -6,6 +6,34 @@ const tree = new TreeModel();
 const { Stack } = require("./stack");
 const device_history = new Stack();
 
+const genId = () => {
+    var timestamp = ((new Date().getTime() / 1000) | 0).toString(16);
+    return (
+        timestamp +
+        "xxxxxxxxxxxxxxxx"
+            .replace(/[x]/g, function () {
+                return ((Math.random() * 16) | 0).toString(16);
+            })
+            .toLowerCase()
+    );
+};
+
+const init_devices = [
+    {
+        label: "devices",
+        id: genId(),
+        type: "main",
+        children: [
+            {
+                label: "group",
+                type: "group",
+                id: genId(),
+                children: [],
+            },
+        ],
+    },
+];
+
 /*************************************************************
  * GET SECTION PAGE && DEFAULT_TREE
  ************************************************************/
@@ -23,18 +51,7 @@ exports.post_tree = (req, res) => {
 
     Max.getDict("devices")
         .then((data) => {
-            if (device_history.isEmpty()) {
-                device_history.push(data);
-                console.log("STACK VUOTO");
-            } else {
-                const last = device_history.peek();
-                if (JSON.stringify(last) !== JSON.stringify(data)) {
-                    device_history.push(data);
-                    console.log("STACK UPDATED");
-                }
-            }
-            update_device_tree(parsed);
-            //get_paths();
+            update_device_tree({ devices: parsed });
             res.send("ok");
         })
         .catch((err) => {
@@ -60,10 +77,9 @@ const update_stack = () => {
 const update_device_tree = (parsed_json) => {
     Max.setDict("devices", parsed_json)
         .then((data) => {
-            //Max.post(data);
             Max.post("I DATI CI SONO");
 
-            const root = tree.parse(data);
+            const root = tree.parse(data.devices);
             const paths = {};
 
             root.walk((node) => {
@@ -73,7 +89,7 @@ const update_device_tree = (parsed_json) => {
                 }
             });
 
-            Max.setDict("paths", paths)
+            Max.setDict("paths", { paths: paths })
                 .then(() => {
                     console.log("ok");
                     get_paths();
@@ -99,10 +115,11 @@ const get_paths = () => {
         .then((data) => {
             let param_names = [];
             let param_ids = [];
+            const p = data.paths;
 
-            Object.keys(data).forEach((e) => {
+            Object.keys(p).forEach((e) => {
                 param_ids.push(e);
-                param_names.push(data[e]);
+                param_names.push(p[e]);
             });
 
             param_names = param_names.join(" ");
@@ -122,8 +139,11 @@ const get_paths = () => {
 
 exports.get_loadtree = (req, res) => {
     Max.getDict("devices")
-        .then((data) => {
-            res.json([data]);
+        .then((d) => {
+            const data = d.devices;
+            if (data.name) {
+                res.json([data]);
+            } else res.json(init_devices);
         })
         .catch((err) => {
             res.json(err);
