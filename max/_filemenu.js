@@ -20,7 +20,7 @@ function object_setvalue(name, message) {
     obj.set(message);
 }
 
-function object_sendvalue(name, message) {
+function object_sendsymbol(name, message) {
     var obj = this.patcher.getnamed(name);
     obj.message("symbol", message);
 }
@@ -33,35 +33,40 @@ function set_metadata(state) {
     // state:
     // 0 for new project
     // 1 for update project
+    // 2 for rename project
 
     var metadata = new Dict(dicts[0]);
-    var title = new Dict();
+    var savedate = new Date();
+    var m_data;
 
     if (state === 0) {
-        title.set("projectName", projectName);
-        var date = new Date();
-        title.set("created_at", date.toString());
-        metadata.set("metadata", title);
+        m_data = new Dict();
+        m_data.set("projectName", projectName);
+        m_data.set("created_at", savedate.toString());
+    } else if (state === 1) {
+        m_data = metadata.get("metadata");
+        m_data.set("projectName", projectName);
+        m_data.set("last_save", savedate.toString());
     } else {
-        var savedate = new Date();
-        var meta = metadata.get("metadata");
-        meta.set("projectName", projectName);
-        meta.set("lat_save", savedate.toString());
-        metadata.set("metadata", meta);
+        m_data = metadata.get("metadata");
+        m_data.set("projectName", projectName);
     }
+
+    metadata.set("metadata", m_data);
 }
 
 function newProject(p_name) {
     projectName = p_name.toString();
     filePath = undefined;
-    set_metadata(0);
 
-    for (var i = 1; i < dicts.length; i++) {
+    for (var i = 0; i < dicts.length; i++) {
         var key = dicts[i];
         var d = new Dict(key);
         d.clear();
         d.set(key, new Dict());
     }
+
+    set_metadata(0);
 
     object_setvalue("nameproject_display", projectName);
 }
@@ -98,24 +103,42 @@ function storeFile() {
     dest.export_json(filePath);
 }
 
+/*
 function saveAs(filename) {
+    filePath = filename.toString();
+    storeFile();
+}
+*/
+
+function saveAs() {
+    if (filePath) {
+        var last = filePath.split("/");
+        last = last[last.length - 1];
+        var obj = this.patcher.getnamed("saveasdialog");
+        obj.message("name", last);
+    }
+    object_sendsymbol("saveasdialog", "bang");
+}
+
+function saveAsCallback(filename) {
     filePath = filename.toString();
     storeFile();
 }
 
 function saveProject() {
     if (filePath) storeFile();
-    else object_sendvalue("saveasdialog", "bang");
+    else saveAs();
+    //else object_sendsymbol("saveasdialog", "bang");
 }
 
 function renameProject() {
-    if (projectName) object_sendvalue("rename_project", projectName);
+    if (projectName) object_sendsymbol("rename_project", projectName);
     else post("No active project\n");
 }
 
 function renameProjectCallback(newname) {
     post("projectName", projectName);
     projectName = newname.toString();
-    set_metadata(1);
+    set_metadata(2);
     object_setvalue("nameproject_display", projectName);
 }

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 925.0, 787.0 ],
+		"rect" : [ -1886.0, 79.0, 1293.0, 930.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,23 +39,6 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 639.0, 703.0, 19.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"filename" : "",
-						"parameter_enable" : 0
-					}
-,
-					"text" : "js"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
@@ -479,7 +462,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 201.0, 474.0, 720.0 ],
+						"rect" : [ -935.0, 147.0, 474.0, 720.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -893,13 +876,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-55",
-					"linecount" : 7,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 600.0, 570.0, 172.0, 102.0 ],
-					"text" : "\"paramslist [ 61748918ed013d7b61d7dc52 6174899baafc72b01fc77f9e 61748a0a1ef7f20f167e7097 ] [ group/reverb/drywet group/delay/gain group2/chorus/volume ]\""
+					"patching_rect" : [ 600.0, 570.0, 175.0, 49.0 ],
+					"text" : "\"paramslist [ 6175384c14bbd8f3848a43cb ] [ group/stronzo/param_1 ]\""
 				}
 
 			}
@@ -1216,8 +1199,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1817,7 +1798,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 1 ],
-					"midpoints" : [ 609.5, 527.399999678134918, 762.5, 527.399999678134918 ],
+					"midpoints" : [ 609.5, 527.399999678134918, 765.5, 527.399999678134918 ],
 					"order" : 0,
 					"source" : [ "obj-53", 0 ]
 				}
