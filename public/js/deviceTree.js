@@ -6,6 +6,13 @@ import { ctxmenu } from "./context_menus_dt.js";
 const MAIN_URI = "/api/v1";
 const data = entity.INIT_DEVICES;
 let selected_node = undefined;
+const SELECTABLES = [
+    "group",
+    "device",
+    "input_value",
+    "output_value",
+    "parameter_name",
+];
 
 // GLOBAL EVENTS
 
@@ -79,7 +86,7 @@ const create_init_tree = () => {
         dataUrl: MAIN_URI + "/device/loadtree",
         dragAndDrop: true,
         autoOpen: 0,
-        selectable: true,
+        selectable: false,
         slide: false,
         useContextMenu: true,
         onCreateLi: function (node, $li) {
@@ -102,8 +109,7 @@ const create_init_tree = () => {
                 node.type == "input" ||
                 node.type == "output"
             ) {
-                $li.find("span").wrap("<strong></strong>");
-                //$li.find("span").addClass("btn btn-outline-secondary btn-sm");
+                $li.find("span").wrapInner("<strong></strong>");
             }
         },
     });
@@ -114,17 +120,8 @@ const create_init_tree = () => {
 $("#tree1").on("tree.dblclick", (event) => {
     let name;
     const ty = event.node.type;
-    const types = [
-        "main",
-        "parameter",
-        "io",
-        "audio",
-        "video",
-        "input",
-        "output",
-    ];
 
-    if (!types.includes(ty)) {
+    if (SELECTABLES.includes(ty)) {
         name = prompt(`${ty} name`, ty);
         if (name) $("#tree1").tree("updateNode", event.node, name);
     }

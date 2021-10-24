@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1886.0, 79.0, 1293.0, 930.0 ],
+		"rect" : [ -1886.0, 79.0, 935.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -462,7 +462,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -935.0, 147.0, 474.0, 720.0 ],
+						"rect" : [ 359.0, 106.0, 474.0, 720.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -882,7 +882,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 600.0, 570.0, 175.0, 49.0 ],
-					"text" : "\"paramslist [ 6175384c14bbd8f3848a43cb ] [ group/stronzo/param_1 ]\""
+					"text" : "\"paramslist [ 61758041974cfc455ad738c0 ] [ group/reverb/param_1 ]\""
 				}
 
 			}
@@ -1199,6 +1199,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
