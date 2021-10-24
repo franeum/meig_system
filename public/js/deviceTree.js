@@ -1,6 +1,7 @@
 // GLOBAL VARIABLES
 
 import { entity } from "./entities.js";
+import { ctxmenu } from "./context_menus_dt.js";
 
 const MAIN_URI = "/api/v1";
 const data = entity.INIT_DEVICES;
@@ -13,7 +14,7 @@ $(() => {
         load_data();
     });
 
-    $("#button_add_group").click(() => {
+    $("#button_add_group").on("click", () => {
         add_group();
     });
 
@@ -21,23 +22,23 @@ $(() => {
         add_device();
     });
 
-    $("#button_add_parameter").click(() => {
+    $("#button_add_parameter").on("click", () => {
         add_parameter();
     });
 
-    $("#button_get_tree").click(() => {
+    $("#button_get_tree").on("click", () => {
         get_tree();
     });
 
-    $("#button_find_parameters").click(() => {
+    $("#button_find_parameters").on("click", () => {
         findNodesByType("io");
     });
 
-    $("#button_reverse_path").click(() => {
+    $("#button_reverse_path").on("click", () => {
         reverse_path();
     });
 
-    $("#button_remove_node").click(() => {
+    $("#button_remove_node").on("click", () => {
         remove_node();
     });
 
@@ -91,6 +92,19 @@ const create_init_tree = () => {
                 const $title = $li.find(".jqtree-element");
                 $title.prop("contenteditable", "true");
             }
+
+            if (
+                node.type == "main" ||
+                node.type == "parameter" ||
+                node.type == "io" ||
+                node.type == "audio" ||
+                node.type == "video" ||
+                node.type == "input" ||
+                node.type == "output"
+            ) {
+                $li.find("span").wrap("<strong></strong>");
+                //$li.find("span").addClass("btn btn-outline-secondary btn-sm");
+            }
         },
     });
 };
@@ -98,18 +112,20 @@ const create_init_tree = () => {
 // TREE EVENTS
 
 $("#tree1").on("tree.dblclick", (event) => {
-    // event.node is the clicked node
-    console.log("double click", event.node);
-    if (event.node.type == "parameter_value") {
-        let value = prompt("value", event.node.name);
-        if (value) {
-            const node = event.node;
-            node.value = parseFloat(value);
-            $("#tree1").tree("updateNode", event.node, value);
-            $("#tree1").tree("updateNode", event.node, node);
-        }
-    } else {
-        let name = prompt(`${event.node.type} name`, event.node.name);
+    let name;
+    const ty = event.node.type;
+    const types = [
+        "main",
+        "parameter",
+        "io",
+        "audio",
+        "video",
+        "input",
+        "output",
+    ];
+
+    if (!types.includes(ty)) {
+        name = prompt(`${ty} name`, ty);
         if (name) $("#tree1").tree("updateNode", event.node, name);
     }
 });
@@ -268,6 +284,7 @@ const prev = (node, arr) => {
 
 // CONTEXTUAL MENU'S
 
+/*
 const mymenu1 = {
     edit: (node) => {
         alert("Edit node: " + node.name);
@@ -280,10 +297,11 @@ const mymenu1 = {
         alert("Add node: " + node.name);
     },
 };
+*/
 
 $("#tree1").jqTreeContextMenu(() => {
     return $("#myMenu1");
-}, mymenu1);
+}, ctxmenu.group);
 
 /*
 context menu:
