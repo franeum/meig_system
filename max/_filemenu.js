@@ -39,17 +39,24 @@ function set_metadata(state) {
     var savedate = new Date();
     var m_data;
 
-    if (state === 0) {
-        m_data = new Dict();
-        m_data.set("projectName", projectName);
-        m_data.set("created_at", savedate.toString());
-    } else if (state === 1) {
-        m_data = metadata.get("metadata");
-        m_data.set("projectName", projectName);
-        m_data.set("last_save", savedate.toString());
-    } else {
-        m_data = metadata.get("metadata");
-        m_data.set("projectName", projectName);
+    switch (state) {
+        case 0:
+            m_data = new Dict();
+            m_data.set("projectName", projectName);
+            m_data.set("created_at", savedate.toString());
+            break;
+        case 1:
+            m_data = metadata.get("metadata");
+            m_data.set("projectName", projectName);
+            m_data.set("last_save", savedate.toString());
+            break;
+        case 2:
+            m_data = metadata.get("metadata");
+            m_data.set("projectName", projectName);
+            break;
+        default:
+            post("problem on metadata\n");
+            break;
     }
 
     metadata.set("metadata", m_data);
@@ -102,13 +109,6 @@ function storeFile() {
     set_metadata(1);
     dest.export_json(filePath);
 }
-
-/*
-function saveAs(filename) {
-    filePath = filename.toString();
-    storeFile();
-}
-*/
 
 function saveAs() {
     if (filePath) {
