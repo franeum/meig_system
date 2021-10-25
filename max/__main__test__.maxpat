@@ -40,6 +40,29 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 195.0, 615.0, 66.0, 22.0 ],
+					"text" : "r devicesui"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 26.5, 101.0, 68.0, 22.0 ],
+					"text" : "s devicesui"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -51,9 +74,10 @@
 					"maxclass" : "bpatcher",
 					"name" : "b_filemenu.maxpat",
 					"numinlets" : 0,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 11.5, 11.0, 135.0, 90.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 26.5, 11.0, 135.0, 82.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -272,7 +296,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 79.0, 451.0, 967.0 ],
+						"rect" : [ 34.0, 79.0, 451.0, 787.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -283,7 +307,7 @@
 						"gridsnaponopen" : 1,
 						"objectsnaponopen" : 1,
 						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
+						"toolbarvisible" : 0,
 						"lefttoolbarpinned" : 0,
 						"toptoolbarpinned" : 0,
 						"righttoolbarpinned" : 0,
@@ -291,7 +315,7 @@
 						"toolbars_unpinned_last_save" : 0,
 						"tallnewobj" : 0,
 						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
+						"enablehscroll" : 0,
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
 						"description" : "",
@@ -660,7 +684,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 145.0, 605.0, 768.0 ],
+						"rect" : [ 49.0, 79.0, 603.0, 768.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -671,7 +695,7 @@
 						"gridsnaponopen" : 1,
 						"objectsnaponopen" : 1,
 						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
+						"toolbarvisible" : 0,
 						"lefttoolbarpinned" : 0,
 						"toptoolbarpinned" : 0,
 						"righttoolbarpinned" : 0,
@@ -679,7 +703,7 @@
 						"toolbars_unpinned_last_save" : 0,
 						"tallnewobj" : 0,
 						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
+						"enablehscroll" : 0,
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
 						"description" : "",
@@ -877,13 +901,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-55",
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 600.0, 570.0, 175.0, 49.0 ],
-					"text" : "\"paramslist [ 61758041974cfc455ad738c0 ] [ group/reverb/param_1 ]\""
+					"patching_rect" : [ 600.0, 570.0, 175.0, 22.0 ],
+					"text" : "\"paramslist [  ] [  ]\""
 				}
 
 			}
@@ -1121,7 +1144,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 105.0, 98.0, 22.0 ],
+					"patching_rect" : [ 30.0, 135.0, 98.0, 22.0 ],
 					"text" : "script npm install"
 				}
 
@@ -1163,7 +1186,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.0, 135.0, 64.0, 22.0 ],
+					"patching_rect" : [ 60.0, 165.0, 64.0, 22.0 ],
 					"text" : "script start"
 				}
 
@@ -1200,8 +1223,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1662,8 +1683,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
-					"midpoints" : [ 397.5, 175.5, 69.5, 175.5 ],
+					"midpoints" : [ 397.5, 213.5, 69.5, 213.5 ],
 					"source" : [ "obj-24", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -1795,6 +1823,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-52", 0 ]
 				}
 
 			}

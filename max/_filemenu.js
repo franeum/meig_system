@@ -83,9 +83,7 @@ function newProject(p_name) {
 
     object_sendmessage("nameproject_display", "textcolor", [0, 0, 0, 1]);
     object_setvalue("nameproject_display", projectName);
-    //object_sendsymbol("devices_tree_ui_script", "bang");
-    var obj = this.patcher.getnamed("devicesui");
-    obj.message("bang");
+    outlet(0, "bang");
 }
 
 function openProject(filename) {
