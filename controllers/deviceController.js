@@ -5,41 +5,14 @@ const TreeModel = require("tree-model");
 const tree = new TreeModel();
 const { Stack } = require("./stack");
 const device_history = new Stack();
-
-const genId = () => {
-    var timestamp = ((new Date().getTime() / 1000) | 0).toString(16);
-    return (
-        timestamp +
-        "xxxxxxxxxxxxxxxx"
-            .replace(/[x]/g, function () {
-                return ((Math.random() * 16) | 0).toString(16);
-            })
-            .toLowerCase()
-    );
-};
-
-const init_devices = [
-    {
-        label: "devices",
-        id: genId(),
-        type: "main",
-        children: [
-            {
-                label: "group",
-                type: "group",
-                id: genId(),
-                children: [],
-            },
-        ],
-    },
-];
+const dataDevice = require("../data/dataDevice");
 
 /*************************************************************
  * GET SECTION PAGE && DEFAULT_TREE
  ************************************************************/
 
 exports.get_page_tree = (req, res) => {
-    res.render("devices");
+    res.render("devices", { menuctx: dataDevice.menu });
 };
 
 /*************************************************************
@@ -77,7 +50,7 @@ const update_stack = () => {
 const update_device_tree = (parsed_json) => {
     Max.setDict("devices", parsed_json)
         .then((data) => {
-            Max.post("I DATI CI SONO");
+            //Max.post("I DATI CI SONO");
 
             const root = tree.parse(data.devices);
             const paths = {};
@@ -143,7 +116,7 @@ exports.get_loadtree = (req, res) => {
             const data = d.devices;
             if (data.name) {
                 res.json([data]);
-            } else res.json(init_devices);
+            } else res.json(dataDevice.init_devices);
         })
         .catch((err) => {
             res.json(err);
@@ -159,8 +132,8 @@ exports.get_undo = (req, res) => {
     const last = device_history.pop();
     console.log(last);
     update_device_tree(last);
-    //device_history.printStack();
-    res.render("devices");
+
+    res.render("devices", { groupmenu: dataDevice.group_menu });
 };
 
 /****************************************************************

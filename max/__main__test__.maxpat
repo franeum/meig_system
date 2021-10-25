@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1886.0, 79.0, 935.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 935.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -53,7 +53,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 30.0, 15.0, 135.0, 82.0 ],
+					"patching_rect" : [ 11.5, 11.0, 135.0, 90.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -441,7 +441,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 195.0, 645.0, 24.0, 24.0 ]
+					"patching_rect" : [ 195.0, 645.0, 24.0, 24.0 ],
+					"varname" : "devicesui"
 				}
 
 			}
@@ -462,7 +463,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 359.0, 106.0, 474.0, 720.0 ],
+						"rect" : [ 34.0, 79.0, 466.0, 705.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -473,7 +474,7 @@
 						"gridsnaponopen" : 1,
 						"objectsnaponopen" : 1,
 						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
+						"toolbarvisible" : 0,
 						"lefttoolbarpinned" : 0,
 						"toptoolbarpinned" : 0,
 						"righttoolbarpinned" : 0,
@@ -481,7 +482,7 @@
 						"toolbars_unpinned_last_save" : 0,
 						"tallnewobj" : 0,
 						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
+						"enablehscroll" : 0,
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
 						"description" : "",

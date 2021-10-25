@@ -25,8 +25,14 @@ function object_sendsymbol(name, message) {
     obj.message("symbol", message);
 }
 
+function object_sendmessage(name, selector, message) {
+    var obj = this.patcher.getnamed(name);
+    obj.message(selector, message);
+}
+
 function reset() {
-    object_setvalue("nameproject_display", "");
+    object_sendmessage("nameproject_display", "textcolor", [1, 0, 0, 1]);
+    object_setvalue("nameproject_display", "NO PROJECT");
 }
 
 function set_metadata(state) {
@@ -75,7 +81,11 @@ function newProject(p_name) {
 
     set_metadata(0);
 
+    object_sendmessage("nameproject_display", "textcolor", [0, 0, 0, 1]);
     object_setvalue("nameproject_display", projectName);
+    //object_sendsymbol("devices_tree_ui_script", "bang");
+    var obj = this.patcher.getnamed("devicesui");
+    obj.message("bang");
 }
 
 function openProject(filename) {
@@ -93,6 +103,7 @@ function openProject(filename) {
     var metadata = new Dict("metadata");
     projectName = metadata.get("metadata");
     projectName = projectName.get("projectName");
+    object_sendmessage("nameproject_display", "textcolor", [0, 0, 0, 1]);
     object_setvalue("nameproject_display", projectName);
 }
 
@@ -140,5 +151,6 @@ function renameProjectCallback(newname) {
     post("projectName", projectName);
     projectName = newname.toString();
     set_metadata(2);
+    object_sendmessage("nameproject_display", "textcolor", [0, 0, 0, 1]);
     object_setvalue("nameproject_display", projectName);
 }

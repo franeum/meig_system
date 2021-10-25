@@ -11,14 +11,15 @@ block content
   <script defer src="/@fortawesome/fontawesome-free/js/solid.js"></script>
   <script defer src="/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
   body(id="whole_doc" class='container') 
-    button(id="button_load_data") Load Data  
-    button(id="button_add_group") Add Group 
-    button(id="button_add_device") Add Device 
-    button(id="button_add_parameter") Add Parameter 
-    button(id="button_get_tree") Get Tree  
-    button(id="button_find_parameters") Get Parameters 
-    button(id="button_reverse_path") Get Path  
-    button(id="button_undo") Undo 
+    //
+      button(id="button_load_data") Load Data  
+      button(id="button_add_group") Add Group 
+      button(id="button_add_device") Add Device 
+      button(id="button_add_parameter") Add Parameter 
+      button(id="button_get_tree") Get Tree  
+      button(id="button_find_parameters") Get Parameters 
+      button(id="button_reverse_path") Get Path  
+      button(id="button_undo") Undo 
     div(id="tree1")
     //
       ul(id="myMenu1" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
@@ -43,13 +44,72 @@ block content
         li(class="delete")
           a(href="#delete")
             i(class="icon-remove") Delete
-    ul(id="myMenu1" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
-      each value in [["Edit","fas fa-edit","#edit"],["Remove","fas fa-minus","#delete"],["Add","fas fa-plus","#add"]]
+    
+    //ul(id="devices" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
+      each value in menuctx.devices_menu  
+        if value[3] 
+          hr 
         li
           .row  
             .col-2 
               i(class=value[1]) 
-            .col-4
+            .col-10
               a(class="btn-outline-secondary" href=value[2])=value[0] 
+
+    //ul(id="group" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
+      each value in menuctx.group_menu  
+        if value[3] 
+          hr 
+        li
+          .row  
+            .col-2 
+              i(class=value[1]) 
+            .col-10
+              a(class="btn-outline-secondary" href=value[2])=value[0] 
+
+    //ul(id="device" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
+      //each value in [["Edit","fas fa-edit","#edit"],["Remove","fas fa-minus","#delete"],["Add","fas fa-plus","#add"]]
+      each value in menuctx.device_menu  
+        if value[3] 
+          hr 
+        li
+          .row  
+            .col-2 
+              i(class=value[1]) 
+            .col-10
+              a(class="btn-outline-secondary" href=value[2])=value[0] 
+
+    //ul(id="parameters" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
+      each value in menuctx.parameters_menu  
+        if value[3] 
+          hr 
+        li
+          .row  
+            .col-2 
+              i(class=value[1]) 
+            .col-10
+              a(class="btn-outline-secondary" href=value[2])=value[0] 
+
+    //ul(id="parameter" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
+      each value in menuctx.parameter_menu  
+        if value[3] 
+          hr 
+        li
+          .row  
+            .col-2 
+              i(class=value[1]) 
+            .col-10
+              a(class="btn-outline-secondary" href=value[2])=value[0] 
+    each menu in menuctx 
+      ul(id=menu[0] class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
+        each value in menu[1] 
+          if value[3] 
+            hr 
+          li
+            .row  
+              .col-2 
+                i(class=value[1]) 
+              .col-10
+                a(class="btn-outline-secondary" href=value[2])=value[0]
 
     script(type="module", src="/js/deviceTree.js")

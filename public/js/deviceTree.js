@@ -296,9 +296,20 @@ const mymenu1 = {
 };
 */
 
-$("#tree1").jqTreeContextMenu(() => {
-    return $("#myMenu1");
-}, ctxmenu.group);
+$("#tree1").jqTreeContextMenu((node) => {
+    switch (node.type) {
+        case "main":
+            return $("#devices");
+        case "group":
+            return $("#group");
+        case "device":
+            return $("#device");
+        case "parameter":
+            return $("#parameters");
+        case "parameter_name":
+            return $("#parameter");
+    }
+}, ctxmenu);
 
 /*
 context menu:
