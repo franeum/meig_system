@@ -87,11 +87,12 @@ const remove_parameter_container = (node) => {
  ************************************************************/
 
 exports.post_preset = (req, res) => {
+    console.log(req.body);
     const { presets, id, onset } = req.body;
 
     Max.updateDict("presets", `presets[${id}]`, {
         presets: JSON.parse(presets),
-        onset: parseInt(onset),
+        onset: parseFloat(onset),
     })
         .then(() => {
             const p_sets = JSON.parse(presets);
