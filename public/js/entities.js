@@ -35,10 +35,21 @@ const create_group = (name) => {
     };
 };
 
+/*
 const create_parameter = (name, id) => {
     return {
         label: name,
         id: id,
+        type: "parameter_name",
+        children: [],
+    };
+};
+*/
+
+const create_parameter = (name) => {
+    return {
+        label: name,
+        id: genId(),
         type: "parameter_name",
         children: [],
     };
