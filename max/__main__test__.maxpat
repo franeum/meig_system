@@ -670,7 +670,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 26.5, 11.0, 135.0, 82.0 ],
+					"patching_rect" : [ 26.5, 11.0, 146.0, 79.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1482,7 +1482,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 600.0, 570.0, 175.0, 76.0 ],
-					"text" : "\"paramslist [ 6177d12d9eed4cca6f366e97 6177d14cb5dca899257a5598 ] [ group/mbuto/param_1 group/new/param_1 ]\""
+					"text" : "\"paramslist [ 6177d198c7f6dd0bc5aef472 undefined ] [ group/qwerty/param_1 group/qwerty/cxzcxzcxzczxc ]\""
 				}
 
 			}
@@ -1799,8 +1799,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -2605,13 +2603,6 @@
 			}
 , 			{
 				"name" : "ftfilesaveas.svg",
-				"bootpath" : "~/Documents/meig_system/max/icons",
-				"patcherrelativepath" : "./icons",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ft14-text.svg",
 				"bootpath" : "~/Documents/meig_system/max/icons",
 				"patcherrelativepath" : "./icons",
 				"type" : "svg",
