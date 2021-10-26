@@ -1,5 +1,3 @@
-const { post } = require("jquery");
-
 inlets = 1;
 outlets = 1;
 autowatch = 1;
