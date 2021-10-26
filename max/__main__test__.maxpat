@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 848.0, 645.0, 251.0, 22.0 ],
+					"text" : "get_preset 6177fdd7e6d71e1932d46911 700."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"data" : 					{
 						"header" : 						{
 							"slotinfo" : 							{
@@ -1476,13 +1488,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-55",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 600.0, 570.0, 175.0, 49.0 ],
-					"text" : "\"paramslist [ 6177f49dfa4ea548752b2979 ] [ group/dev/param_1 ]\""
+					"patching_rect" : [ 600.0, 570.0, 179.0, 62.0 ],
+					"text" : "\"presetvalues presetvalues [ 6177fc0bdd99db5b00dee4a6 6177fc7f399fd93f854d5582 ] [ 120 12 ]\""
 				}
 
 			}
@@ -1763,8 +1775,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1952,7 +1962,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 1 ],
-					"midpoints" : [ 609.5, 527.399999678134918, 765.5, 527.399999678134918 ],
+					"midpoints" : [ 609.5, 527.399999678134918, 769.5, 527.399999678134918 ],
 					"order" : 0,
 					"source" : [ "obj-53", 0 ]
 				}
@@ -1963,6 +1973,13 @@
 					"destination" : [ "obj-63", 0 ],
 					"order" : 1,
 					"source" : [ "obj-53", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}

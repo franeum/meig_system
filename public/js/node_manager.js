@@ -31,7 +31,7 @@ const add_same_node = (node) => {
     let name = prompt_name(node);
 
     if (name) {
-        $("#tree1").tree("appendNode", create_group(name), node);
+        $("#tree1").tree("appendNode", entity.create_group(name), node);
         $("#tree1").tree("openNode", node);
     }
 };
