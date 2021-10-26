@@ -1,0 +1,118 @@
+{
+	"metadata" : 	{
+		"filePath" : "INDMEM DMPG3NA1708 SSD:/Users/neum/Documents/meig_system/max/qweqweqweqwe.json",
+		"fileName" : "",
+		"created_at" : "Tue Oct 26 2021 14:29:10 GMT+0200 (CEST)",
+		"last_save" : "Tue Oct 26 2021 14:29:10 GMT+0200 (CEST)"
+	}
+,
+	"devices" : 	{
+		"name" : "devices",
+		"id" : "6177f412aa67ba24901e1a4d",
+		"type" : "main",
+		"is_open" : 1,
+		"children" : [ 			{
+				"name" : "group",
+				"type" : "group",
+				"id" : "6177f412ad105251c8813ea7",
+				"children" : [ 					{
+						"name" : "dev",
+						"id" : "6177f49d03322888c4ba8473",
+						"type" : "device",
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "6177f49da9136c1e9738a181",
+								"type" : "io",
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "6177f49dcd3a64ba7825dd79",
+										"type" : "audio",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "6177f49d5c700f9c2d5a8458",
+												"type" : "input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6177f49d38600e23cdffa758",
+														"type" : "input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "6177f49d1c5db711bf5f7a6e",
+												"type" : "output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6177f49de460122450cbc190",
+														"type" : "output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "6177f49d347d57fa9c659d57",
+										"type" : "video",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "6177f49dc3edd4ededf7f1c6",
+												"type" : "input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6177f49dc0243ea50a937a2a",
+														"type" : "input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "6177f49d1e0e1fe8ee9bd7c2",
+												"type" : "output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6177f49d15de6b8380237c84",
+														"type" : "output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "6177f49dce547558002633c4",
+								"type" : "parameter",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "6177f49dfa4ea548752b2979",
+										"type" : "parameter_name"
+									}
+ ]
+							}
+ ]
+					}
+ ]
+			}
+ ]
+	}
+,
+	"parameters_list" : 	{
+
+	}
+,
+	"presets" : 	{
+
+	}
+,
+	"paths" : 	{
+		"6177f49dfa4ea548752b2979" : "group/dev/param_1"
+	}
+,
+	"meigroll" : 	{
+
+	}
+
+}

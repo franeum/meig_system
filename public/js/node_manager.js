@@ -51,7 +51,7 @@ const add_node_sibling = (node, where) => {
             case "device":
                 func = entity.create_device;
                 break;
-            case "parameter":
+            case "parameter_name":
                 func = entity.create_parameter;
                 break;
             default:
