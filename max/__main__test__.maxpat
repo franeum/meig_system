@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 935.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 1286.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,599 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"data" : 					{
+						"header" : 						{
+							"slotinfo" : 							{
+								"1" : 								{
+									"name" : "envelope",
+									"type" : "function",
+									"key" : "f",
+									"range" : [ 0.0, 1.0 ],
+									"slope" : 0.0,
+									"domain" : [ 0.0, 1.0 ],
+									"domainslope" : 0.0,
+									"temporalmode" : "relative",
+									"extend" : 0,
+									"width" : "duration",
+									"height" : "auto",
+									"copywhensplit" : 0,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"2" : 								{
+									"name" : "start",
+									"type" : "floatlist",
+									"key" : "s",
+									"range" : [ 0.0, 1.0 ],
+									"slope" : 0.0,
+									"color" : [ 0.0213, 0.0213, 0.0231, 1.0 ],
+									"default" : 0.0,
+									"temporalmode" : "relative",
+									"extend" : 0,
+									"width" : 150.0,
+									"height" : "auto",
+									"copywhensplit" : 0,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"3" : 								{
+									"name" : "destination",
+									"type" : "floatlist",
+									"key" : "d",
+									"range" : [ 0.0, 1.0 ],
+									"slope" : 0.0,
+									"color" : [ 0.6241, 0.637, 0.3704, 1.0 ],
+									"default" : 0.0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"4" : 								{
+									"name" : "start",
+									"type" : "intlist",
+									"key" : "S",
+									"range" : [ 0.0, 127.0 ],
+									"slope" : 0.0,
+									"color" : [ 0.089, 0.0849, 0.0758, 1.0 ],
+									"default" : 0.0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"5" : 								{
+									"name" : "destination",
+									"type" : "intlist",
+									"key" : "D",
+									"range" : [ 0.0, 127.0 ],
+									"slope" : 0.0,
+									"color" : [ 0.546, 0.5561, 0.3475, 1.0 ],
+									"default" : 1.0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"6" : 								{
+									"name" : "text",
+									"type" : "text",
+									"key" : "t",
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 150.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"7" : 								{
+									"name" : "filelist",
+									"type" : "filelist",
+									"key" : "f",
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 150.0,
+									"height" : "auto",
+									"copywhensplit" : 0,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"8" : 								{
+									"name" : "event",
+									"type" : "llll",
+									"key" : "y",
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 53.240767557905443,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"9" : 								{
+									"name" : "id",
+									"type" : "text",
+									"key" : "I",
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 150.0,
+									"height" : "auto",
+									"copywhensplit" : 0,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"10" : 								{
+									"name" : "id",
+									"type" : "text",
+									"key" : "i",
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 0,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"11" : 								{
+									"name" : "Label",
+									"type" : "text",
+									"key" : "l",
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"12" : 								{
+									"name" : "Comments",
+									"type" : "text",
+									"key" : "c",
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"13" : 								{
+									"name" : "slot",
+									"type" : "none",
+									"key" : 0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"14" : 								{
+									"name" : "slot",
+									"type" : "none",
+									"key" : 0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"15" : 								{
+									"name" : "slot",
+									"type" : "none",
+									"key" : 0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"16" : 								{
+									"name" : "slot",
+									"type" : "none",
+									"key" : 0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"17" : 								{
+									"name" : "slot",
+									"type" : "none",
+									"key" : 0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"18" : 								{
+									"name" : "slot",
+									"type" : "none",
+									"key" : 0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"19" : 								{
+									"name" : "slot",
+									"type" : "none",
+									"key" : 0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"20" : 								{
+									"name" : "dynamics",
+									"type" : "none",
+									"key" : "d",
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 110.0,
+									"height" : "auto",
+									"copywhensplit" : 0,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"21" : 								{
+									"name" : "lyrics",
+									"type" : "none",
+									"key" : "l",
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 0,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"22" : 								{
+									"name" : "articulations",
+									"type" : "none",
+									"key" : "-",
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 110.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"23" : 								{
+									"name" : "notehead",
+									"type" : "notehead",
+									"key" : "h",
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 110.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"24" : 								{
+									"name" : "annotation",
+									"type" : "none",
+									"key" : "t",
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"25" : 								{
+									"name" : "slot",
+									"type" : "none",
+									"key" : 0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"26" : 								{
+									"name" : "slot",
+									"type" : "none",
+									"key" : 0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"27" : 								{
+									"name" : "slot",
+									"type" : "none",
+									"key" : 0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"28" : 								{
+									"name" : "slot",
+									"type" : "none",
+									"key" : 0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"29" : 								{
+									"name" : "slot",
+									"type" : "none",
+									"key" : 0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+,
+								"30" : 								{
+									"name" : "slot",
+									"type" : "none",
+									"key" : 0,
+									"temporalmode" : "none",
+									"extend" : 0,
+									"width" : 100.0,
+									"height" : "auto",
+									"copywhensplit" : 1,
+									"access" : "readandwrite",
+									"follownotehead" : 0
+								}
+
+							}
+,
+							"commands" : 							{
+								"1" : 								{
+									"note" : "note",
+									"chord" : "chord",
+									"rest" : "rest",
+									"key" : 0
+								}
+,
+								"2" : 								{
+									"note" : "note",
+									"chord" : "chord",
+									"rest" : "rest",
+									"key" : 0
+								}
+,
+								"3" : 								{
+									"note" : "note",
+									"chord" : "chord",
+									"rest" : "rest",
+									"key" : 0
+								}
+,
+								"4" : 								{
+									"note" : "note",
+									"chord" : "chord",
+									"rest" : "rest",
+									"key" : 0
+								}
+,
+								"5" : 								{
+									"note" : "note",
+									"chord" : "chord",
+									"rest" : "rest",
+									"key" : 0
+								}
+
+							}
+,
+							"clefs" : [ "None", "None" ],
+							"keys" : [ "CM", "CM" ],
+							"voicenames" : [ "presets", "events" ],
+							"stafflines" : 							{
+								"1" : [ -1, 1, 3, 5, 7 ],
+								"2" : [ -1, 1, 3, 5, 7 ]
+							}
+,
+							"midichannels" : [ 1, 2 ],
+							"numparts" : 2,
+							"loop" : [ 1774.984899999999925, 3022.175999999999931 ]
+						}
+,
+						"voices" : 						{
+							"presets" : 							{
+								"1" : 								{
+									"onset" : 1000.0,
+									"pitch" : 7900.0,
+									"duration" : 0.0,
+									"slots" : 									{
+										"slots" : 										{
+											"9" : "6171e7d21ea9578483e141ac",
+											"11" : "preset",
+											"23" : "blacksquare"
+										}
+
+									}
+
+								}
+,
+								"2" : 								{
+									"onset" : 2100.0,
+									"pitch" : 7700.0,
+									"duration" : 0.0,
+									"slots" : 									{
+										"slots" : 										{
+											"9" : "6171e7d54b761fb443c3df9a",
+											"11" : "preset",
+											"23" : "blacksquare"
+										}
+
+									}
+
+								}
+
+							}
+,
+							"events" : 							{
+								"1" : 								{
+									"onset" : 3200.0,
+									"pitch" : 7600.0,
+									"duration" : 0.0,
+									"slots" : 									{
+										"slots" : 										{
+											"8" : [ "x", "y", "z" ],
+											"9" : "6171e8c2347c8e84d6591923",
+											"11" : "event",
+											"23" : "blacktriangle"
+										}
+
+									}
+
+								}
+,
+								"2" : 								{
+									"onset" : 4700.0,
+									"pitch" : 7300.0,
+									"duration" : 0.0,
+									"slots" : 									{
+										"slots" : 										{
+											"8" : [ "x", "y", "z" ],
+											"9" : "6171e8d82ad078a56efe9f3e",
+											"11" : "event",
+											"23" : "blacktriangle"
+										}
+
+									}
+
+								}
+,
+								"3" : 								{
+									"onset" : 7900.0,
+									"pitch" : 7300.0,
+									"duration" : 0.0,
+									"slots" : 									{
+										"slots" : 										{
+											"8" : [ "x", "y", "z" ],
+											"9" : "6172a764b261a9ef1fd6b527",
+											"11" : "event",
+											"23" : "blacktriangle"
+										}
+
+									}
+
+								}
+
+							}
+
+						}
+
+					}
+,
+					"id" : "obj-72",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 30.0, 740.0, 161.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 1,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict meigroll_bak @embed 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-60",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 30.0, 708.0, 73.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict meigroll"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-52",
 					"maxclass" : "newobj",
@@ -79,24 +672,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 26.5, 11.0, 135.0, 82.0 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-51",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 4,
-					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 30.0, 705.0, 73.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 0,
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0
-					}
-,
-					"text" : "dict meigroll"
 				}
 
 			}
@@ -901,12 +1476,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-55",
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 600.0, 570.0, 175.0, 22.0 ],
-					"text" : "\"paramslist [  ] [  ]\""
+					"patching_rect" : [ 600.0, 570.0, 175.0, 76.0 ],
+					"text" : "\"paramslist [ 6177d12d9eed4cca6f366e97 6177d14cb5dca899257a5598 ] [ group/mbuto/param_1 group/new/param_1 ]\""
 				}
 
 			}
@@ -1223,6 +1799,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
