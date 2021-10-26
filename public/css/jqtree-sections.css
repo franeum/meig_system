@@ -18,7 +18,7 @@ ul.jqtree-tree ul.jqtree_common {
     display: block;
 }
 
-ul.jqtree-tree li.jqtree-closed>ul.jqtree_common {
+ul.jqtree-tree li.jqtree-closed > ul.jqtree_common {
     display: none;
 }
 
@@ -28,47 +28,55 @@ ul.jqtree-tree li.jqtree_common {
 }
 
 ul.jqtree-tree .jqtree-element.main {
-    background-color: #ff9933;
+    background-color: #cc3300;
 }
 
 ul.jqtree-tree .jqtree-element.group {
-    background-color: #ffb366;
+    background-color: #ff4000;
 }
 
 ul.jqtree-tree .jqtree-element.device {
-    background-color: #ffcc99;
+    background-color: #ff8533;
 }
 
 ul.jqtree-tree .jqtree-element.io {
-    background-color: #ffe6cc;
+    background-color: #ffa366;
+}
+
+ul.jqtree-tree .jqtree-element.audio {
+    background-color: #ffc299;
+}
+
+ul.jqtree-tree .jqtree-element.video {
+    background-color: #ffc299;
 }
 
 ul.jqtree-tree .jqtree-element.input {
-    background-color: #ffe6cc;
+    background-color: #ffe0cc;
 }
 
 ul.jqtree-tree .jqtree-element.output {
-    background-color: #ffe6cc;
+    background-color: #ffe0cc;
 }
 
 ul.jqtree-tree .jqtree-element.input_value {
-    background-color: #fff2e6;
+    background-color: #fff0e6;
 }
 
 ul.jqtree-tree .jqtree-element.output_value {
-    background-color: #fff2e6;
+    background-color: #fff0e6;
 }
 
 ul.jqtree-tree .jqtree-element.parameter {
-    background-color: #ffe6cc;
+    background-color: #ffa366;
 }
 
 ul.jqtree-tree .jqtree-element.parameter_name {
-    background-color: #ffe6cc;
+    background-color: #fff0e6;
 }
 
 ul.jqtree-tree .jqtree-element.parameter_value {
-    background-color: #fff2e6;
+    background-color: #fff0e6;
 }
 
 ul.jqtree-tree .jqtree-toggler {
@@ -168,14 +176,14 @@ ul.jqtree-tree span.jqtree-border {
     box-sizing: content-box;
 }
 
-ul.jqtree-tree li.jqtree-selected>.jqtree-element,
-ul.jqtree-tree li.jqtree-selected>.jqtree-element:hover {
+ul.jqtree-tree li.jqtree-selected > .jqtree-element,
+ul.jqtree-tree li.jqtree-selected > .jqtree-element:hover {
     background-color: #97bdd6;
     background: linear-gradient(#bee0f5, #89afca);
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
-ul.jqtree-tree .jqtree-moving>.jqtree-element .jqtree-title {
+ul.jqtree-tree .jqtree-moving > .jqtree-element .jqtree-title {
     outline: dashed 1px #0000ff;
 }
 
