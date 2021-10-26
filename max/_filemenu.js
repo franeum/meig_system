@@ -87,7 +87,7 @@ function storeFile() {
     dest.export_json(filePath);
 }
 
-function fileNew() {
+function fileNew(p_name) {
     filePath = p_name.toString();
     fileName = getFilename(filePath);
 

@@ -445,8 +445,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 915.0, 465.0, 48.0, 22.0 ],
-					"text" : "saveAs"
+					"patching_rect" : [ 915.0, 465.0, 65.0, 22.0 ],
+					"text" : "fileSaveAs"
 				}
 
 			}
@@ -619,7 +619,7 @@
 					"patching_rect" : [ 315.0, 30.0, 210.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 54.0, 126.0, 20.0 ],
-					"text" : "NO PROJECT",
+					"text" : "NO FILE",
 					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
 					"varname" : "nameproject_display"
@@ -723,8 +723,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 720.0, 465.0, 71.0, 22.0 ],
-					"text" : "saveProject"
+					"patching_rect" : [ 720.0, 465.0, 51.0, 22.0 ],
+					"text" : "fileSave"
 				}
 
 			}
