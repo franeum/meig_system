@@ -1,3 +1,5 @@
+const { post } = require("jquery");
+
 inlets = 1;
 outlets = 1;
 autowatch = 1;
@@ -69,7 +71,7 @@ function getFilename(w_path) {
     if (w_path) {
         var file = w_path.split("/");
         var lastindex = file.length - 1;
-        outlet(0, "filename", file[lastindex]);
+        fileName = file[lastindex];
     }
 }
 
