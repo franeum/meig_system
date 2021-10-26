@@ -69,8 +69,10 @@ function getFilename(w_path) {
     if (w_path) {
         var file = w_path.split("/");
         var lastindex = file.length - 1;
-        fileName = file[lastindex];
+        return file[lastindex];
     }
+
+    return 0;
 }
 
 function storeFile() {
