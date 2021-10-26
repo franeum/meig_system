@@ -15,7 +15,7 @@ const add_node = (node) => {
             case "group":
                 func = entity.create_device;
                 break;
-            case "device":
+            case "parameter":
                 func = entity.create_parameter;
                 break;
             default:
@@ -76,6 +76,6 @@ export const manager = {
     add_node: add_node,
     add_same_node: add_same_node,
     add_node_sibling: add_node_sibling,
-    node_rename,
-    node_remove,
+    node_rename: node_rename,
+    node_remove: node_remove,
 };
