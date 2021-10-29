@@ -40,7 +40,7 @@ $("#tree1").on("tree.click", (e) => {
     // Disable single selection
     e.preventDefault();
     console.log(e.node);
-    if (e.node.type == "parameter_name") {
+    if (e.node.type == "parameter") {
         const selected_node = e.node;
 
         if ($("#tree1").tree("isNodeSelected", selected_node)) {

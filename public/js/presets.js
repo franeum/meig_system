@@ -1,6 +1,6 @@
 const MAIN_URI = "/api/v1";
 
-$(document).ready(() => {
+$(() => {
     $(".pathid").spinner({
         step: 0.01,
         numberFormat: "n",
@@ -34,7 +34,7 @@ $(() => {
         onCreateLi: function (node, $li) {
             const $title = $li.find(".jqtree-element");
             $title.addClass(node.type);
-            if (node.type == "parameter_name") {
+            if (node.type == "parameter") {
                 const txt = $li.find("span").text();
                 $li.find("span").html(`
                     <table>
