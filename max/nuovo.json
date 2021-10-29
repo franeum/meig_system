@@ -1,0 +1,230 @@
+{
+	"metadata" : 	{
+		"filePath" : "INDMEM DMPG3NA1708 SSD:/Users/neum/Documents/meig_system/max/nuovo.json",
+		"fileName" : "nuovo.json",
+		"created_at" : "Tue Oct 26 2021 17:22:26 GMT+0200 (CEST)",
+		"last_save" : "Tue Oct 26 2021 17:22:26 GMT+0200 (CEST)"
+	}
+,
+	"devices" : 	{
+		"name" : "devices",
+		"id" : "61781d057186d93d3d07bd37",
+		"type" : "main",
+		"is_open" : 1,
+		"children" : [ 			{
+				"name" : "group",
+				"type" : "group",
+				"id" : "61781d056ca53799761f4d63",
+				"is_open" : 1,
+				"children" : [ 					{
+						"name" : "reverb",
+						"id" : "61781d3a4fd97d04f21cd480",
+						"type" : "device",
+						"is_open" : 1,
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "61781d3aed52b7449ec1286a",
+								"type" : "io",
+								"is_open" : 0,
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "61781d3a044d42a1081a3c7b",
+										"type" : "audio",
+										"is_open" : 0,
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61781d3a64222a1455f0b464",
+												"type" : "audio_input",
+												"is_open" : 1,
+												"children" : [ 													{
+														"name" : "4",
+														"id" : "61781d3abd9e208c9dc2137f",
+														"type" : "audio_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61781d3a919d11254223523d",
+												"type" : "audio_output",
+												"is_open" : 1,
+												"children" : [ 													{
+														"name" : "5",
+														"id" : "61781d3a1ff50e6f79b7c424",
+														"type" : "audio_output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "61781d3a75a3b6fa2087fa95",
+										"type" : "video",
+										"is_open" : 0,
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61781d3aa962c15daf4d915b",
+												"type" : "video_input",
+												"is_open" : 1,
+												"children" : [ 													{
+														"name" : "2",
+														"id" : "61781d3aa65b653377d78514",
+														"type" : "video_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61781d3a61efd74ef11391ff",
+												"type" : "video_output",
+												"is_open" : 1,
+												"children" : [ 													{
+														"name" : "2",
+														"id" : "61781d3a8ba1d4aaf2631d55",
+														"type" : "video_output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "61781d3ad7ec7f11fdf3a9a4",
+								"type" : "parameters",
+								"is_open" : 0,
+								"children" : [ 									{
+										"name" : "flanger",
+										"id" : "61781f32b1233cf9d9f9c1af",
+										"type" : "parameter"
+									}
+, 									{
+										"name" : "param_1",
+										"id" : "61781d3a03cbba1c559d55fc",
+										"type" : "parameter"
+									}
+, 									{
+										"name" : "chorus",
+										"id" : "61781f2cbc0012b9ca02c3d4",
+										"type" : "parameter"
+									}
+, 									{
+										"name" : "delay3",
+										"id" : "617822dd2496d96eefb78446",
+										"type" : "parameter"
+									}
+ ]
+							}
+ ]
+					}
+, 					{
+						"name" : "reverb2",
+						"id" : "617824ff926088a5bc628ccc",
+						"type" : "device",
+						"is_open" : 1,
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "617824ffe431957422811aa6",
+								"type" : "io",
+								"is_open" : 1,
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "617824ff63f7490818606370",
+										"type" : "audio",
+										"is_open" : 1,
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "617824ffb6d705c8bd9b6da1",
+												"type" : "audio_input",
+												"is_open" : 1,
+												"children" : [ 													{
+														"name" : "3",
+														"id" : "617824ff956b1eeaeb8431fb",
+														"type" : "audio_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "617824ff3ff9c57d0e1f6306",
+												"type" : "audio_output",
+												"is_open" : 1,
+												"children" : [ 													{
+														"name" : "4",
+														"id" : "617824ffb90a8916f4fc663a",
+														"type" : "audio_output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "617824ff2dfaca79a7e94a1b",
+										"type" : "video",
+										"is_open" : 1,
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "617824ffd76e7b7d187cdb24",
+												"type" : "video_input",
+												"is_open" : 1,
+												"children" : [ 													{
+														"name" : "2",
+														"id" : "617824ff45d9521cc72118b2",
+														"type" : "video_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "617824ff610bce7e9b8b6e5e",
+												"type" : "video_output",
+												"is_open" : 1,
+												"children" : [ 													{
+														"name" : "2",
+														"id" : "617824ff908e60171d9ac188",
+														"type" : "video_output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "617824ff5ce5baca0da97660",
+								"type" : "parameters",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "617824ff85ae8e9e28eb80ef",
+										"type" : "parameter"
+									}
+ ]
+							}
+ ]
+					}
+ ]
+			}
+ ]
+	}
+,
+	"parameters_list" : 	{
+
+	}
+,
+	"presets" : 	{
+
+	}
+,
+	"paths" : 	{
+
+	}
+,
+	"meigroll" : 	{
+
+	}
+
+}

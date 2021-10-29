@@ -48,7 +48,6 @@ const device_menu = [
     [
         ["add Device Before", "fas fa-chevron-up", "#addBefore"],
         ["add Device After", "fas fa-chevron-down", "#addAfter"],
-        ["add Parameter", "fas fa-plus", "#addChild", "sep"],
         ["Edit", "fas fa-edit", "#rename", "sep"],
         ["Remove", "fas fa-minus", "#delete"],
     ],
@@ -56,11 +55,7 @@ const device_menu = [
 
 const parameters_menu = [
     "parameters",
-    [
-        ["add Parameter", "fas fa-plus", "#addChild"],
-        ["Edit", "fas fa-edit", "#rename", "sep"],
-        ["Remove", "fas fa-minus", "#delete"],
-    ],
+    [["add Parameter", "fas fa-plus", "#addChild"]],
 ];
 
 const parameter_menu = [

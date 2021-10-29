@@ -40,6 +40,115 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 577.0, 90.0, 65.0, 22.0 ],
+					"text" : "get_matrix"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 2,
+							"revision" : 0,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 133.0, 100.0, 75.0, 22.0 ],
+									"text" : "matrix 10 10"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 133.0, 185.0, 94.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"filename" : "matrixscript.js",
+										"parameter_enable" : 0
+									}
+,
+									"text" : "js matrixscript.js"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 1044.0, 665.0, 51.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p matrix"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1085,7 +1194,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1065.0, 282.0, 466.0, 705.0 ],
+						"rect" : [ 983.0, 270.0, 466.0, 705.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1499,13 +1608,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-55",
-					"linecount" : 7,
+					"linecount" : 17,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 600.0, 570.0, 179.0, 102.0 ],
-					"text" : "\"paramslist [ 6177fc0bdd99db5b00dee4a6 6177fc7f399fd93f854d5582 617804198499530ee97f776d ] [ group/rev/param_1 group/rev/volume group/rev/qweqweqwe ]\""
+					"patching_rect" : [ 600.0, 570.0, 182.0, 236.0 ],
+					"text" : "\"paramslist [ 61783ac98e9e43bded30f548 61781f32b1233cf9d9f9c1af 61781d3a03cbba1c559d55fc 61781f2cbc0012b9ca02c3d4 617822dd2496d96eefb78446 617824ff85ae8e9e28eb80ef 6178361a9aaf100a7f584813 617839f619c0f1ec6f9ae9a4 ] [ group/sottogruppo1/subdevice/param_1 group/reverb/flanger group/reverb/param_1 group/reverb/chorus group/reverb/delay3 group/reverb2/param_1 group3/rev/param_1 group3/_device/param_1 ]\""
 				}
 
 			}
@@ -1786,6 +1895,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1973,7 +2084,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 1 ],
-					"midpoints" : [ 609.5, 527.399999678134918, 769.5, 527.399999678134918 ],
+					"midpoints" : [ 609.5, 527.399999678134918, 772.5, 527.399999678134918 ],
 					"order" : 0,
 					"source" : [ "obj-53", 0 ]
 				}
@@ -1984,6 +2095,13 @@
 					"destination" : [ "obj-63", 0 ],
 					"order" : 1,
 					"source" : [ "obj-53", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-48", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -2097,6 +2215,13 @@
 				"bootpath" : "~/Documents/meig_system/max/icons",
 				"patcherrelativepath" : "./icons",
 				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "matrixscript.js",
+				"bootpath" : "~/Documents/meig_system/max",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

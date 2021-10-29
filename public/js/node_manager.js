@@ -6,29 +6,30 @@ const prompt_name = (node) => {
 };
 
 const add_node = (node) => {
-    let name = prompt_name(node);
+    let name;
+    let func;
+
+    switch (node.type) {
+        case "group":
+            name = prompt("Device name", "_device");
+            func = entity.create_device;
+            break;
+        case "parameters":
+            name = prompt("Parameter name", "_parameter");
+            func = entity.create_parameter;
+            break;
+        default:
+            break;
+    }
 
     if (name) {
-        let func;
-
-        switch (node.type) {
-            case "group":
-                func = entity.create_device;
-                break;
-            case "parameter":
-                func = entity.create_parameter;
-                break;
-            default:
-                break;
-        }
-
         $("#tree1").tree("appendNode", func(name), node);
         $("#tree1").tree("openNode", node);
     }
 };
 
 const add_same_node = (node) => {
-    let name = prompt_name(node);
+    let name = prompt("(Sub) Group name", "_subgroup");
 
     if (name) {
         $("#tree1").tree("appendNode", entity.create_group(name), node);
@@ -51,7 +52,7 @@ const add_node_sibling = (node, where) => {
             case "device":
                 func = entity.create_device;
                 break;
-            case "parameter_name":
+            case "parameter":
                 func = entity.create_parameter;
                 break;
             default:
@@ -64,7 +65,7 @@ const add_node_sibling = (node, where) => {
 };
 
 const node_rename = (node) => {
-    let name = prompt_name(node);
+    let name = prompt(`Rename ${node.type}`, node.name);
     $("#tree1").tree("updateNode", node, name);
 };
 

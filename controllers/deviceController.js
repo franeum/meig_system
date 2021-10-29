@@ -56,7 +56,7 @@ const update_device_tree = (parsed_json) => {
             const paths = {};
 
             root.walk((node) => {
-                if (node.model.type == "parameter_name") {
+                if (node.model.type == "parameter") {
                     //node.model.path = findPathName(node);
                     paths[node.model.id] = findPathName(node);
                 }

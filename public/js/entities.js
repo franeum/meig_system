@@ -50,7 +50,7 @@ const create_parameter = (name) => {
     return {
         label: name,
         id: genId(),
-        type: "parameter_name",
+        type: "parameter",
         children: [],
     };
 };
@@ -74,24 +74,24 @@ const create_device = (name) => {
                             {
                                 label: "input",
                                 id: genId(),
-                                type: "input",
+                                type: "audio_input",
                                 children: [
                                     {
                                         label: "0",
                                         id: genId(),
-                                        type: "input_value",
+                                        type: "audio_input_value",
                                     },
                                 ],
                             },
                             {
                                 label: "output",
                                 id: genId(),
-                                type: "output",
+                                type: "audio_output",
                                 children: [
                                     {
                                         label: "0",
                                         id: genId(),
-                                        type: "output_value",
+                                        type: "audio_output_value",
                                     },
                                 ],
                             },
@@ -105,24 +105,24 @@ const create_device = (name) => {
                             {
                                 label: "input",
                                 id: genId(),
-                                type: "input",
+                                type: "video_input",
                                 children: [
                                     {
                                         label: "0",
                                         id: genId(),
-                                        type: "input_value",
+                                        type: "video_input_value",
                                     },
                                 ],
                             },
                             {
                                 label: "output",
                                 id: genId(),
-                                type: "output",
+                                type: "video_output",
                                 children: [
                                     {
                                         label: "0",
                                         id: genId(),
-                                        type: "output_value",
+                                        type: "video_output_value",
                                     },
                                 ],
                             },
@@ -133,12 +133,12 @@ const create_device = (name) => {
             {
                 label: "parameters",
                 id: genId(),
-                type: "parameter",
+                type: "parameters",
                 children: [
                     {
                         label: "param_1",
                         id: genId(),
-                        type: "parameter_name",
+                        type: "parameter",
                         children: [],
                     },
                 ],

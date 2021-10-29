@@ -9,9 +9,11 @@ let selected_node = undefined;
 const SELECTABLES = [
     "group",
     "device",
-    "input_value",
-    "output_value",
-    "parameter_name",
+    "audio_input_value",
+    "audio_output_value",
+    "video_input_value",
+    "video_output_value",
+    "parameter",
 ];
 
 // GLOBAL EVENTS
@@ -102,12 +104,14 @@ const create_init_tree = () => {
 
             if (
                 node.type == "main" ||
-                node.type == "parameter" ||
+                node.type == "parameters" ||
                 node.type == "io" ||
                 node.type == "audio" ||
                 node.type == "video" ||
-                node.type == "input" ||
-                node.type == "output"
+                node.type == "audio_input" ||
+                node.type == "audio_output" ||
+                node.type == "video_input" ||
+                node.type == "video_output"
             ) {
                 $li.find("span").wrapInner("<strong></strong>");
             }
@@ -122,7 +126,7 @@ $("#tree1").on("tree.dblclick", (event) => {
     const ty = event.node.type;
 
     if (SELECTABLES.includes(ty)) {
-        name = prompt(`${ty} name`, ty);
+        name = prompt(`${ty} name`, event.node.name);
         if (name) $("#tree1").tree("updateNode", event.node, name);
     }
 });
@@ -304,9 +308,9 @@ $("#tree1").jqTreeContextMenu((node) => {
             return $("#group");
         case "device":
             return $("#device");
-        case "parameter":
+        case "parameters":
             return $("#parameters");
-        case "parameter_name":
+        case "parameter":
             return $("#parameter");
     }
 }, ctxmenu);

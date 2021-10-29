@@ -6,7 +6,189 @@
 	}
 ,
 	"devices" : 	{
-
+		"name" : "devices",
+		"id" : "617814b97ef00383f138e5a7",
+		"type" : "main",
+		"is_open" : 1,
+		"children" : [ 			{
+				"name" : "group",
+				"type" : "group",
+				"id" : "617814b9607f2282f79260c6",
+				"is_open" : 1,
+				"children" : [ 					{
+						"name" : "deverb",
+						"id" : "61781638c9a297ded4d69003",
+						"type" : "device",
+						"is_open" : 1,
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "617816385007d2dca5d616c5",
+								"type" : "io",
+								"is_open" : 1,
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "617816382a84d0c77f9ae3d4",
+										"type" : "audio",
+										"is_open" : 1,
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61781638de31150f55bdeda8",
+												"type" : "input",
+												"is_open" : 1,
+												"children" : [ 													{
+														"name" : "3",
+														"id" : "61781638eadb281fb31643c6",
+														"type" : "input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "617816384e91f862de7cbeb8",
+												"type" : "output",
+												"is_open" : 1,
+												"children" : [ 													{
+														"name" : "4",
+														"id" : "61781638a151052c776075a0",
+														"type" : "output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "61781638e854b552b721a7c7",
+										"type" : "video",
+										"is_open" : 1,
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61781638b0fef06d16d0b9c4",
+												"type" : "input",
+												"is_open" : 1,
+												"children" : [ 													{
+														"name" : "2",
+														"id" : "617816388ebdceb737885ed0",
+														"type" : "input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61781638441304f2380dd2fa",
+												"type" : "output",
+												"is_open" : 1,
+												"children" : [ 													{
+														"name" : "2",
+														"id" : "617816389cf8a1a7fd001044",
+														"type" : "output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "6178163875d31782af937471",
+								"type" : "parameter",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "61781638e58585ecb2d4f85d",
+										"type" : "parameter_name"
+									}
+ ]
+							}
+ ]
+					}
+, 					{
+						"name" : "delay",
+						"id" : "6178163ec28a936f5709900a",
+						"type" : "device",
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "6178163ee0c371c0e7ee12e6",
+								"type" : "io",
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "6178163eb4779958ddb1c6d9",
+										"type" : "audio",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "6178163e26b0dc2596e023d7",
+												"type" : "input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6178163e8f5e73228a6ce157",
+														"type" : "input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "6178163e0462a3456a6a709a",
+												"type" : "output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6178163e3169dcbd3811b1be",
+														"type" : "output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "6178163e60a3eace2e8d350a",
+										"type" : "video",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "6178163ed10ea1113ee22fb7",
+												"type" : "input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6178163e3c16271d3eb66b4c",
+														"type" : "input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "6178163e9fc21921234114cd",
+												"type" : "output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6178163e20405d89fd608b30",
+														"type" : "output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "6178163e2bb14c2a7b13872b",
+								"type" : "parameter",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "6178163ed6f4f81fae9fe0cc",
+										"type" : "parameter_name"
+									}
+ ]
+							}
+ ]
+					}
+ ]
+			}
+, 			{
+				"name" : "group2",
+				"id" : "61781649b96889255602a161",
+				"type" : "group"
+			}
+ ]
 	}
 ,
 	"parameters_list" : 	{
@@ -18,7 +200,8 @@
 	}
 ,
 	"paths" : 	{
-
+		"61781638e58585ecb2d4f85d" : "group/deverb/param_1",
+		"6178163ed6f4f81fae9fe0cc" : "group/delay/param_1"
 	}
 ,
 	"meigroll" : 	{
