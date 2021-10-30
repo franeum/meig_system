@@ -75,11 +75,11 @@ exports.post_list = (req, res) => {
     const id = req.body.container_id;
 
     root.all((node) => {
-        if (node.model.type == "parameter_name")
+        if (node.model.type == "parameter")
             node.model.path = findPathName(node);
     });
 
-    const nodes = utils.findAllByType(root, "parameter_name");
+    const nodes = utils.findAllByType(root, "parameter");
     //const filtered = ["event_params", "event_params"];
 
     const filtered = [];
