@@ -9,6 +9,7 @@ const utils = require("./utils");
  ************************************************************/
 
 exports.get_preset = (req, res) => {
+    Max.post(req.query);
     const { id, onset } = req.query;
 
     res.render("presets", {
@@ -31,7 +32,9 @@ exports.get_preset_values = (req, res) => {
             const data = d.presets;
             //if (data[id].presets) preset_values = data[id].presets;
             if (data[id])
-                if (data[id].presets) preset_values = data[id].presets;
+                if (data[id].presets) {
+                    preset_values = data[id].presets;
+                }
         })
         .catch((err) => Max.post("errore sui presets"));
 
@@ -51,7 +54,7 @@ exports.get_preset_values = (req, res) => {
 
             root.all().forEach((node) => {
                 node.model.is_selected = false;
-                if (node.model.type == "parameter_name") {
+                if (node.model.type == "parameter") {
                     const _id = node.model.id;
                     let value = 0;
 
