@@ -28,6 +28,19 @@ exports.get_page = (req, res) => {
         });
 };
 
+exports.get_selected = (req, res) => {
+    const { id } = req.query;
+    Max.post("call get selected", id);
+
+    Max.getDict("parameters_list")
+        .then((data) => {
+            res.json(data.parameters_list[id]);
+        })
+        .catch((err) => {
+            Max.post(err);
+        });
+};
+
 /*************************************************************
  * GET TREE
  ************************************************************/

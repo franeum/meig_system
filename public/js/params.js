@@ -6,6 +6,10 @@ const MAIN_URI = "/api/v1";
 
 // GLOBAL EVENTS
 
+$("#button_get_sel").on("click", () => {
+    get_selected();
+});
+
 $(() => {
     $("#button_send_data").on("click", () => {
         send_data();
@@ -32,6 +36,8 @@ $(() => {
             }
         },
     });
+
+    get_selected();
 });
 
 // TREE EVENTS
@@ -82,4 +88,21 @@ const prev = (node, arr) => {
         arr.push(current.name);
         prev(current, arr);
     }
+};
+
+const get_selected = () => {
+    const _id = $("#id_container").text();
+    $.get({
+        url: MAIN_URI + "/params/selected?id=" + _id,
+        dataType: "json",
+        success: (res) => {
+            res.forEach((n) => {
+                const node = $("#tree1").tree("getNodeById", n.id);
+                console.log(node);
+                //node.is_selected = true;
+                $("#tree1").tree("addToSelection", node, false);
+                //$("#tree1").tree("updateNode", node, { is_selected: true });
+            });
+        },
+    });
 };

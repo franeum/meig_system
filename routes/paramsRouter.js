@@ -26,6 +26,17 @@ router.get("/tree", params.get_page);
 router.get("/list", params.get_list);
 
 /*************************************************************
+ * GET TREE
+ ************************************************************/
+/**
+ * ask for the tree of params
+ *
+ * @name /params/selected
+ * @path {GET} /params/selected
+ **/
+router.get("/selected", params.get_selected);
+
+/*************************************************************
  * POST TREE
  ************************************************************/
 /**

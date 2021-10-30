@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 467.0, 190.0, 41.0, 22.0 ],
+					"text" : "reveal"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-57",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -284,7 +296,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1636,13 +1648,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-55",
-					"linecount" : 3,
+					"linecount" : 11,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 472.0, 446.0, 182.0, 49.0 ],
-					"text" : "\"event_params event_params [  617d42f50141de5a91ac31f2 ] [group/rev/param_1 ]\""
+					"patching_rect" : [ 472.0, 446.0, 182.0, 156.0 ],
+					"text" : "\"paramslist [ 61781f32b1233cf9d9f9c1af 61781d3a03cbba1c559d55fc 61781f2cbc0012b9ca02c3d4 617822dd2496d96eefb78446 617824ff85ae8e9e28eb80ef ] [ group/reverb/flanger group/reverb/param_1 group/reverb/chorus group/reverb/delay3 group/reverb2/param_1 ]\""
 				}
 
 			}
@@ -1739,7 +1751,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 179.0, 39.5, 63.0, 22.0 ],
+					"patching_rect" : [ 179.0, 41.0, 63.0, 22.0 ],
 					"text" : "script stop"
 				}
 
@@ -1784,7 +1796,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 60.0, 225.0, 397.0, 22.0 ],
+					"patching_rect" : [ 60.0, 225.0, 252.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
@@ -1793,12 +1805,19 @@
 						"watch" : 0
 					}
 ,
-					"text" : "node.script /Users/neum/Documents/meig_system/bin/www @autostart 1"
+					"text" : "node.script meig-www @autostart 1 @defer 1"
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-48", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
 					"source" : [ "obj-23", 0 ]
@@ -1851,6 +1870,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
+					"midpoints" : [ 188.5, 183.5, 69.5, 183.5 ],
 					"source" : [ "obj-46", 0 ]
 				}
 
@@ -1866,7 +1886,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
-					"midpoints" : [ 447.5, 264.0, 69.5, 264.0 ],
+					"midpoints" : [ 302.5, 264.0, 69.5, 264.0 ],
 					"source" : [ "obj-48", 1 ]
 				}
 
@@ -1904,9 +1924,9 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "www",
-				"bootpath" : "~/Documents/meig_system/bin",
-				"patcherrelativepath" : "../bin",
+				"name" : "meig-www",
+				"bootpath" : "~/Documents/meig_system/max",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
