@@ -1,5 +1,6 @@
 const MAIN_URI = "/api/v1";
 
+/*
 $(() => {
     $(".pathid").spinner({
         step: 0.01,
@@ -12,6 +13,7 @@ $(() => {
         $(".pathid").spinner("value", current);
     });
 });
+*/
 
 $("#button_send_data").on("click", () => {
     send_data();
@@ -35,6 +37,7 @@ $(() => {
             const $title = $li.find(".jqtree-element");
             $title.addClass(node.type);
             if (node.type == "parameter") {
+                //console.log(node.value);
                 const txt = $li.find("span").text();
                 $li.find("span").html(`
                     <table>
@@ -78,8 +81,10 @@ const send_data = () => {
     const onset = parseInt($("#onset").text());
 
     $(".pathid").each((index, item) => {
+        console.log(item);
         preset_values[item.id] = {
-            value: item.value,
+            //value: JSON.stringify(item.value),
+            value: format_values(item.value),
             name: item.name,
         };
     });
@@ -95,4 +100,15 @@ const send_data = () => {
             onset: onset,
         },
     });
+};
+
+const format_values = (val) => {
+    const splitted = val.split(/\s+/);
+    const len = splitted.length;
+
+    if (len == 1) {
+        return splitted[0];
+    } else {
+        return JSON.stringify(splitted.join(" "));
+    }
 };
