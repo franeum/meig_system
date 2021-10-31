@@ -105,7 +105,7 @@ exports.post_preset = (req, res) => {
             Object.keys(p_sets).forEach((idx) => {
                 let v = p_sets[idx].value;
 
-                values.push(v);
+                values.push(parse_list(v));
                 ids.push(idx);
             });
 
@@ -121,4 +121,12 @@ exports.post_preset = (req, res) => {
         })
         .catch((err) => Max.post(err));
     res.send("ok");
+};
+
+const parse_list = (value) => {
+    let p = value;
+    let rex = /(^\")(.*)(\"$)/;
+    p = p.replace(rex, " [ $2 ] ");
+
+    return p;
 };
