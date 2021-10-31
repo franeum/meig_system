@@ -1,7 +1,5 @@
 // GLOBAL VARIABLES
 
-import { entity } from "./entities.js";
-
 const MAIN_URI = "/api/v1";
 
 // GLOBAL EVENTS
@@ -98,10 +96,7 @@ const get_selected = () => {
         success: (res) => {
             res.forEach((n) => {
                 const node = $("#tree1").tree("getNodeById", n.id);
-                console.log(node);
-                //node.is_selected = true;
                 $("#tree1").tree("addToSelection", node, false);
-                //$("#tree1").tree("updateNode", node, { is_selected: true });
             });
         },
     });
