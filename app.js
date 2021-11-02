@@ -4,6 +4,9 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 
+// insert max controller
+require("./controllers/max_controller");
+
 const indexRouter = require("./routes/index");
 
 const app = express();

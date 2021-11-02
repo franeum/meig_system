@@ -33,6 +33,12 @@ $(() => {
                 return false;
             }
         },
+        onCreateLi: function (node, $li) {
+            if (node.type) {
+                const $title = $li.find(".jqtree-element");
+                $title.addClass(node.type);
+            }
+        },
     });
 
     get_selected();

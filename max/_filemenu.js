@@ -14,6 +14,10 @@ var dicts = [
     "meigroll",
 ];
 
+function openDevicesTree() {
+    outlet(0, "get_devices");
+}
+
 function object_setvalue(name, message) {
     var obj = this.patcher.getnamed(name);
     obj.set(message);
@@ -105,7 +109,8 @@ function fileNew(p_name) {
 
     object_sendmessage("nameproject_display", "textcolor", [0, 0, 0, 1]);
     object_setvalue("nameproject_display", fileName);
-    outlet(0, "bang");
+    //outlet(0, "bang");
+    openDevicesTree();
 }
 
 function fileOpen(filename) {
@@ -127,6 +132,7 @@ function fileOpen(filename) {
     //fileName = projectName.get("fileName");
     object_sendmessage("nameproject_display", "textcolor", [0, 0, 0, 1]);
     object_setvalue("nameproject_display", fileName);
+    openDevicesTree();
 }
 
 function fileSave() {

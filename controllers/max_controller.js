@@ -27,7 +27,7 @@ Max.addHandler("post_params", (_id) => {
         .then((data) => {
             const root = tree.parse(data);
             const parameters = [];
-            const nodes = findAllByType(root, "parameter_name");
+            const nodes = findAllByType(root, "parameter");
             nodes.map((node) => {
                 node.model.path = findPathName(node);
                 parameters.push(node.model);
@@ -77,7 +77,7 @@ Max.addHandler("get_all_params", (_id) => {
  ****************************************************************/
 
 Max.addHandler("get_randomID", (n = 1) => {
-    r_id = ["randomID"];
+    let r_id = ["randomID"];
     for (let i = 0; i < n; i++) r_id.push(random_id());
     Max.outlet(r_id);
 });
@@ -196,10 +196,8 @@ Max.addHandler("get_event", (_id) => {
     */
 });
 
-Max.addHandler("get_cross", (_id) => {
-    /*
-        probabilmente non serve perché avviene tutto dentro al roll       
-    */
+Max.addHandler("get_cross", () => {
+    Max.post("NOT YET IMPLEMENTED");
 });
 
 module.exports = Max;
