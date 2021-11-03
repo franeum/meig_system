@@ -211,13 +211,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-23",
-					"linecount" : 7,
+					"linecount" : 9,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 750.0, 226.0, 102.0 ],
-					"text" : "\"presetvalues presetvalues [ 61781f32b1233cf9d9f9c1af 61781d3a03cbba1c559d55fc 61781f2cbc0012b9ca02c3d4 617822dd2496d96eefb78446 617824ff85ae8e9e28eb80ef ] [ 0.06 20 20 30 50 ]\""
+					"patching_rect" : [ 195.0, 750.0, 226.0, 129.0 ],
+					"text" : "\"paramslist [ 61781f32b1233cf9d9f9c1af 61781d3a03cbba1c559d55fc 61781f2cbc0012b9ca02c3d4 617822dd2496d96eefb78446 617824ff85ae8e9e28eb80ef ] [ group/reverb/flanger group/reverb/param_1 group/reverb/chorus group/reverb/delay3 group/reverb2/param_1 ]\""
 				}
 
 			}
@@ -518,12 +518,13 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-4",
 					"maxclass" : "jweb",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 570.0, 195.0, 525.0, 375.0 ],
+					"patching_rect" : [ 525.0, 210.0, 540.0, 375.0 ],
 					"rendermode" : 0,
 					"url" : "http://127.0.0.1:3000/api/v1/preset/tree?id=6174895775fd0f35add7fe11&onset=200",
 					"varname" : "presets-ui"
@@ -538,7 +539,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 855.0, 603.0, 570.0, 150.0 ],
+					"patching_rect" : [ 900.0, 600.0, 525.0, 142.5 ],
 					"rendermode" : 0,
 					"url" : "http://127.0.0.1:3000/api/v1/params/tree?id=6174895775fd0f35add7fe11",
 					"varname" : "params-ui"
@@ -547,13 +548,12 @@
 			}
 , 			{
 				"box" : 				{
-					"hidden" : 1,
 					"id" : "obj-2",
 					"maxclass" : "jweb",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 435.0, 45.0, 570.0, 135.0 ],
+					"patching_rect" : [ 525.0, 30.0, 540.0, 210.0 ],
 					"rendermode" : 0,
 					"url" : "http://127.0.0.1:3000/api/v1/device/tree",
 					"varname" : "devices-ui"

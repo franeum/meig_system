@@ -157,16 +157,15 @@ const create_init_tree = () => {
 };
 
 const expand_tree = () => {
-    console.log("call expand...");
     $("#tree1").tree("getNodeByCallback", (node) => {
         $("#tree1").tree("openNode", node);
     });
 };
 
 const collapse_tree = () => {
-    console.log("call expand...");
     $("#tree1").tree("getNodeByCallback", (node) => {
-        $("#tree1").tree("closeNode", node);
+        if (node.type == "main") $("#tree1").tree("openNode", node);
+        else $("#tree1").tree("closeNode", node);
     });
 };
 
@@ -178,8 +177,10 @@ $("#tree1").on("tree.dblclick", (event) => {
 
     if (SELECTABLES.includes(ty)) {
         name = prompt(`${ty} name`, event.node.name);
-        name = name.replace(" ", "_").toLocaleLowerCase();
-        if (name) $("#tree1").tree("updateNode", event.node, name);
+        if (name) {
+            name = name.replace(" ", "_").toLocaleLowerCase();
+            $("#tree1").tree("updateNode", event.node, name);
+        }
     }
 });
 
