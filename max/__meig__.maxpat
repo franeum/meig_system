@@ -40,6 +40,139 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 390.0, 195.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 555.0, 765.0, 285.0, 35.0 ],
+					"text" : "http://127.0.0.1:3000/api/v1/preset/tree?id=6174895775fd0f35add7fe11&onset=200"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-60",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 30.0, 873.0, 73.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict meigroll"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-50",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 30.0, 720.0, 81.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict metadata"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 30.0, 840.0, 60.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict paths"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 30.0, 780.0, 113.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict parameters_list"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-70",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 30.0, 809.0, 70.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict presets"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 30.0, 749.0, 71.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict devices"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -57,7 +190,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1050.0, 450.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1155.0, 450.0, 29.5, 22.0 ],
 					"text" : "+ 1"
 				}
 
@@ -65,12 +198,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-23",
+					"linecount" : 11,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 750.0, 225.0, 22.0 ],
-					"text" : "\"paramslist [  ] [  ]\""
+					"patching_rect" : [ 195.0, 750.0, 226.0, 156.0 ],
+					"text" : "\"presetvalues presetvalues [ 61781f32b1233cf9d9f9c1af 61781d3a03cbba1c559d55fc 61781f2cbc0012b9ca02c3d4 617822dd2496d96eefb78446 617824ff85ae8e9e28eb80ef 6181cf83255109439bb7e8e0 6181cf967455c16c956f41be 6181cfbc853ad8e5a21d09cc 6181d05045c7f86a42238009 ] [ 0.06 10 20 30 50 0 0 0 0 ]\""
 				}
 
 			}
@@ -92,7 +226,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1050.0, 540.0, 61.0, 22.0 ],
+					"patching_rect" : [ 1155.0, 540.0, 61.0, 22.0 ],
 					"text" : "s tobridge"
 				}
 
@@ -104,7 +238,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1050.0, 495.0, 46.0, 22.0 ],
+					"patching_rect" : [ 1155.0, 495.0, 46.0, 22.0 ],
 					"text" : "turn $1"
 				}
 
@@ -119,7 +253,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1050.0, 420.0, 200.0, 24.0 ],
+					"patching_rect" : [ 1155.0, 420.0, 200.0, 24.0 ],
 					"tabs" : [ "devices", "presets", "events" ]
 				}
 
@@ -262,8 +396,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -386,13 +518,12 @@
 			}
 , 			{
 				"box" : 				{
-					"hidden" : 1,
 					"id" : "obj-4",
 					"maxclass" : "jweb",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 480.0, 315.0, 480.0, 255.0 ],
+					"patching_rect" : [ 480.0, 315.0, 345.0, 135.0 ],
 					"rendermode" : 0,
 					"url" : "http://127.0.0.1:3000/api/v1/preset/tree?id=6174895775fd0f35add7fe11&onset=200",
 					"varname" : "presets-ui"
@@ -407,7 +538,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 975.0, 45.0, 480.0, 255.0 ],
+					"patching_rect" : [ 795.0, 45.0, 330.0, 150.0 ],
 					"rendermode" : 0,
 					"url" : "http://127.0.0.1:3000/api/v1/params/tree?id=6174895775fd0f35add7fe11",
 					"varname" : "params-ui"
@@ -416,12 +547,13 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-2",
 					"maxclass" : "jweb",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 480.0, 45.0, 480.0, 255.0 ],
+					"patching_rect" : [ 435.0, 45.0, 345.0, 135.0 ],
 					"rendermode" : 0,
 					"url" : "http://127.0.0.1:3000/api/v1/device/tree",
 					"varname" : "devices-ui"
@@ -433,8 +565,8 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 60.0, 195.0, 138.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "_bridgeClientServer.js",
@@ -447,6 +579,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 1 ],
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
 					"source" : [ "obj-1", 0 ]
@@ -515,7 +654,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 1 ],
-					"midpoints" : [ 204.5, 709.0, 410.5, 709.0 ],
+					"midpoints" : [ 204.5, 709.0, 411.5, 709.0 ],
 					"order" : 0,
 					"source" : [ "obj-20", 0 ]
 				}
@@ -540,6 +679,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
 					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-35", 0 ]
 				}
 
 			}

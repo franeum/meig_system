@@ -12,10 +12,12 @@ const add_node = (node) => {
     switch (node.type) {
         case "group":
             name = prompt("Device name", "_device");
+            name = name.replace(" ", "_").toLocaleLowerCase();
             func = entity.create_device;
             break;
         case "parameters":
             name = prompt("Parameter name", "_parameter");
+            name = name.replace(" ", "_").toLocaleLowerCase();
             func = entity.create_parameter;
             break;
         default:
@@ -30,6 +32,7 @@ const add_node = (node) => {
 
 const add_same_node = (node) => {
     let name = prompt("(Sub) Group name", "_subgroup");
+    name = name.replace(" ", "_").toLocaleLowerCase();
 
     if (name) {
         $("#tree1").tree("appendNode", entity.create_group(name), node);
@@ -39,6 +42,7 @@ const add_same_node = (node) => {
 
 const add_node_sibling = (node, where) => {
     let name = prompt_name(node);
+    name = name.replace(" ", "_").toLocaleLowerCase();
 
     const direction = where ? "addNodeAfter" : "addNodeBefore";
 
@@ -66,6 +70,7 @@ const add_node_sibling = (node, where) => {
 
 const node_rename = (node) => {
     let name = prompt(`Rename ${node.type}`, node.name);
+    name = name.replace(" ", "_").toLocaleLowerCase();
     $("#tree1").tree("updateNode", node, name);
 };
 

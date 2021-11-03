@@ -114,6 +114,36 @@ const create_init_tree = () => {
                 node.type == "video_output"
             ) {
                 $li.find("span").wrapInner("<strong></strong>");
+            } else {
+                switch (node.type) {
+                    case "group":
+                        $li.find("span").addClass(
+                            "badge bg-success rounded-pill text-light"
+                        );
+                        break;
+                    case "device":
+                        $li.find("span").addClass(
+                            "badge bg-secondary rounded-pill text-light"
+                        );
+                        break;
+                    case "parameter":
+                        $li.find("span").addClass(
+                            "badge bg-warning rounded-pill text-dark"
+                        );
+                        break;
+                    case "audio_input_value":
+                        $li.find("span").addClass("badge bg-light text-dark");
+                        break;
+                    case "audio_output_value":
+                        $li.find("span").addClass("badge bg-light text-dark");
+                        break;
+                    case "video_input_value":
+                        $li.find("span").addClass("badge bg-light text-dark");
+                        break;
+                    case "video_output_value":
+                        $li.find("span").addClass("badge bg-light text-dark");
+                        break;
+                }
             }
         },
     });
@@ -127,6 +157,7 @@ $("#tree1").on("tree.dblclick", (event) => {
 
     if (SELECTABLES.includes(ty)) {
         name = prompt(`${ty} name`, event.node.name);
+        name = name.replace(" ", "_").toLocaleLowerCase();
         if (name) $("#tree1").tree("updateNode", event.node, name);
     }
 });

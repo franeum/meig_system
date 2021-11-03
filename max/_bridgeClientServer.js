@@ -1,5 +1,5 @@
 inlets = 1;
-outlets = 1;
+outlets = 2;
 autowatch = 1;
 
 var matrix = [0, 0, 0];
@@ -38,6 +38,7 @@ function get_preset() {
     var presets = obj[1];
 
     turn(2);
+    outlet(1, uri);
     presets.message("url", uri);
 }
 

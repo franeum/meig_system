@@ -28,55 +28,57 @@ ul.jqtree-tree li.jqtree_common {
 }
 
 ul.jqtree-tree .jqtree-element.main {
-    background-color: #cc3300;
+    background-color: #eeeeee;
+    color: black;
 }
 
 ul.jqtree-tree .jqtree-element.group {
-    background-color: #ff4000;
+    background-color: #eeeeee;
+    color: black;
+    font-style: normal;
 }
 
 ul.jqtree-tree .jqtree-element.device {
-    background-color: #ff8533;
+    background-color: #fafafa;
+    color: black;
 }
 
-ul.jqtree-tree .jqtree-element.io {
-    background-color: #ffa366;
+ul.jqtree-tree .jqtree-element.io,
+ul.jqtree-tree .jqtree-element.parameters {
+    background-color: #cccccc;
+    color: black;
 }
 
-ul.jqtree-tree .jqtree-element.audio {
-    background-color: #ffc299;
-}
-
+ul.jqtree-tree .jqtree-element.audio,
 ul.jqtree-tree .jqtree-element.video {
-    background-color: #ffc299;
+    background-color: #cccccc;
+    color: black;
 }
 
-ul.jqtree-tree .jqtree-element.input {
-    background-color: #ffe0cc;
+ul.jqtree-tree .jqtree-element.audio_input,
+ul.jqtree-tree .jqtree-element.audio_output,
+ul.jqtree-tree .jqtree-element.video_input,
+ul.jqtree-tree .jqtree-element.video_output {
+    background-color: #cccccc;
+    color: black;
 }
 
-ul.jqtree-tree .jqtree-element.output {
-    background-color: #ffe0cc;
-}
-
-ul.jqtree-tree .jqtree-element.input_value {
-    background-color: #fff0e6;
-}
-
-ul.jqtree-tree .jqtree-element.output_value {
-    background-color: #fff0e6;
+ul.jqtree-tree .jqtree-element.audio_input_value,
+ul.jqtree-tree .jqtree-element.audio_output_value,
+ul.jqtree-tree .jqtree-element.video_input_value,
+ul.jqtree-tree .jqtree-element.video_output_value {
+    background-color: #cccccc;
+    color: black;
 }
 
 ul.jqtree-tree .jqtree-element.parameter {
-    background-color: #ffa366;
-}
-
-ul.jqtree-tree .jqtree-element.parameter_name {
-    background-color: #fff0e6;
+    background-color: #cccccc;
+    color: black;
 }
 
 ul.jqtree-tree .jqtree-element.parameter_value {
-    background-color: #fff0e6;
+    background-color: #cccccc;
+    color: black;
 }
 
 ul.jqtree-tree .jqtree-toggler {
@@ -238,4 +240,10 @@ span.jqtree-dragging {
     opacity: 0.6;
     cursor: pointer;
     padding: 2px 8px;
+}
+
+.ui-spinner-input {
+    padding: 0;
+    margin-top: 0.05em;
+    margin-bottom: 0.05em;
 }

@@ -40,14 +40,13 @@ $(() => {
                 //console.log(node.value);
                 const txt = $li.find("span").text();
                 $li.find("span").html(`
-                    <table>
-                        <tr>
-                            <td>${txt}</td>
-                            <td>
-                                <input id=${node.id} value=${node.value} class='pathid' name=${node.name}>
-                            </td>
-                        </tr>
-                    </table>`);
+                <div class='row justify-content-start'>
+                    <div class='col-4' style='width: 150px'>${txt}</div>
+                    <div class='col-4'>
+                        <input id=${node.id} value=${node.value} class='pathid' name=${node.name}>
+                    </div>
+                </div>
+                `);
             }
         },
         selectable: false,
