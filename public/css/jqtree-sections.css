@@ -59,7 +59,7 @@ ul.jqtree-tree .jqtree-element.audio_input,
 ul.jqtree-tree .jqtree-element.audio_output,
 ul.jqtree-tree .jqtree-element.video_input,
 ul.jqtree-tree .jqtree-element.video_output {
-    background-color: #cccccc;
+    background-color: #aaaaaa;
     color: black;
 }
 
@@ -67,17 +67,17 @@ ul.jqtree-tree .jqtree-element.audio_input_value,
 ul.jqtree-tree .jqtree-element.audio_output_value,
 ul.jqtree-tree .jqtree-element.video_input_value,
 ul.jqtree-tree .jqtree-element.video_output_value {
-    background-color: #cccccc;
+    background-color: #aaaaaa;
     color: black;
 }
 
 ul.jqtree-tree .jqtree-element.parameter {
-    background-color: #cccccc;
+    background-color: #eeeeee;
     color: black;
 }
 
 ul.jqtree-tree .jqtree-element.parameter_value {
-    background-color: #cccccc;
+    background-color: #eeeeee;
     color: black;
 }
 
@@ -110,8 +110,11 @@ ul.jqtree-tree .jqtree-element {
     position: relative;
     display: flex;
     background-color: #ffcc66;
-    padding: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
     margin: 3px;
+    font-size: 14px;
 }
 
 ul.jqtree-tree .jqtree-title {
@@ -244,6 +247,6 @@ span.jqtree-dragging {
 
 .ui-spinner-input {
     padding: 0;
-    margin-top: 0.05em;
-    margin-bottom: 0.05em;
+    margin-top: 0;
+    margin-bottom: 0;
 }

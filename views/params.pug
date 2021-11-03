@@ -4,10 +4,40 @@ block content
   link(rel='stylesheet', href="/bootstrap/dist/css/bootstrap.min.css")
   script(src="/bootstrap/dist/js/bootstrap.bundle.min.js")
   link(rel='stylesheet', href="/css/jqtree-sections.css")
+
+  <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-light shadow" style="height: 40px; margin-bottom: 10px">
+    <div class="container align-middle">
+      <a class="navbar-brand display-6">Event Tree</a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#" id="button_send_data">Send Data</a></li>
+      </ul>
+    </div>
+  </nav>
+
   body(id="whole_doc" class='container') 
-    button(id="button_send_data") Send data 
-    button(id="button_get_sel") Getselected 
+    //div.row(class="justify-content-between" style="padding: 5px; margin-bottom: 5px")
+      div.col-4    
+        p(class="display-6") Event
+      div.col-3(class="ms-auto") 
+        button(id="button_send_data" class="btn btn-sm bg-dark text-light") Send Data 
+      div.col-5
     div(id="id_container" hidden)=id   
     div(id="tree1")
+
+    script.
+      document.addEventListener("DOMContentLoaded", function(){
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 50) {
+            document.getElementById('navbar_top').classList.add('fixed-top');
+            // add padding top to show content behind navbar
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+          } else {
+            document.getElementById('navbar_top').classList.remove('fixed-top');
+            // remove padding top from body
+            document.body.style.paddingTop = '0';
+          } 
+        });
+      }); 
 
     script(type="module", src="/js/params.js")

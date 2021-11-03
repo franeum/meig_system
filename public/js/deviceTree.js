@@ -19,10 +19,16 @@ const SELECTABLES = [
 // GLOBAL EVENTS
 
 $(() => {
-    $("#button_load_data").on("click", () => {
-        load_data();
+    $("#button_expand").on("click", () => {
+        expand_tree();
     });
 
+    $("#button_collapse").on("click", () => {
+        collapse_tree();
+    });
+});
+
+/*
     $("#button_add_group").on("click", () => {
         add_group();
     });
@@ -55,6 +61,7 @@ $(() => {
         perform_undo();
     });
 });
+*/
 
 const genId = () => {
     var timestamp = ((new Date().getTime() / 1000) | 0).toString(16);
@@ -146,6 +153,20 @@ const create_init_tree = () => {
                 }
             }
         },
+    });
+};
+
+const expand_tree = () => {
+    console.log("call expand...");
+    $("#tree1").tree("getNodeByCallback", (node) => {
+        $("#tree1").tree("openNode", node);
+    });
+};
+
+const collapse_tree = () => {
+    console.log("call expand...");
+    $("#tree1").tree("getNodeByCallback", (node) => {
+        $("#tree1").tree("closeNode", node);
     });
 };
 

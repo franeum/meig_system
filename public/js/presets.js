@@ -43,7 +43,7 @@ $(() => {
                 <div class='row justify-content-start'>
                     <div class='col-4' style='width: 150px'>${txt}</div>
                     <div class='col-4'>
-                        <input id=${node.id} value=${node.value} class='pathid' name=${node.name}>
+                        <input id=${node.id} value=${node.value} class='pathid' name=${node.name} style="padding-top: 0px;padding-bottom: 0px;border-top-width: 0px;border-top-style: solid;border-bottom-width: 0px;border-bottom-style: solid;">
                     </div>
                 </div>
                 `);
@@ -52,10 +52,12 @@ $(() => {
         selectable: false,
     });
 
+    /*
     $(".pathid").spinner({
         step: 0.01,
         numberFormat: "n",
     });
+    */
 });
 
 const findNodesByType = (type) => {

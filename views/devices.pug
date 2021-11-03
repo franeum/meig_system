@@ -3,6 +3,7 @@ extends layout
 block content
   //link(rel='stylesheet', href="/bootstrap-icons/font/bootstrap-icons.css")
   //link(rel='stylesheet', href="/bootstrap/dist/css/bootstrap.css")
+
   link(rel='stylesheet', href="/bootstrap/dist/css/bootstrap.min.css")
   script(src="/bootstrap/dist/js/bootstrap.bundle.min.js")
   link(rel='stylesheet', href="/css/jqtree-sections.css")
@@ -10,6 +11,17 @@ block content
   <script defer src="/@fortawesome/fontawesome-free/js/brands.js"></script>
   <script defer src="/@fortawesome/fontawesome-free/js/solid.js"></script>
   <script defer src="/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+
+  <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-light shadow" style="height: 40px; margin-bottom: 10px">
+    <div class="container align-middle">
+      <a class="navbar-brand display-6">Devices Tree</a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#" id="button_expand">Expand</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" id="button_collapse">Collapse</a></li>
+      </ul>
+    </div>
+  </nav>
+
   body(id="whole_doc" class='container') 
     //
       button(id="button_load_data") Load Data  
@@ -20,86 +32,14 @@ block content
       button(id="button_find_parameters") Get Parameters 
       button(id="button_reverse_path") Get Path  
       button(id="button_undo") Undo 
+    //div.row
+      div.col 
+        div(class="display-6") Devices Tree 
+      dev.col 
+        button(id="button_expand") Expand 
+      dev.col 
+        button(id="button_collapse") Collapse  
     div(id="tree1")
-    //
-      ul(id="myMenu1" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
-        li(class="edit")
-          //a(href="#edit") 
-          i(class="bi-alarm")  
-          btn(class="btn-outline-secondary") Edit 
-        li(class="delete")
-          //a(href="#delete")
-          i(class="icon-remove")
-          btn(class="btn-outline-secondary") Remove 
-        hr 
-        li(class="add")
-          //a(href="#add")
-          i(class="icon-plus") 
-          btn(class ="btn-outline-secondary") Add 
-
-      ul(id="myMenu2" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu")
-        li(class="edit")
-          a(href="#edit")
-            i(class="icon-edit") Edit
-        li(class="delete")
-          a(href="#delete")
-            i(class="icon-remove") Delete
-    
-    //ul(id="devices" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
-      each value in menuctx.devices_menu  
-        if value[3] 
-          hr 
-        li
-          .row  
-            .col-2 
-              i(class=value[1]) 
-            .col-10
-              a(class="btn-outline-secondary" href=value[2])=value[0] 
-
-    //ul(id="group" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
-      each value in menuctx.group_menu  
-        if value[3] 
-          hr 
-        li
-          .row  
-            .col-2 
-              i(class=value[1]) 
-            .col-10
-              a(class="btn-outline-secondary" href=value[2])=value[0] 
-
-    //ul(id="device" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
-      //each value in [["Edit","fas fa-edit","#edit"],["Remove","fas fa-minus","#delete"],["Add","fas fa-plus","#add"]]
-      each value in menuctx.device_menu  
-        if value[3] 
-          hr 
-        li
-          .row  
-            .col-2 
-              i(class=value[1]) 
-            .col-10
-              a(class="btn-outline-secondary" href=value[2])=value[0] 
-
-    //ul(id="parameters" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
-      each value in menuctx.parameters_menu  
-        if value[3] 
-          hr 
-        li
-          .row  
-            .col-2 
-              i(class=value[1]) 
-            .col-10
-              a(class="btn-outline-secondary" href=value[2])=value[0] 
-
-    //ul(id="parameter" class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
-      each value in menuctx.parameter_menu  
-        if value[3] 
-          hr 
-        li
-          .row  
-            .col-2 
-              i(class=value[1]) 
-            .col-10
-              a(class="btn-outline-secondary" href=value[2])=value[0] 
     each menu in menuctx 
       ul(id=menu[0] class="dropdown-menu myMenuStyle" role="menu" aria-labelledby="dropdownMenu")
         each value in menu[1] 
