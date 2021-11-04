@@ -7,12 +7,6 @@ var obj = [];
 var devices = ["devices-ui", "presets-ui", "params-ui"];
 var MAIN_URL = "http://127.0.0.1:3000/api/v1/";
 
-function provuma(n) {
-    var parent = this.patcher.box;
-    var p = parent.patcher.getnamed("numero_parente");
-    p.message("int", n);
-}
-
 function get_objects() {
     for (var i = 0; i < 3; i++) {
         obj.push(this.patcher.getnamed(devices[i]));
@@ -85,6 +79,6 @@ function anything() {
 }
 
 function loadbang() {
-    post("loadbang");
     get_objects();
+    messnamed("ctrl-roll", "clear");
 }

@@ -110,6 +110,7 @@ function fileNew(p_name) {
     object_sendmessage("nameproject_display", "textcolor", [0, 0, 0, 1]);
     object_setvalue("nameproject_display", fileName);
     //outlet(0, "bang");
+    messnamed("ctrl-roll", "clear");
     openDevicesTree();
 }
 

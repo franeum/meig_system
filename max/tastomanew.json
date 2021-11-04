@@ -1,52 +1,52 @@
 {
 	"metadata" : 	{
-		"filePath" : "SDD:/Users/Noja/Documents/meig_system/max/stronzo.json",
-		"fileName" : "stronzo.json",
-		"created_at" : "Sat Oct 30 2021 16:22:36 GMT+0200 (CEST)",
-		"last_save" : "Sat Oct 30 2021 16:29:10 GMT+0200 (CEST)"
+		"filePath" : "INDMEM DMPG3NA1708 SSD:/Users/neum/Documents/meig_system/max/tastomanew.json",
+		"fileName" : "tastomanew.json",
+		"created_at" : "Thu Nov 04 2021 21:42:52 GMT+0100 (CET)",
+		"last_save" : "Thu Nov 04 2021 21:42:52 GMT+0100 (CET)"
 	}
 ,
 	"devices" : 	{
 		"name" : "devices",
-		"id" : "617d53182209c35c9923e503",
+		"id" : "618445b8d38eafb2e7597617",
 		"type" : "main",
 		"is_open" : 1,
 		"children" : [ 			{
 				"name" : "group",
 				"type" : "group",
-				"id" : "617d53182aed3e23dd24863b",
+				"id" : "618445b8887cc27199067c52",
 				"is_open" : 1,
 				"children" : [ 					{
-						"name" : "ciao",
-						"id" : "617d5534c09761964ef88046",
+						"name" : "chorus",
+						"id" : "61844a6f067ed923855c9abd",
 						"type" : "device",
 						"is_open" : 1,
 						"children" : [ 							{
 								"name" : "i/o",
-								"id" : "617d55347db10eb35b0fb26d",
+								"id" : "61844a6f9d333b186b64314a",
 								"type" : "io",
 								"children" : [ 									{
 										"name" : "audio",
-										"id" : "617d5534b9d27ef346e99667",
+										"id" : "61844a6fcd1a4f32b50c6b9e",
 										"type" : "audio",
 										"children" : [ 											{
 												"name" : "input",
-												"id" : "617d55341ae8fd5da8e113f1",
+												"id" : "61844a6f16109cc4e8b101d2",
 												"type" : "audio_input",
 												"children" : [ 													{
 														"name" : "0",
-														"id" : "617d55342037433996a40155",
+														"id" : "61844a6f0a13cebcee1a8a76",
 														"type" : "audio_input_value"
 													}
  ]
 											}
 , 											{
 												"name" : "output",
-												"id" : "617d553431d707191cad6027",
+												"id" : "61844a6f5015560196c2f81d",
 												"type" : "audio_output",
 												"children" : [ 													{
 														"name" : "0",
-														"id" : "617d5534b4261b4dd0bfda80",
+														"id" : "61844a6faf17d9735d449c95",
 														"type" : "audio_output_value"
 													}
  ]
@@ -55,26 +55,26 @@
 									}
 , 									{
 										"name" : "video",
-										"id" : "617d5534f33659132d99758f",
+										"id" : "61844a6f29ad0f9bd34becf2",
 										"type" : "video",
 										"children" : [ 											{
 												"name" : "input",
-												"id" : "617d55340f4781edf20011a4",
+												"id" : "61844a6f56f78d822b5f6b3e",
 												"type" : "video_input",
 												"children" : [ 													{
 														"name" : "0",
-														"id" : "617d55345d31653b81ff6aad",
+														"id" : "61844a6f1f05a84a62c2b297",
 														"type" : "video_input_value"
 													}
  ]
 											}
 , 											{
 												"name" : "output",
-												"id" : "617d553490269a680fd91221",
+												"id" : "61844a6fe35535ecf01eaf12",
 												"type" : "video_output",
 												"children" : [ 													{
 														"name" : "0",
-														"id" : "617d55348effde4e5478ff8e",
+														"id" : "61844a6fc551462b07acac94",
 														"type" : "video_output_value"
 													}
  ]
@@ -85,17 +85,258 @@
 							}
 , 							{
 								"name" : "parameters",
-								"id" : "617d553455ea221e17d110fc",
+								"id" : "61844a6f98c2f2eec8c06e29",
 								"type" : "parameters",
-								"is_open" : 1,
+								"is_open" : 0,
 								"children" : [ 									{
 										"name" : "param_1",
-										"id" : "617d553495670a48de651880",
+										"id" : "61844a6ffb8f88f7966559c4",
 										"type" : "parameter"
 									}
+ ]
+							}
+ ]
+					}
+, 					{
+						"name" : "flanger",
+						"id" : "61844a770a90f05cc41ed0a9",
+						"type" : "device",
+						"is_open" : 1,
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "61844a776bf66e8ee87cecf0",
+								"type" : "io",
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "61844a77ad39b96e80266d85",
+										"type" : "audio",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61844a7708f3e34f97990943",
+												"type" : "audio_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61844a771954ad1e475ca954",
+														"type" : "audio_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61844a7764eb2cce645e2031",
+												"type" : "audio_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61844a778f116a8021a49e55",
+														"type" : "audio_output_value"
+													}
+ ]
+											}
+ ]
+									}
 , 									{
-										"name" : "2",
-										"id" : "617d553bf4ab2c4cc32b09bb",
+										"name" : "video",
+										"id" : "61844a776195ae2fe9488498",
+										"type" : "video",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61844a772729fa3575cefd13",
+												"type" : "video_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61844a77b362d71b7b742cfb",
+														"type" : "video_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61844a77010b29345ef7189e",
+												"type" : "video_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61844a7771b34a0564f41fde",
+														"type" : "video_output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "61844a7751b67108765cc9d6",
+								"type" : "parameters",
+								"is_open" : 0,
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "61844a7796824c842d9294fb",
+										"type" : "parameter"
+									}
+ ]
+							}
+ ]
+					}
+ ]
+			}
+, 			{
+				"name" : "group2",
+				"id" : "618445dc5667784110562bbe",
+				"type" : "group",
+				"is_open" : 1,
+				"children" : [ 					{
+						"name" : "reverb",
+						"id" : "618448f35dd7644b7daf4543",
+						"type" : "device",
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "618448f3158b78793cb3f4d4",
+								"type" : "io",
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "618448f329f2844175970ad7",
+										"type" : "audio",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "618448f3483b677e882b3344",
+												"type" : "audio_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "618448f359254db9f2ff2f9f",
+														"type" : "audio_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "618448f327479c750c525c81",
+												"type" : "audio_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "618448f301a5bf8998b975cb",
+														"type" : "audio_output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "618448f3b16a7729c3821d6c",
+										"type" : "video",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "618448f380eab92970ab260b",
+												"type" : "video_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "618448f386162998e131bd72",
+														"type" : "video_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "618448f33a1e0a0892ac0202",
+												"type" : "video_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "618448f3c5304923f4c1b709",
+														"type" : "video_output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "618448f3d6b4012927b4f4c9",
+								"type" : "parameters",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "618448f3df22fe5e59539f00",
+										"type" : "parameter"
+									}
+ ]
+							}
+ ]
+					}
+, 					{
+						"name" : "delay",
+						"id" : "61844a8fbfc7cc648251dab8",
+						"type" : "device",
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "61844a8f6ed7549a841266b7",
+								"type" : "io",
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "61844a8f67ab37045bf91d35",
+										"type" : "audio",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61844a8f51b00656e0508b1a",
+												"type" : "audio_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61844a8f9fad104e8fe0dbf5",
+														"type" : "audio_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61844a8f9dc67156edb34596",
+												"type" : "audio_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61844a8f90e8e76ad3f8147b",
+														"type" : "audio_output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "61844a8fd25b534ac9396b6e",
+										"type" : "video",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61844a8fe31837958f8583e3",
+												"type" : "video_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61844a8f6fbdcf7e31b9c9ca",
+														"type" : "video_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61844a8f79b0e3b360ac9736",
+												"type" : "video_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61844a8f63e64c168976cd03",
+														"type" : "video_output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "61844a8f27cd49ef4fab44be",
+								"type" : "parameters",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "61844a8f919e1c3a174dbfc8",
 										"type" : "parameter"
 									}
  ]
@@ -108,79 +349,96 @@
 	}
 ,
 	"parameters_list" : 	{
-		"" : [ 			{
-				"id" : "617d553495670a48de651880",
-				"path" : "group/ciao/param_1"
-			}
-, 			{
-				"id" : "617d553bf4ab2c4cc32b09bb",
-				"path" : "group/ciao/2"
-			}
- ],
-		"617d55717e3611e0295d233b" : 		{
+		"undefined" : 		{
 
 		}
 ,
-		"617d557a205eabe3bc5dcc74" : [ 			{
-				"id" : "617d553495670a48de651880",
-				"path" : "group/ciao/param_1"
+		"6184628a70bc26efc989560e" : [ 			{
+				"id" : "61844a6ffb8f88f7966559c4",
+				"path" : "group/chorus/param_1"
 			}
 , 			{
-				"id" : "617d553bf4ab2c4cc32b09bb",
-				"path" : "group/ciao/2"
+				"id" : "618448f3df22fe5e59539f00",
+				"path" : "group2/reverb/param_1"
 			}
  ],
-		"617d557e24b80c13ac980ffd" : [ 			{
-				"id" : "617d553495670a48de651880",
-				"path" : "group/ciao/param_1"
+		"618462fd0f3bc47cf14a93a4" : [ 			{
+				"id" : "61844a6ffb8f88f7966559c4",
+				"path" : "group/chorus/param_1"
 			}
 , 			{
-				"id" : "617d553bf4ab2c4cc32b09bb",
-				"path" : "group/ciao/2"
+				"id" : "618448f3df22fe5e59539f00",
+				"path" : "group2/reverb/param_1"
+			}
+, 			{
+				"id" : "61844a8f919e1c3a174dbfc8",
+				"path" : "group2/delay/param_1"
 			}
  ]
 	}
 ,
 	"presets" : 	{
-		"617d553f7322a4a24ef2283d" : 		{
+		"6184620e2b9627a5fd179d15" : 		{
 			"presets" : 			{
-				"617d553495670a48de651880" : 				{
-					"value" : "50",
+				"61844a6ffb8f88f7966559c4" : 				{
+					"value" : "10",
 					"name" : "param_1"
 				}
 ,
-				"617d553bf4ab2c4cc32b09bb" : 				{
-					"value" : "cio",
-					"name" : "2"
+				"61844a7796824c842d9294fb" : 				{
+					"value" : "12",
+					"name" : "param_1"
+				}
+,
+				"618448f3df22fe5e59539f00" : 				{
+					"value" : "\"ciao mondo\"",
+					"name" : "param_1"
+				}
+,
+				"61844a8f919e1c3a174dbfc8" : 				{
+					"value" : "\"12 15 18\"",
+					"name" : "param_1"
 				}
 
 			}
 ,
-			"onset" : 600
+			"onset" : 100
 		}
 ,
-		"617d5560d90e3e2a7902f9c6" : 		{
+		"618463603de7bfbffc35468c" : 		{
 			"presets" : 			{
-				"617d553495670a48de651880" : 				{
-					"value" : "500",
+				"61844a6ffb8f88f7966559c4" : 				{
+					"value" : "\"ciao a tutti\"",
 					"name" : "param_1"
 				}
 ,
-				"617d553bf4ab2c4cc32b09bb" : 				{
-					"value" : "1000",
-					"name" : "2"
+				"61844a7796824c842d9294fb" : 				{
+					"value" : "7.8",
+					"name" : "param_1"
+				}
+,
+				"618448f3df22fe5e59539f00" : 				{
+					"value" : "12",
+					"name" : "param_1"
+				}
+,
+				"61844a8f919e1c3a174dbfc8" : 				{
+					"value" : "mbuto",
+					"name" : "param_1"
 				}
 
 			}
 ,
-			"onset" : 2200
+			"onset" : 3500
 		}
 
 	}
 ,
 	"paths" : 	{
-		"617d553495670a48de651880" : "group/ciao/param_1",
-		"617d553bf4ab2c4cc32b09bb" : "group/ciao/2"
+		"61844a6ffb8f88f7966559c4" : "group/chorus/param_1",
+		"61844a7796824c842d9294fb" : "group/flanger/param_1",
+		"618448f3df22fe5e59539f00" : "group2/reverb/param_1",
+		"61844a8f919e1c3a174dbfc8" : "group2/delay/param_1"
 	}
 ,
 	"meigroll" : 	{
@@ -638,38 +896,44 @@
 
 			}
 ,
-			"clefs" : [ "None", "None", "None", "None" ],
-			"keys" : [ "CM", "CM", "CM", "CM" ],
-			"voicenames" : [ "presets", "events", "group/ciao/param_1", "group/ciao/2" ],
+			"clefs" : [ "None", "None", "None", "None", "None", "None" ],
+			"keys" : [ "CM", "CM", "CM", "CM", "CM", "CM" ],
+			"voicenames" : [ "presets", "events", "group/chorus/param_1", "group/flanger/param_1", "group2/reverb/param_1", "group2/delay/param_1" ],
 			"stafflines" : 			{
 				"1" : [ -1, 1, 3, 5, 7 ],
 				"2" : [ -1, 1, 3, 5, 7 ],
 				"3" : [ 1, 6 ],
-				"4" : [ 1, 6 ]
+				"4" : [ 1, 6 ],
+				"5" : [ 1, 6 ],
+				"6" : [ 1, 6 ]
 			}
 ,
-			"midichannels" : [ 1, 2, 3, 4 ],
-			"numparts" : [ 2, 1, 1 ],
+			"midichannels" : [ 1, 2, 3, 4, 5, 6 ],
+			"numparts" : [ 2, 1, 1, 1, 1 ],
 			"loop" : [ 1774.984899999999925, 3022.175999999999931 ]
 		}
 ,
 		"voices" : 		{
 			"presets" : 			{
 				"1" : 				{
-					"onset" : 600.0,
-					"pitch" : 7500.0,
+					"onset" : 100.0,
+					"pitch" : 7700.0,
 					"duration" : 0.0,
 					"slots" : 					{
 						"slots" : 						{
 							"8" : 							{
 								"presetvalues" : 								{
-									"617d553495670a48de651880" : "617d553bf4ab2c4cc32b09bb",
-									"50" : "cio"
+									"61844a6ffb8f88f7966559c4" : [ "61844a7796824c842d9294fb", "618448f3df22fe5e59539f00", "61844a8f919e1c3a174dbfc8" ],
+									"10" : 									{
+										"ciao" : "mondo",
+										"12" : [ 15, 18 ]
+									}
+
 								}
 
 							}
 ,
-							"9" : "617d553f7322a4a24ef2283d",
+							"9" : "6184620e2b9627a5fd179d15",
 							"11" : "preset",
 							"23" : "blacksquare"
 						}
@@ -679,20 +943,23 @@
 				}
 ,
 				"2" : 				{
-					"onset" : 2200.0,
-					"pitch" : 7800.0,
+					"onset" : 3500.0,
+					"pitch" : 7700.0,
 					"duration" : 0.0,
 					"slots" : 					{
 						"slots" : 						{
 							"8" : 							{
 								"presetvalues" : 								{
-									"617d553495670a48de651880" : "617d553bf4ab2c4cc32b09bb",
-									"500" : 1000
+									"61844a6ffb8f88f7966559c4" : [ "61844a7796824c842d9294fb", "618448f3df22fe5e59539f00", "61844a8f919e1c3a174dbfc8" ],
+									"" : 									{
+
+									}
+
 								}
 
 							}
 ,
-							"9" : "617d5560d90e3e2a7902f9c6",
+							"9" : "618463603de7bfbffc35468c",
 							"11" : "preset",
 							"23" : "blacksquare"
 						}
@@ -705,19 +972,16 @@
 ,
 			"events" : 			{
 				"1" : 				{
-					"onset" : 1200.0,
-					"pitch" : 6800.0,
+					"onset" : 1400.0,
+					"pitch" : 7100.0,
 					"duration" : 0.0,
 					"slots" : 					{
 						"slots" : 						{
 							"8" : 							{
-								"event_params" : 								{
-
-								}
 
 							}
 ,
-							"9" : "617d55717e3611e0295d233b",
+							"9" : "6184628a70bc26efc989560e",
 							"11" : "event",
 							"23" : "blacktriangle"
 						}
@@ -727,150 +991,22 @@
 				}
 ,
 				"2" : 				{
-					"onset" : 1600.0,
-					"pitch" : 6200.0,
+					"onset" : 2500.0,
+					"pitch" : 7100.0,
 					"duration" : 0.0,
 					"slots" : 					{
 						"slots" : 						{
 							"8" : 							{
 								"event_params" : 								{
-
+									"61844a6ffb8f88f7966559c4" : "618448f3df22fe5e59539f00",
+									"group/chorus/param_1" : "group2/reverb/param_1"
 								}
 
 							}
 ,
-							"9" : "617d557a205eabe3bc5dcc74",
+							"9" : "618462fd0f3bc47cf14a93a4",
 							"11" : "event",
 							"23" : "blacktriangle"
-						}
-
-					}
-
-				}
-,
-				"3" : 				{
-					"onset" : 3000.0,
-					"pitch" : 6900.0,
-					"duration" : 0.0,
-					"slots" : 					{
-						"slots" : 						{
-							"8" : 							{
-								"event_params" : 								{
-									"617d553495670a48de651880" : "617d553bf4ab2c4cc32b09bb",
-									"group/ciao/param_1" : "group/ciao/2"
-								}
-
-							}
-,
-							"9" : "617d557e24b80c13ac980ffd",
-							"11" : "event",
-							"23" : "blacktriangle"
-						}
-
-					}
-
-				}
-
-			}
-,
-			"group/ciao/param_1" : 			{
-				"1" : 				{
-					"onset" : 1200.0,
-					"pitch" : 6400.0,
-					"duration" : 1102.0,
-					"slots" : 					{
-						"slots" : 						{
-							"1" : 							{
-								"0.000" : [ 0.116866704887814, 0.0 ],
-								"0.211" : [ 0.530012250211504, 0.0 ],
-								"0.862" : [ 0.323439477549659, 0.0 ]
-							}
-,
-							"9" : "617d55717e3611e0295d233b",
-							"10" : "617d5586aaa58291e7962cb4",
-							"11" : "group/ciao/param_1",
-							"23" : "cross"
-						}
-
-					}
-
-				}
-,
-				"2" : 				{
-					"onset" : 3000.0,
-					"pitch" : 6400.0,
-					"duration" : 1102.0,
-					"slots" : 					{
-						"slots" : 						{
-							"1" : 							{
-								"0.205" : [ 0.248322105672624, 0.0 ],
-								"0.380" : [ 0.961937138504452, 0.0 ],
-								"0.993" : [ 0.360998163488176, 0.0 ],
-								"1.000" : [ 0.924378452565935, 0.0 ]
-							}
-,
-							"9" : "617d557e24b80c13ac980ffd",
-							"10" : "617d559a36322c9f4d5b30c6",
-							"11" : "group/ciao/param_1",
-							"23" : "cross"
-						}
-
-					}
-
-				}
-,
-				"3" : 				{
-					"onset" : 4300.0,
-					"pitch" : 6400.0,
-					"duration" : 1102.0,
-					"slots" : 					{
-						"slots" : 						{
-							"1" : 							{
-								"0.000" : [ 1.0, 0.0 ],
-								"1.000" : [ 0.0, 0.0 ]
-							}
-,
-							"9" : "617d557e24b80c13ac980ffd",
-							"10" : "617d55959593a8df3852e527",
-							"11" : "group/ciao/param_1",
-							"23" : "cross"
-						}
-
-					}
-
-				}
-
-			}
-,
-			"group/ciao/2" : 			{
-				"1" : 				{
-					"onset" : 2900.0,
-					"pitch" : 6400.0,
-					"duration" : 1102.0,
-					"slots" : 					{
-						"slots" : 						{
-							"2" : [ 0.0, 0.0, 1.0, 0.794313195637633, 0.857535422591497, 1.0 ],
-							"9" : "617d557a205eabe3bc5dcc74",
-							"10" : "617d5591313dec1861ad46ad",
-							"11" : "group/ciao/2",
-							"23" : "cross"
-						}
-
-					}
-
-				}
-,
-				"2" : 				{
-					"onset" : 5100.0,
-					"pitch" : 6400.0,
-					"duration" : 1102.0,
-					"slots" : 					{
-						"slots" : 						{
-							"2" : [ 1.0, 0.92075764954536 ],
-							"9" : "617d557e24b80c13ac980ffd",
-							"10" : "617d5598bdd86717a3f2f9b2",
-							"11" : "group/ciao/2",
-							"23" : "cross"
 						}
 
 					}
