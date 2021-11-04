@@ -27,60 +27,6 @@ ul.jqtree-tree li.jqtree_common {
     list-style-type: none;
 }
 
-ul.jqtree-tree .jqtree-element.main {
-    background-color: #eeeeee;
-    color: black;
-}
-
-ul.jqtree-tree .jqtree-element.group {
-    background-color: #eeeeee;
-    color: black;
-    font-style: normal;
-}
-
-ul.jqtree-tree .jqtree-element.device {
-    background-color: #fafafa;
-    color: black;
-}
-
-ul.jqtree-tree .jqtree-element.io,
-ul.jqtree-tree .jqtree-element.parameters {
-    background-color: #cccccc;
-    color: black;
-}
-
-ul.jqtree-tree .jqtree-element.audio,
-ul.jqtree-tree .jqtree-element.video {
-    background-color: #cccccc;
-    color: black;
-}
-
-ul.jqtree-tree .jqtree-element.audio_input,
-ul.jqtree-tree .jqtree-element.audio_output,
-ul.jqtree-tree .jqtree-element.video_input,
-ul.jqtree-tree .jqtree-element.video_output {
-    background-color: #aaaaaa;
-    color: black;
-}
-
-ul.jqtree-tree .jqtree-element.audio_input_value,
-ul.jqtree-tree .jqtree-element.audio_output_value,
-ul.jqtree-tree .jqtree-element.video_input_value,
-ul.jqtree-tree .jqtree-element.video_output_value {
-    background-color: #aaaaaa;
-    color: black;
-}
-
-ul.jqtree-tree .jqtree-element.parameter {
-    background-color: #eeeeee;
-    color: black;
-}
-
-ul.jqtree-tree .jqtree-element.parameter_value {
-    background-color: #eeeeee;
-    color: black;
-}
-
 ul.jqtree-tree .jqtree-toggler {
     border-bottom: none;
     color: #333;
@@ -249,4 +195,58 @@ span.jqtree-dragging {
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+ul.jqtree-tree .jqtree-element.main {
+    background-color: #eeeeee;
+    color: black;
+}
+
+ul.jqtree-tree .jqtree-element.group {
+    background-color: #eeeeee;
+    color: black;
+    font-style: normal;
+}
+
+ul.jqtree-tree .jqtree-element.device {
+    background-color: #fafafa;
+    color: black;
+}
+
+ul.jqtree-tree .jqtree-element.io,
+ul.jqtree-tree .jqtree-element.parameters {
+    background-color: #cccccc;
+    color: black;
+}
+
+ul.jqtree-tree .jqtree-element.audio,
+ul.jqtree-tree .jqtree-element.video {
+    background-color: #cccccc;
+    color: black;
+}
+
+ul.jqtree-tree .jqtree-element.audio_input,
+ul.jqtree-tree .jqtree-element.audio_output,
+ul.jqtree-tree .jqtree-element.video_input,
+ul.jqtree-tree .jqtree-element.video_output {
+    background-color: #777777;
+    color: yellow;
+}
+
+ul.jqtree-tree .jqtree-element.audio_input_value,
+ul.jqtree-tree .jqtree-element.audio_output_value,
+ul.jqtree-tree .jqtree-element.video_input_value,
+ul.jqtree-tree .jqtree-element.video_output_value {
+    background-color: #aaaaaa;
+    color: black;
+}
+
+ul.jqtree-tree .jqtree-element.parameter {
+    background-color: #eeeeee;
+    color: black;
+}
+
+ul.jqtree-tree .jqtree-element.parameter_value {
+    background-color: #eeeeee;
+    color: black;
 }

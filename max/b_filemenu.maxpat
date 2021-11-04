@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
+		"rect" : [ 132.0, 216.0, 1372.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -526,7 +526,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 669.0, 54.0, 30.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 114.0, 32.0, 18.0, 18.0 ]
+					"presentation_rect" : [ 114.0, 32.0, 36.0, 34.0 ]
 				}
 
 			}
@@ -556,7 +556,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 630.0, 54.0, 30.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 78.0, 32.0, 18.0, 18.0 ]
+					"presentation_rect" : [ 78.0, 32.0, 36.0, 34.0 ]
 				}
 
 			}
@@ -586,7 +586,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 588.0, 54.0, 30.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 41.999999940395355, 32.0, 18.0, 18.0 ]
+					"presentation_rect" : [ 41.999999940395355, 32.0, 36.0, 34.0 ]
 				}
 
 			}
@@ -616,7 +616,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 543.0, 54.0, 30.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 32.0, 18.0, 18.0 ]
+					"presentation_rect" : [ 6.0, 32.0, 36.0, 34.0 ]
 				}
 
 			}
@@ -631,7 +631,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 315.0, 30.0, 210.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 54.0, 126.0, 20.0 ],
+					"presentation_rect" : [ 6.0, 68.0, 144.0, 20.0 ],
 					"text" : "NO FILE",
 					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -680,7 +680,7 @@
 					"patching_rect" : [ 669.0, 90.0, 30.0, 30.0 ],
 					"pic" : "INDMEM DMPG3NA1708 SSD:/Users/neum/Documents/meig_system/max//icons/ftfilesaveas.svg",
 					"presentation" : 1,
-					"presentation_rect" : [ 114.0, 32.0, 18.0, 18.0 ]
+					"presentation_rect" : [ 114.0, 32.0, 36.0, 34.0 ]
 				}
 
 			}
@@ -695,7 +695,7 @@
 					"patching_rect" : [ 630.0, 90.0, 30.0, 30.0 ],
 					"pic" : "INDMEM DMPG3NA1708 SSD:/Users/neum/Documents/meig_system/max//icons/ftfilesave.svg",
 					"presentation" : 1,
-					"presentation_rect" : [ 78.0, 32.0, 18.0, 18.0 ]
+					"presentation_rect" : [ 78.0, 32.0, 36.0, 34.0 ]
 				}
 
 			}
@@ -710,7 +710,7 @@
 					"patching_rect" : [ 588.0, 90.0, 30.0, 30.0 ],
 					"pic" : "INDMEM DMPG3NA1708 SSD:/Users/neum/Documents/meig_system/max//icons/ftfolder-documents.svg",
 					"presentation" : 1,
-					"presentation_rect" : [ 41.999999940395355, 32.0, 18.0, 18.0 ]
+					"presentation_rect" : [ 41.999999940395355, 32.0, 36.0, 34.0 ]
 				}
 
 			}
@@ -725,7 +725,7 @@
 					"patching_rect" : [ 543.0, 90.0, 30.0, 30.0 ],
 					"pic" : "INDMEM DMPG3NA1708 SSD:/Users/neum/Documents/meig_system/max//icons/ftark-new.svg",
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 32.0, 18.0, 18.0 ]
+					"presentation_rect" : [ 6.0, 32.0, 36.0, 34.0 ]
 				}
 
 			}
@@ -850,6 +850,14 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.784313725490196, 0.796078431372549, 0.807843137254902, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.784313725490196, 0.796078431372549, 0.807843137254902, 1.0 ],
+					"bgfillcolor_color1" : [ 0.929411764705882, 0.941176470588235, 0.956862745098039, 1.0 ],
+					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "color",
 					"id" : "obj-4",
 					"items" : [ "(File)", ",", "<separator>", ",", "New", ",", "Open", ",", "Save", ",", "Save", "as..." ],
 					"maxclass" : "umenu",
@@ -859,8 +867,9 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 315.0, 135.0, 165.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 6.0, 126.0, 22.0 ],
-					"style" : "default"
+					"presentation_rect" : [ 6.0, 6.0, 144.0, 22.0 ],
+					"style" : "default",
+					"textcolor" : [ 0.207843137254902, 0.207843137254902, 0.207843137254902, 1.0 ]
 				}
 
 			}
@@ -961,7 +970,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1022.0, 37.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 138.5, 78.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 156.0, 96.0 ],
 					"proportion" : 0.5
 				}
 

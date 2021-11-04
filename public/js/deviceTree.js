@@ -6,6 +6,8 @@ import { ctxmenu } from "./context_menus_dt.js";
 const MAIN_URI = "/api/v1";
 const data = entity.INIT_DEVICES;
 let selected_node = undefined;
+let expandCollapse = 1;
+
 const SELECTABLES = [
     "group",
     "device",
