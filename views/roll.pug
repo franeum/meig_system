@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  //link(rel='stylesheet', href="/bootstrap-icons/font/bootstrap-icons.css")
+  //link(rel='stylesheet', href="/bootstrap/dist/css/bootstrap.css")
+
+  link(rel='stylesheet', href="/bootstrap/dist/css/bootstrap.min.css")
+  script(src="/bootstrap/dist/js/bootstrap.bundle.min.js")
+  link(rel='stylesheet', href="/css/jqtree-sections.css")
+  link(rel='stylesheet', href="/css/mymenustyle.css")
+  <script defer src="/@fortawesome/fontawesome-free/js/brands.js"></script>
+  <script defer src="/@fortawesome/fontawesome-free/js/solid.js"></script>
+  <script defer src="/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+
+  //div.container
+    <nav id="navbar_top" class="navbar navbar-expand-sm navbar-light bg-light shadow" style="height: 40px; margin-bottom: 15px">
+      <div class="container align-middle">
+        <a class="navbar-brand display-7">Devices Tree</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#" id="button_expand">Expand</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" id="button_collapse">Collapse</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  <ul class="nav bg-light shadow">
+    <li class="nav-item">
+      <a class="nav-link disabled display-6" aria-current="page">Roll Timeline</a>
+    </li>
+  </ul>
+
+  body(id="whole_doc" class='container')  
+    //div(id="tree1")

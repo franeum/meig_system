@@ -7,6 +7,7 @@
 var app = require("../app");
 var debug = require("debug")("meig-system:server");
 var http = require("http");
+const Max = require("max-api");
 
 /**
  * Get port from environment and store in Express.
@@ -25,7 +26,14 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+server.listen(
+    port,
+    setTimeout(() => {
+        Max.post("CONNECTED");
+        Max.outlet("get_roll_decorator", "bang");
+        Max.outlet("get_file_menu_decorator", "bang");
+    }, 2000)
+);
 server.on("error", onError);
 server.on("listening", onListening);
 

@@ -62,6 +62,22 @@ function get_devices() {
     devices.message("url", uri);
 }
 
+function get_roll_decorator() {
+    // url http://127.0.0.1:3000/api/v1/roll
+    var uri = MAIN_URL + "view/roll";
+    var p = this.patcher.getnamed("roll-timeline-decorator");
+
+    p.message("url", uri);
+}
+
+function get_file_menu_decorator() {
+    // url http://127.0.0.1:3000/api/v1/filemenu
+    var uri = MAIN_URL + "view/filemenu";
+    var p = this.patcher.getnamed("file-menu-decorator");
+
+    p.message("url", uri);
+}
+
 function anything() {
     var pure = arrayfromargs(messagename, arguments);
     turn(0);
