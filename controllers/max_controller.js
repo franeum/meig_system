@@ -200,4 +200,16 @@ Max.addHandler("get_cross", () => {
     Max.post("NOT YET IMPLEMENTED");
 });
 
+const prom = new Promise((resolve, reject) => {
+    resolve();
+});
+
+Max.addHandler("mia_promessa", (x) => {
+    prom.then(() => {
+        Max.post(random_id());
+    }).then(() => {
+        Max.post("post");
+    });
+});
+
 module.exports = Max;

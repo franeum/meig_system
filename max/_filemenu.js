@@ -110,7 +110,7 @@ function fileNew(p_name) {
     object_sendmessage("nameproject_display", "textcolor", [0, 0, 0, 1]);
     object_setvalue("nameproject_display", fileName);
     //outlet(0, "bang");
-    messnamed("ctrl-roll", "clear");
+    messnamed("ctrl-roll", "clear, numvoices 2");
     openDevicesTree();
 }
 
@@ -118,13 +118,14 @@ function fileOpen(filename) {
     filePath = filename.toString();
     fileName = getFilename(filePath);
 
-    var source = new Dict();
+    var source = new Dict("stocazzo");
     source.import_json(filePath);
 
     for (var i = 0; i < dicts.length; i++) {
         var key = dicts[i];
         var content = source.get(key);
         var d = new Dict(key);
+        d.clear();
         d.set(key, content);
     }
 

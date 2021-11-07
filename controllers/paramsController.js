@@ -9,22 +9,24 @@ const tree = new TreeModel();
  ************************************************************/
 
 exports.get_page = (req, res) => {
-    const { id } = req.query;
+    const { id, label } = req.query;
     Max.getDict("parameters_list")
         .then((d) => {
             const data = d.parameters_list;
             if (!data[id]) {
                 Max.updateDict("parameters_list", `parameters_list[${id}]`, {})
                     .then(() => {
-                        res.render("params", { id: id });
+                        res.render("params", { id: id, label: label });
                     })
                     .catch((err) => {
                         res.json(err);
                     });
-            } else res.render("params", { id: id });
+            } else res.render("params", { id: id, label: label });
         })
         .catch((err) => {
-            res.json(err);
+            res.json({
+                error_code: "errore sul caricamento della preset page",
+            });
         });
 };
 

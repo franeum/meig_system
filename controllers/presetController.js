@@ -10,11 +10,12 @@ const utils = require("./utils");
 
 exports.get_preset = (req, res) => {
     Max.post(req.query);
-    const { id, onset } = req.query;
+    const { id, onset, label } = req.query;
 
     res.render("presets", {
         id: id,
         onset: onset,
+        label: label,
     });
 };
 
@@ -91,11 +92,12 @@ const remove_parameter_container = (node) => {
 
 exports.post_preset = (req, res) => {
     console.log(req.body);
-    const { presets, id, onset } = req.body;
+    const { presets, id, onset, label } = req.body;
 
     Max.updateDict("presets", `presets[${id}]`, {
         presets: JSON.parse(presets),
         onset: parseFloat(onset),
+        label: label,
     })
         .then(() => {
             const p_sets = JSON.parse(presets);

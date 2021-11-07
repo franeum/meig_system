@@ -28,7 +28,18 @@ function get_preset() {
     var pure = arrayfromargs(messagename, arguments);
     var _id = pure[1];
     var _onset = pure[2];
-    var uri = MAIN_URL + "preset/tree?id=" + _id + "&onset=" + _onset;
+    var label = "preset";
+
+    if (pure[3]) label = pure[3];
+
+    var uri =
+        MAIN_URL +
+        "preset/tree?id=" +
+        _id +
+        "&onset=" +
+        _onset +
+        "&label=" +
+        label;
     var presets = obj[1];
 
     turn(2);
@@ -38,12 +49,25 @@ function get_preset() {
 
 function get_event() {
     // url http://127.0.0.1:3000/api/v1/params/tree?id=%s
+
     var pure = arrayfromargs(messagename, arguments);
-    var _id = pure[1];
-    var uri = MAIN_URL + "params/tree?id=" + _id;
+
+    if (pure[1]) var _id = pure[1];
+    else var _id = random_id();
+
+    if (pure[2]) var _label = pure[2];
+    else var _label = "event";
+
+    var uri = MAIN_URL + "params/tree?id=" + _id + "&label=" + _label;
     var params = obj[2];
 
+    //post(uri);
+
     turn(3);
+    messnamed("fromnode", ["randomID", _id]);
+
+    //var sender = this.patcher.getnamed("send-from-node");
+    //sender.message("randomID", _id);
     params.message("url", uri);
 }
 
@@ -80,5 +104,22 @@ function anything() {
 
 function loadbang() {
     get_objects();
-    messnamed("ctrl-roll", "clear");
+    // questo messaggio invia un bang al roll per làinizializzazione
+    messnamed("ctrl-roll", "bang"); // FIXED
+}
+
+/****************************************************************
+ * random id generator
+ ****************************************************************/
+
+function random_id() {
+    var timestamp = ((new Date().getTime() / 1000) | 0).toString(16);
+    var value =
+        timestamp +
+        "xxxxxxxxxxxxxxxx"
+            .replace(/[x]/g, function () {
+                return ((Math.random() * 16) | 0).toString(16);
+            })
+            .toLowerCase();
+    return value;
 }

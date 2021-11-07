@@ -80,6 +80,7 @@ const send_data = () => {
     const preset_values = {};
     const id = $("#preset_id").text();
     const onset = parseInt($("#onset").text());
+    const label = $("#labelName").text();
 
     $(".pathid").each((index, item) => {
         console.log(item);
@@ -99,6 +100,7 @@ const send_data = () => {
             presets: JSON.stringify(preset_values),
             id: id,
             onset: onset,
+            label: label,
         },
     });
 };

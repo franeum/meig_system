@@ -1,0 +1,872 @@
+{
+	"metadata" : 	{
+		"filePath" : "INDMEM DMPG3NA1708 SSD:/Users/neum/Documents/meig_system/max/tastoma02.json",
+		"fileName" : "tastoma02.json",
+		"created_at" : "Sat Nov 06 2021 18:04:23 GMT+0100 (CET)"
+	}
+,
+	"devices" : 	{
+		"name" : "devices",
+		"id" : "6186b5a6bd21c4ae12311737",
+		"type" : "main",
+		"is_open" : 1,
+		"children" : [ 			{
+				"name" : "group",
+				"type" : "group",
+				"id" : "6186b5a6e25c09977cc55182",
+				"is_open" : 1,
+				"children" : [ 					{
+						"name" : "reverb",
+						"id" : "6186b5b9e4f72705f322c398",
+						"type" : "device",
+						"is_open" : 1,
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "6186b5b998be1a239fb7b67b",
+								"type" : "io",
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "6186b5b908bd69fc67926150",
+										"type" : "audio",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "6186b5b905f48a952042aacc",
+												"type" : "audio_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6186b5b99a3b5320cbd97b40",
+														"type" : "audio_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "6186b5b9cd2df0653626c110",
+												"type" : "audio_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6186b5b90dc23a05a71b389d",
+														"type" : "audio_output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "6186b5b917cd99f56ae5c18e",
+										"type" : "video",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "6186b5b97c20578b51c9cc35",
+												"type" : "video_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6186b5b99fc8ae2de181e314",
+														"type" : "video_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "6186b5b97ad00e090b2fab48",
+												"type" : "video_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6186b5b95d9db8e4a63c876a",
+														"type" : "video_output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "6186b5b95c1caa63fe50dca8",
+								"type" : "parameters",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "6186b5b91179dddb545dd115",
+										"type" : "parameter"
+									}
+ ]
+							}
+ ]
+					}
+, 					{
+						"name" : "delay",
+						"id" : "6186b5c17f7954127cb1e6ab",
+						"type" : "device",
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "6186b5c180c5642f1979361c",
+								"type" : "io",
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "6186b5c14e6c49235b9f7b8c",
+										"type" : "audio",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "6186b5c129a5eb84f211ddc3",
+												"type" : "audio_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6186b5c192288f57065890df",
+														"type" : "audio_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "6186b5c10c029a7658a180ec",
+												"type" : "audio_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6186b5c12e7fc10d6d126baa",
+														"type" : "audio_output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "6186b5c18ad9b15dec7a95c3",
+										"type" : "video",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "6186b5c1b69edc0781ca5fea",
+												"type" : "video_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6186b5c12134960d251d4282",
+														"type" : "video_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "6186b5c1bfe142989f82a34e",
+												"type" : "video_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6186b5c1c119c5a2a2fb90e1",
+														"type" : "video_output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "6186b5c11f9286175ef2d41a",
+								"type" : "parameters",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "6186b5c169dc480179985a38",
+										"type" : "parameter"
+									}
+ ]
+							}
+ ]
+					}
+ ]
+			}
+, 			{
+				"name" : "group2",
+				"id" : "6186b5c743a55f5a72d8b9f4",
+				"type" : "group",
+				"children" : [ 					{
+						"name" : "chorus",
+						"id" : "6186b5ccf05797b721e74160",
+						"type" : "device",
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "6186b5cc572d442cc767093b",
+								"type" : "io",
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "6186b5cc966c75673edb743c",
+										"type" : "audio",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "6186b5cc3e064e35af0b1c2d",
+												"type" : "audio_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6186b5cc934336d35a9d648b",
+														"type" : "audio_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "6186b5ccc2e23de94cbf4670",
+												"type" : "audio_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6186b5cc2fb1f9a748ee683a",
+														"type" : "audio_output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "6186b5cc004773711a40d3ca",
+										"type" : "video",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "6186b5ccf653ade3c3bef272",
+												"type" : "video_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6186b5cc9bf355db44d1fb94",
+														"type" : "video_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "6186b5cc21d0fc3c4859dae1",
+												"type" : "video_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "6186b5ccca9e95f0bccda1a6",
+														"type" : "video_output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "6186b5cc2807137e57e9a357",
+								"type" : "parameters",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "6186b5cc70ac67005a283b03",
+										"type" : "parameter"
+									}
+ ]
+							}
+ ]
+					}
+ ]
+			}
+ ]
+	}
+,
+	"parameters_list" : 	{
+		"6186b7502a39de4d499f95a1" : 		{
+
+		}
+
+	}
+,
+	"presets" : 	{
+		"6186b5e35470e065de8ba7e5" : 		{
+			"presets" : 			{
+				"6186b5b91179dddb545dd115" : 				{
+					"value" : "10",
+					"name" : "param_1"
+				}
+,
+				"6186b5c169dc480179985a38" : 				{
+					"value" : "20",
+					"name" : "param_1"
+				}
+,
+				"6186b5cc70ac67005a283b03" : 				{
+					"value" : "30",
+					"name" : "param_1"
+				}
+
+			}
+,
+			"onset" : 500
+		}
+,
+		"6186b6a4b295c48c8542a6d6" : 		{
+			"presets" : 			{
+				"6186b5b91179dddb545dd115" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"6186b5c169dc480179985a38" : 				{
+					"value" : "12",
+					"name" : "param_1"
+				}
+,
+				"6186b5cc70ac67005a283b03" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+
+			}
+,
+			"onset" : 1700,
+			"label" : "preset"
+		}
+,
+		"6186b77e135d304bda786179" : 		{
+			"presets" : 			{
+				"6186b5b91179dddb545dd115" : 				{
+					"value" : "5",
+					"name" : "param_1"
+				}
+,
+				"6186b5c169dc480179985a38" : 				{
+					"value" : "15",
+					"name" : "param_1"
+				}
+,
+				"6186b5cc70ac67005a283b03" : 				{
+					"value" : "25",
+					"name" : "param_1"
+				}
+
+			}
+,
+			"onset" : 1500,
+			"label" : "preset"
+		}
+,
+		"6186b795809b887c26ba08bc" : 		{
+			"presets" : 			{
+				"6186b5b91179dddb545dd115" : 				{
+					"value" : "1",
+					"name" : "param_1"
+				}
+,
+				"6186b5c169dc480179985a38" : 				{
+					"value" : "\"ciao mondo\"",
+					"name" : "param_1"
+				}
+,
+				"6186b5cc70ac67005a283b03" : 				{
+					"value" : "12",
+					"name" : "param_1"
+				}
+
+			}
+,
+			"onset" : 2700,
+			"label" : "preset"
+		}
+
+	}
+,
+	"paths" : 	{
+		"6186b5b91179dddb545dd115" : "group/reverb/param_1",
+		"6186b5c169dc480179985a38" : "group/delay/param_1",
+		"6186b5cc70ac67005a283b03" : "group2/chorus/param_1"
+	}
+,
+	"meigroll" : 	{
+		"header" : 		{
+			"slotinfo" : 			{
+				"1" : 				{
+					"name" : "envelope",
+					"type" : "function",
+					"key" : "f",
+					"range" : [ 0.0, 1.0 ],
+					"slope" : 0.0,
+					"domain" : [ 0.0, 1.0 ],
+					"domainslope" : 0.0,
+					"temporalmode" : "relative",
+					"extend" : 0,
+					"width" : "duration",
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"2" : 				{
+					"name" : "start",
+					"type" : "floatlist",
+					"key" : "s",
+					"range" : [ 0.0, 1.0 ],
+					"slope" : 0.0,
+					"color" : [ 0.0213, 0.0213, 0.0231, 1.0 ],
+					"default" : 0.0,
+					"temporalmode" : "relative",
+					"extend" : 0,
+					"width" : 150.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"3" : 				{
+					"name" : "destination",
+					"type" : "floatlist",
+					"key" : "d",
+					"range" : [ 0.0, 1.0 ],
+					"slope" : 0.0,
+					"color" : [ 0.6241, 0.637, 0.3704, 1.0 ],
+					"default" : 0.0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"4" : 				{
+					"name" : "start",
+					"type" : "intlist",
+					"key" : "S",
+					"range" : [ 0.0, 127.0 ],
+					"slope" : 0.0,
+					"color" : [ 0.089, 0.0849, 0.0758, 1.0 ],
+					"default" : 0.0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"5" : 				{
+					"name" : "destination",
+					"type" : "intlist",
+					"key" : "D",
+					"range" : [ 0.0, 127.0 ],
+					"slope" : 0.0,
+					"color" : [ 0.546, 0.5561, 0.3475, 1.0 ],
+					"default" : 1.0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"6" : 				{
+					"name" : "text",
+					"type" : "text",
+					"key" : "t",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 150.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"7" : 				{
+					"name" : "filelist",
+					"type" : "filelist",
+					"key" : "f",
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 150.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"8" : 				{
+					"name" : "event",
+					"type" : "llll",
+					"key" : "y",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 228.337678000000011,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"9" : 				{
+					"name" : "id",
+					"type" : "text",
+					"key" : "I",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 150.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"10" : 				{
+					"name" : "id",
+					"type" : "text",
+					"key" : "i",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"11" : 				{
+					"name" : "Label",
+					"type" : "text",
+					"key" : "l",
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"12" : 				{
+					"name" : "Comments",
+					"type" : "text",
+					"key" : "c",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"13" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"14" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"15" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"16" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"17" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"18" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"19" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"20" : 				{
+					"name" : "dynamics",
+					"type" : "none",
+					"key" : "d",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 110.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"21" : 				{
+					"name" : "lyrics",
+					"type" : "none",
+					"key" : "l",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"22" : 				{
+					"name" : "articulations",
+					"type" : "none",
+					"key" : "-",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 110.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"23" : 				{
+					"name" : "notehead",
+					"type" : "notehead",
+					"key" : "h",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 110.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"24" : 				{
+					"name" : "annotation",
+					"type" : "none",
+					"key" : "t",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"25" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"26" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"27" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"28" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"29" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"30" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+
+			}
+,
+			"commands" : 			{
+				"1" : 				{
+					"note" : "note",
+					"chord" : "chord",
+					"rest" : "rest",
+					"key" : 0
+				}
+,
+				"2" : 				{
+					"note" : "note",
+					"chord" : "chord",
+					"rest" : "rest",
+					"key" : 0
+				}
+,
+				"3" : 				{
+					"note" : "note",
+					"chord" : "chord",
+					"rest" : "rest",
+					"key" : 0
+				}
+,
+				"4" : 				{
+					"note" : "note",
+					"chord" : "chord",
+					"rest" : "rest",
+					"key" : 0
+				}
+,
+				"5" : 				{
+					"note" : "note",
+					"chord" : "chord",
+					"rest" : "rest",
+					"key" : 0
+				}
+
+			}
+,
+			"clefs" : [ "None", "None", "None", "None", "None" ],
+			"keys" : [ "CM", "CM", "CM", "CM", "CM" ],
+			"voicenames" : [ "presets", "events", "group/reverb/param_1", "group/delay/param_1", "group2/chorus/param_1" ],
+			"stafflines" : 			{
+				"1" : [ -1, 1, 3, 5, 7 ],
+				"2" : [ -1, 1, 3, 5, 7 ],
+				"3" : [ 1, 6 ],
+				"4" : [ 1, 6 ],
+				"5" : [ 1, 6 ]
+			}
+,
+			"midichannels" : [ 1, 2, 3, 4, 5 ],
+			"numparts" : [ 1, 1, 1, 1, 1 ],
+			"loop" : [ 1774.984899999999925, 3022.175999999999931 ]
+		}
+,
+		"voices" : 		{
+			"events" : 			{
+				"1" : 				{
+					"onset" : 400.0,
+					"pitch" : 7700.0,
+					"duration" : 0.0,
+					"slots" : 					{
+						"slots" : 						{
+							"8" : 							{
+
+							}
+,
+							"9" : "6186b7509ebb811a836b5116",
+							"11" : "event",
+							"23" : "blacktriangle"
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

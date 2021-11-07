@@ -100,10 +100,13 @@ const get_selected = () => {
         url: MAIN_URI + "/params/selected?id=" + _id,
         dataType: "json",
         success: (res) => {
-            res.forEach((n) => {
-                const node = $("#tree1").tree("getNodeById", n.id);
-                $("#tree1").tree("addToSelection", node, false);
-            });
+            console.log(res.length);
+            if (res.length) {
+                res.forEach((n) => {
+                    const node = $("#tree1").tree("getNodeById", n.id);
+                    $("#tree1").tree("addToSelection", node, false);
+                });
+            } else console.log("new preset created");
         },
     });
 };
