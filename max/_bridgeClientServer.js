@@ -61,13 +61,11 @@ function get_event() {
     var uri = MAIN_URL + "params/tree?id=" + _id + "&label=" + _label;
     var params = obj[2];
 
-    //post(uri);
+    post(uri);
+    post("\n");
 
     turn(3);
     messnamed("fromnode", ["randomID", _id]);
-
-    //var sender = this.patcher.getnamed("send-from-node");
-    //sender.message("randomID", _id);
     params.message("url", uri);
 }
 

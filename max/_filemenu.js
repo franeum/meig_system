@@ -161,11 +161,3 @@ function reset() {
 }
 
 reset();
-/*
-reset();
-
-function reset() {
-    object_sendmessage("nameproject_display", "textcolor", [1, 0, 0, 1]);
-    object_setvalue("nameproject_display", "NO PROJECT");
-}
-*/
