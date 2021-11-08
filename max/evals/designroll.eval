@@ -1,0 +1,152 @@
+
+$paramslist = wrap($x1).'paramslist';					### paramslist received fromnode, edited with devices_tree_ui
+														### formatted as: paramslist [ list of params IDs ] [ list of params label with path)
+														### ex: paramslist [ 617d3b70ab50c8dc4800eece 617d3d0343cca80bd3a6239b ] [ group/_device/1 group/_device/2 ]
+														## print($paramslist, "paramslist fromNODE = ");
+
+$dumpedroll =  $x2;
+														### fullroll LLLL received from bach.roll after dumping it
+
+
+if $past = 'null' then unkeep $past = $paramslist:1;
+														## print($past, "past, paramsIDs received before = ");
+		$present =
+				if
+					$paramslist:1 != $past
+				then
+					for
+						$x in flat($paramslist:1)
+					collect
+						wrap($x)
+				else
+					$past;
+														## print($present, "present, current paramsIDs = ");
+###############
+														### comparing paramsIDs lists (common and different elements)
+			$cmmn_addrs =
+				wrap(
+					for
+						$x in $present
+					collect
+						flat(findaddrs($past, $x))
+					);
+
+			$diff_addrs =
+				flat(
+					for
+						$x in diff($present, $past) with @maxdepth 1
+					collect
+						findaddrs($present, $x)
+					);
+
+
+
+#################
+
+			$past_len = 0-length($past);
+			$present_len = length($present);
+			$pastMINUSpresent = $past_len + $present_len;
+
+################
+														## keep past for next evaluation
+if $paramslist:1 != $past then unkeep $past;
+init $past = for
+				$x in flat($paramslist:1)
+					collect
+						wrap($x);
+keep $past;
+
+
+
+#####
+
+
+
+###############################################	
+											   #### create full roll with new voices
+###############################################
+	
+############	
+			$voices_past = right($dumpedroll, $past_len);
+
+############
+			$voices_cmmn = nth($voices_past, $cmmn_addrs);
+############
+			$voices_present =
+				if
+					$pastMINUSpresent == 0
+				&&
+					diff_addrs != null
+				then
+					$voices_cmmn
+				else
+					subs(
+						$ins = insert(
+							$voices_cmmn, $diff_addrs, 0, $diff_addrs, 1234567890
+						), findaddrs($ins, 1234567890), wrap(wrap(0)), 1, 1);
+##########
+
+																	### there's a bach.BUG in eval_function insert (so i was troggling it with subs)
+
+
+
+############
+			$fullROLL = left($dumpedroll, $past_len) $voices_present;
+############
+
+#### MESSAGES FOR ROLL:
+
+			$numvoices = wrap("numvoices" 2+length(flat($present)));
+			$voicespacing = wrap("voicespacing" 50 50 50 8:*length(flat($present)));
+			$numparts = wrap("numparts" 2 1:*length((flat($present)));
+			$stafflines = wrap("stafflines" wrap(-1 1 3 5 7) wrap(-1 1 3 5 7) wrap(1 6) :* length(flat($present)));
+			$voicenames = wrap("voicenames" "presets" "events" flat($paramslist:2))) ;
+
+	$all = wrap($fullROLL) $numvoices $voicespacing $stafflines $numparts ;
+
+
+
+if $x1:1 == 'paramslist' then
+	for
+				$l in $all with @maxdepth 1
+			do
+				directout(1, flat($l @maxlevel 1))
+;
+
+
+
+
+
+
+
+
+
+
+#############################################################################################################
+################################################									VIEW ALL VOICES Toggle
+#############################################################################################################
+
+
+############								
+			$viewallvoices = wrap($x1).'viewallvoices';
+		##	 print($viewallvoices, "viewallvoices = ")
+
+################################################
+
+############
+			directout(1,
+				if
+					$viewallvoices == 1
+			##	||
+			##		$viewallvoices == null
+				then
+					"hidevoices" 0 0 0:* length($dumpedroll.'voicenames') - 2
+				else
+				if 
+					$viewallvoices == 0
+				then
+					"hidevoices" 0 0 1:* length($dumpedroll.'voicenames') - 2
+			);
+############
+			if $viewallvoices == null then directout(2, 'set' 1)
+############

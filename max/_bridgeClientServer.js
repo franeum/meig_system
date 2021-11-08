@@ -65,6 +65,7 @@ function get_event() {
     post("\n");
 
     turn(3);
+
     messnamed("fromnode", ["randomID", _id]);
     params.message("url", uri);
 }

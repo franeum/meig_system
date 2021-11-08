@@ -134,6 +134,7 @@ function fileOpen(filename) {
     //fileName = projectName.get("fileName");
     object_sendmessage("nameproject_display", "textcolor", [0, 0, 0, 1]);
     object_setvalue("nameproject_display", fileName);
+    messnamed("parse-roll", "bang");
     openDevicesTree();
 }
 

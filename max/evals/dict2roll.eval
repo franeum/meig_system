@@ -1,0 +1,60 @@
+##$voices = right($x2, 0 - length($x2.'voicenames'));
+										##			print($voices, "voices-dump = ")
+
+$sl = 
+wrap('stafflines'
+for $x in $x1.'meigroll'.'header'.'stafflines'
+collect wrap(right(flat($x), 1)));
+
+
+$voicedict = for $x in $x1.'meigroll'.'voices' collect wrap(right(flat($x, @maxlevel 1), 1));	
+			##	print($voicedict, "voicedict = ")
+
+$voicedict_thin = thin(for $x in $voicedict with @maxdepth 2 collect $x )
+
+
+
+$rollfromdict =
+				'roll'
+
+				subs($x1.'meigroll'.'header', 6, $sl);
+
+
+
+
+
+
+directout(1, 
+		$rollfromdict
+		
+	left(
+		for $y in 
+			group(
+				for $x in
+						$voicedict_thin
+ 						
+
+		collect
+				wrap(
+					flat($x, @maxlevel 1).'onset'
+				wrap(
+					flat($x, @maxlevel 1).'pitch'
+					flat($x, @maxlevel 1).'duration' 1
+					flat($x, @maxlevel 1).'slots'
+					wrap( 'name' flat($x, @maxlevel 1).'slots'.'slots'.'9')	0 )
+ 					wrap( 'name' flat($x, @maxlevel 1).'slots'.'slots'.'10') 0 )
+
+			,
+
+				for $x in $voicedict
+				collect
+				length(flat($x, @maxlevel 1))
+			)
+
+		collect
+		wrap(flat($y, @maxlevel 1) 0)
+
+	, length($voicedict) 
+	)
+
+) 
