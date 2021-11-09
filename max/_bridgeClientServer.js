@@ -52,11 +52,14 @@ function get_event() {
 
     var pure = arrayfromargs(messagename, arguments);
 
-    if (pure[1]) var _id = pure[1];
-    else var _id = random_id();
+    //if (pure[1]) var _id = pure[1];
+    //else var _id = random_id();
 
-    if (pure[2]) var _label = pure[2];
-    else var _label = "event";
+    var _id = pure[1];
+    var _label = pure[2];
+
+    //if (pure[2]) var _label = pure[2];
+    //else var _label = "event";
 
     var uri = MAIN_URL + "params/tree?id=" + _id + "&label=" + _label;
     var params = obj[2];
@@ -66,7 +69,7 @@ function get_event() {
 
     turn(3);
 
-    messnamed("fromnode", ["randomID", _id]);
+    //messnamed("fromnode", ["randomID", _id]);
     params.message("url", uri);
 }
 
