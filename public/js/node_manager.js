@@ -14,7 +14,7 @@ const add_node = (node) => {
             name = prompt("Group name", "_group");
             if (name) {
                 name = name.replace(" ", "_").toLocaleLowerCase();
-                entity.create_group(name);
+                func = entity.create_group;
             }
             break;
         case "group":

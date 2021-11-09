@@ -26,10 +26,7 @@ exports.init_devices = [
     },
 ];
 
-const devices_menu = [
-    "devices",
-    [["add Group", "fas fa-level-down-alt", "#addChild"]],
-];
+const devices_menu = ["devices", [["add Group", "fas fa-plus", "#addChild"]]];
 
 const group_menu = [
     "group",
