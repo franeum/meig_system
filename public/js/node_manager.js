@@ -81,8 +81,10 @@ const add_node_sibling = (node, where) => {
 
 const node_rename = (node) => {
     let name = prompt(`Rename ${node.type}`, node.name);
-    name = name.replace(" ", "_").toLocaleLowerCase();
-    $("#tree1").tree("updateNode", node, name);
+    if (name) {
+        name = name.replace(" ", "_").toLocaleLowerCase();
+        $("#tree1").tree("updateNode", node, name);
+    }
 };
 
 const node_remove = (node) => {
