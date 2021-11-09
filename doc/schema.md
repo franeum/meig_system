@@ -25,7 +25,7 @@ Ogni nodo è identificato da un _id_ univoco nel sistema, quindi può essere mod
             "id":"id": "0000abcd5678asdf",
             "type": "group",
             "children": [
-                ...
+                //...
             ]
         },
         {
@@ -33,7 +33,7 @@ Ogni nodo è identificato da un _id_ univoco nel sistema, quindi può essere mod
             "id": "2222sdas12312yrue333",
             "type": "group",
             "children": [
-                ...
+                //...
             ]
         }
     ]
@@ -53,13 +53,13 @@ La struttura ricorsiva di ogni nodo permette di rendere alcuni _types_ innestabi
             "id":"id": "0000abcd5678asdf",
             "type": "group",
             "children": [
-                ...
+                //...
             ]
         }
     ]
 }
 ```
 
-Tali strutture dati vengono gestite sia lato client che lato server con delle rappresentazioni parallele, come si vede in figura il pacchetto javascript **jqtree** si occupa di gestire l'albero lato client, mentre dall'altra parte il pachetto **tree-model** gestisce gli alberi lato server.
+Tali strutture dati vengono gestite sia lato client che lato server con delle rappresentazioni parallele, come si vede in figura il pacchetto javascript **jqtree** si occupa di gestire l'albero lato client, mentre il pachetto **tree-model** gestisce gli alberi lato server.
 
 ![](gestione_albero.png)

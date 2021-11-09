@@ -110,7 +110,7 @@ function fileNew(p_name) {
     object_sendmessage("nameproject_display", "textcolor", [0, 0, 0, 1]);
     object_setvalue("nameproject_display", fileName);
     //outlet(0, "bang");
-    messnamed("ctrl-roll", "clear, numvoices 2");
+    messnamed("ctrl-roll", "bang");
     openDevicesTree();
 }
 
@@ -134,6 +134,7 @@ function fileOpen(filename) {
     //fileName = projectName.get("fileName");
     object_sendmessage("nameproject_display", "textcolor", [0, 0, 0, 1]);
     object_setvalue("nameproject_display", fileName);
+    messnamed("ctrl-roll", "bang");
     messnamed("parse-roll", "bang");
     openDevicesTree();
 }
