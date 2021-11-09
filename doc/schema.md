@@ -27,7 +27,7 @@ Ogni nodo è identificato da un _id_ univoco nel sistema, quindi può essere mod
             "id":"id": "0000abcd5678asdf",
             "type": "group",
             "children": [
-                //...
+                {"...":"..."}
             ]
         },
         {
@@ -35,7 +35,7 @@ Ogni nodo è identificato da un _id_ univoco nel sistema, quindi può essere mod
             "id": "2222sdas12312yrue333",
             "type": "group",
             "children": [
-                //...
+                {"...":"..."}
             ]
         }
     ]
@@ -55,7 +55,7 @@ La struttura ricorsiva di ogni nodo permette di rendere alcuni _types_ innestabi
             "id":"id": "0000abcd5678asdf",
             "type": "group",
             "children": [
-                //...
+                {"...":"..."}
             ]
         }
     ]
@@ -75,3 +75,5 @@ Allo stato attuale del progetto, l'entità che rappresenta l'albero dei _Devices
 Dall'albero dei _Devices_ derivano le altre due strutture, _Preset_ ed _Event_, che permettono, rispettivamente, di impostare i valori di tutti i parametri in un preset e di scegliere quali parametri utilizzare all'interno di un event. Graficamente il _Preset Tree_ è composto da una vista ad albero con tutti i parametri provvisti di un _form_ in cui inserire il valore (_Number_, _String_ o _Array_). L'_Event Tree_ invece è un mero elenco di tutti i parametri, con la possiblità di selezionare quelli interessati.
 
 ![](devicesTree.png)
+![](presetTree.png)
+![](eventTree.png)
