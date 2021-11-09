@@ -64,6 +64,7 @@ $("#tree1").on("tree.click", (e) => {
 });
 
 const send_data = () => {
+    /*
     const root = $("#tree1").tree("toJson");
     const _id = $("#id_container").text();
 
@@ -72,6 +73,19 @@ const send_data = () => {
         dataType: "json",
         data: {
             devices: root,
+            container_id: _id,
+        },
+    });
+    */
+    const node = $("#tree1").tree("getState");
+    const _id = $("#id_container").text();
+    //console.log(JSON.stringify(node.selected_node));
+
+    $.post({
+        url: MAIN_URI + "/params/list",
+        dataType: "json",
+        data: {
+            devices: JSON.stringify(node.selected_node),
             container_id: _id,
         },
     });

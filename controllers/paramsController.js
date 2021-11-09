@@ -85,6 +85,7 @@ const remove_parameter_container = (node) => {
  ************************************************************/
 
 exports.post_list = (req, res) => {
+    /*
     const parsed = JSON.parse(req.body.devices);
     const root = tree.parse(parsed[0]);
     const id = req.body.container_id;
@@ -95,8 +96,6 @@ exports.post_list = (req, res) => {
     });
 
     const nodes = utils.findAllByType(root, "parameter");
-    //const filtered = ["event_params", "event_params"];
-
     const filtered = [];
 
     nodes.forEach((n) => {
@@ -108,6 +107,18 @@ exports.post_list = (req, res) => {
     });
 
     Max.post(filtered.slice(2));
+    */
+
+    const parsed = JSON.parse(req.body.devices);
+    const id = req.body.container_id;
+    const filtered = [];
+
+    Max.getDict("paths").then((data) => {
+        const paths = data.paths;
+        parsed.forEach((p) => {
+            filtered.push({ id: p, path: paths[p] });
+        });
+    });
 
     Max.updateDict("parameters_list", `parameters_list[${id}]`, filtered)
         .then(() => {
