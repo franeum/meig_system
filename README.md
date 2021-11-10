@@ -34,4 +34,6 @@ meig_system/max/
 
 avviare il server node dalla patch premendo sul messaggio `script start`
 
+Video di istruzioni:
+
 [link](https://drive.google.com/file/d/1PgOnjERTsHSIEqLuLAc2L2ovUr3k-bK9/view?usp=drive_web)
