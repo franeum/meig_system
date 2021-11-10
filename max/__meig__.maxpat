@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 752.0, 74.0, 29.5, 22.0 ],
+					"patching_rect" : [ 305.468902786572471, 339.0, 29.5, 22.0 ],
 					"text" : "!- 1"
 				}
 
@@ -56,7 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 481.0, 100.0, 150.0, 20.0 ],
+					"patching_rect" : [ 616.0, 25.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 434.0, 105.0, 45.0, 33.0 ],
@@ -72,26 +72,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 855.0, 30.0, 24.0, 24.0 ],
+					"patching_rect" : [ 305.468902786572471, 299.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 390.0, 96.0, 44.0, 44.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-74",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 855.0, 90.0, 101.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"filename" : "_server_size.js",
-						"parameter_enable" : 0
-					}
-,
-					"text" : "js _server_size.js"
 				}
 
 			}
@@ -132,18 +115,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-79",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 385.0, 954.0, 149.0, 22.0 ],
-					"text" : "prepend presentation_rect"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-72",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -163,19 +134,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 690.0, 135.0, 99.0, 22.0 ],
 					"text" : "238 435 400 220"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-33",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 519.0, 982.0, 67.0, 22.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
-					"text" : "thispatcher"
 				}
 
 			}
@@ -294,7 +252,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 90.0, 420.0, 315.0, 127.0 ],
+									"patching_rect" : [ 90.0, 420.0, 316.0, 127.0 ],
 									"text" : "(3.4) Creazione di un Event: premere 'e' e posizionare sulla timeline l'event con cmd+click (ctrl+click). \n\n(3.5) Fare doppio click sull'icona dell'event (sul roll) per aprire l'interfaccia che permette di selezionare i parametri da usare nell'event\n\n(3.6) Premere Send Data per salvare l'event\n"
 								}
 
@@ -306,7 +264,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 45.0, 15.0, 270.0, 47.0 ],
+									"patching_rect" : [ 45.0, 15.0, 273.0, 47.0 ],
 									"text" : "(0) Installare i pacchetti del server premendo su npm install e dopo avviare il server con npm start (l'installazione dei pacchetti si fa una tantum)"
 								}
 
@@ -419,6 +377,8 @@
 					}
 ,
 					"patching_rect" : [ 900.0, 330.0, 66.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 452.0, 74.0, 66.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3218,18 +3178,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 268.468902786572471, 345.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -3443,13 +3391,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -4007,13 +3948,6 @@
 			}
 , 			{
 				"name" : "matrixscript.js",
-				"bootpath" : "~/Documents/meig_system/max",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "_server_size.js",
 				"bootpath" : "~/Documents/meig_system/max",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
