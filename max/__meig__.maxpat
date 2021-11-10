@@ -216,7 +216,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1668.0, 18.0, 925.0, 787.0 ],
+						"rect" : [ 961.0, 79.0, 925.0, 787.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -252,7 +252,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 435.0, 555.0, 225.0, 301.0 ],
-									"text" : "(4) Slot delle entità: si attiva lo slot di un'entità selezionando l'entità con un click. Si chiama uno slot specifico usando i tasti seguenti: \n\n(4.1) slot universali:\n    l (elle): editing label\n    c: aggiunge commento visibile\n\n(4.2) slot per preset e event\n    C (8): config (read only)\n    9: entity id (read only)\n\n(4.3) slot per automazioni:\n    f (1); unction\n    s (2) : float list (start values)\n    d: float list (destination values)\n    S: int list (start)\n    D: int list (destination)\n    t: text\n    9: event id (per labels)\n    10: automation id"
+									"text" : "(4) Slot delle entità: si attiva lo slot di un'entità selezionando l'entità con un click. Si chiama uno slot specifico usando i tasti seguenti: \n\n(4.1) slot universali:\n    l (elle): editing label\n    c: aggiunge commento visibile\n\n(4.2) slot per preset e event\n    C (8): config (read only)\n    9: entity id (read only)\n\n(4.3) slot per automazioni:\n    f (1); function\n    s (2) : float list (start values)\n    d: float list (destination values)\n    S: int list (start)\n    D: int list (destination)\n    t: text\n    9: event id (per labels)\n    10: automation id"
 								}
 
 							}
@@ -3569,6 +3569,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -4149,14 +4151,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "_bridgeClientServer.js",
 				"bootpath" : "~/Documents/meig_system/max",
