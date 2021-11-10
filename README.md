@@ -2,7 +2,7 @@
 
 ## installazione
 
-Aprire il terminale e posizionarsi ovunque si voglia (presumibilmente nella folder `Documents`). clonare il repository con il seguente comando:
+Aprire il terminale e posizionarsi ovunque si voglia (presumibilmente nella folder `Documents`). Clonare il repository con il seguente comando:
 
 ```bash
 git clone https://github.com/franeum/meig_system.git
@@ -26,7 +26,7 @@ npm install
 
 e attendere alcuni secondi.
 
-A questo punto si può aprire la patch di Max (`__main__test__.maxpat`) che si trova in:
+A questo punto si può aprire la patch di Max (`__meig__.maxpat`) che si trova in:
 
 ```bash
 meig_system/max/
@@ -34,10 +34,4 @@ meig_system/max/
 
 avviare il server node dalla patch premendo sul messaggio `script start`
 
-## Generare la documentazione (markdown)
-
-Eseguire dalla directory root del progetto:
-
-```bash
-./node_modules/.bin/jsdoc2md -l bash routes/file.js > documentazione/file.md
-```
+[link](https://drive.google.com/file/d/1PgOnjERTsHSIEqLuLAc2L2ovUr3k-bK9/view?usp=drive_web)
