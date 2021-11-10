@@ -3256,10 +3256,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 225.0, 150.0, 300.0, 70.0 ],
+					"patching_rect" : [ 225.0, 150.0, 400.0, 220.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 225.0, 150.0, 300.0, 196.0 ],
-					"varname" : "server-debugger",
 					"viewvisibility" : 1
 				}
 
@@ -3275,8 +3274,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,

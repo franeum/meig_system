@@ -1,0 +1,73 @@
+$voices = right($x1, 0 - length($x1.'voicenames'));
+													## print($voices)
+
+$rollwithoutvoices = left($x1, 0 - length($x1.'voicenames'));
+
+
+######
+$stafflines = $rollwithoutvoices.'stafflines';
+										## print($stafflines, "stafflines = ")
+
+$sladdr = 
+for $x $xaddr in $stafflines
+collect(wrap($xaddr flat($x)));
+
+											##  print('stafflines' $sladdr)
+
+$rollheader = subs($rollwithoutvoices, 9,  wrap('stafflines' $sladdr));
+#######
+
+
+
+$voices_parser = 
+
+for
+	$x in $voices,
+	$y in $x1.'voicenames'
+		with @maxdepth 1
+
+collect
+
+		wrap(
+			$y
+
+			for
+				$z $zaddr in $x with @maxdepth 2
+			collect
+			wrap(
+				$zaddr:2
+
+			wrap(
+				'onset'
+				$z:(1 1))
+			
+			wrap(
+				'pitch'
+				$z:(1 2 1))
+
+			wrap(
+				'duration'
+				$z:(1 2 2))
+
+	##		wrap(
+	##			'velocity (UNUSED)'
+	##			$z:(1 2 2))
+			
+			wrap(
+			'slots'
+				$z:(1 2 4))			
+	
+	
+		
+		)
+		)
+		;
+
+							## print($voices_parser)
+
+							## print(for $x in $voices_parser collect subs($x, -1 -1, null))
+
+directout(1,
+			wrap('meigroll'
+			wrap('header' $rollheader)
+			wrap('voices' for $x in $voices_parser collect subs($x, -1 -1, null))))
