@@ -1,52 +1,52 @@
-const express = require("express");
-const device = require("../controllers/deviceController");
-const router = express.Router();
+const express = require("express")
+const device = require("../controllers/deviceController")
+const router = express.Router()
 
 /*************************************************************
  * GET DEVICE PAGE && TREE
  ************************************************************/
 
 /**
- * ask for the main page of section tree
+ * ask for the main page of device tree
  *
  * @name /device/tree
  * @path {GET} /device/tree
  **/
-router.get("/tree", device.get_page_tree);
+router.get("/tree", device.get_page_tree)
 
 /*************************************************************
  * POST TREE
  ************************************************************/
 /**
- * post tree in json format
+ * update device tree
  *
  * @name /device/tree
  * @path {POST} /device/tree
  **/
-router.post("/tree", device.post_tree);
+router.post("/tree", device.post_tree)
 
 /*************************************************************
  * GET TREE
  ************************************************************/
 /**
- * get a json and convert in tree
+ * get a json and convert in jqtree data structure
  *
  * @name /device/loadtree
  * @path {POST} /device/tree
  **/
-router.get("/loadtree", device.get_loadtree);
+router.get("/loadtree", device.get_loadtree)
 
 /*************************************************************
  * GET UNDO
  ************************************************************/
 /**
- * get undo
+ * get undo (TODO)
  *
  * @name /device/undo
  * @path {GET} /device/undo
  **/
-router.get("/undo", device.get_undo);
+router.get("/undo", device.get_undo)
 
-router.get("/stack", device.get_stack);
+router.get("/stack", device.get_stack)
 
-module.exports = router;
+module.exports = router

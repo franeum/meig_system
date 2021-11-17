@@ -1,6 +1,6 @@
-const express = require("express");
-const preset = require("../controllers/presetController");
-const router = express.Router();
+const express = require("express")
+const preset = require("../controllers/presetController")
+const router = express.Router()
 
 /*************************************************************
  * GET PRESET PAGE && TREE
@@ -12,7 +12,7 @@ const router = express.Router();
  * @name /preset/tree
  * @path {GET} /preset/tree
  **/
-router.get("/tree", preset.get_preset);
+router.get("/tree", preset.get_preset)
 
 /*************************************************************
  * POST PRESET TREE
@@ -24,18 +24,18 @@ router.get("/tree", preset.get_preset);
  * @name /preset/tree
  * @path {POST} /preset/tree
  **/
-router.post("/tree", preset.post_preset);
+router.post("/tree", preset.post_preset)
 
 /*************************************************************
- * GET PRESET PAGE && TREE
+ * GET PRESET VALUES
  ************************************************************/
 
 /**
- * ask for the main page of preset tree
+ * ask for preset values
  *
  * @name /preset/values
  * @path {GET} /preset/values
  **/
-router.get("/values", preset.get_preset_values);
+router.get("/values", preset.get_preset_values)
 
-module.exports = router;
+module.exports = router
