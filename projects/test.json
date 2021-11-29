@@ -1,0 +1,1898 @@
+{
+	"metadata" : 	{
+		"filePath" : "SDD:/Users/Noja/Documents/meig_system/projects/test.json",
+		"fileName" : "test.json",
+		"created_at" : "Mon Nov 29 2021 17:19:32 GMT+0100 (CET)",
+		"last_save" : "Mon Nov 29 2021 18:20:42 GMT+0100 (CET)"
+	}
+,
+	"devices" : 	{
+		"name" : "devices",
+		"id" : "61a4fc2c0c5c18de8a530c42",
+		"type" : "main",
+		"is_open" : 1,
+		"children" : [ 			{
+				"name" : "group",
+				"type" : "group",
+				"id" : "61a4fc2c6141f49f267b244f",
+				"is_open" : 1,
+				"children" : [ 					{
+						"name" : "1",
+						"id" : "61a4fd97e6c603187a192310",
+						"type" : "device",
+						"is_open" : 1,
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "61a4fd97f1a768dc0151fa38",
+								"type" : "io",
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "61a4fd97b2719a6e6d5f485d",
+										"type" : "audio",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61a4fd97c8721d2e3d22bf44",
+												"type" : "audio_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fd97547dee33c53ed7b2",
+														"type" : "audio_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61a4fd976e2488423486e1ce",
+												"type" : "audio_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fd97e093b2f30e176a82",
+														"type" : "audio_output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "61a4fd97572f8ea152673247",
+										"type" : "video",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61a4fd97b849f28333f51d8f",
+												"type" : "video_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fd979ff9565ac00e89d5",
+														"type" : "video_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61a4fd97c5ffc485ae58bb19",
+												"type" : "video_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fd979aeb26a6f096fe90",
+														"type" : "video_output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "61a4fd974072ccb8986b88fb",
+								"type" : "parameters",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "61a4fd97ab328a007a7c5894",
+										"type" : "parameter"
+									}
+ ]
+							}
+ ]
+					}
+, 					{
+						"name" : "2",
+						"id" : "61a4fd9b4e9b57667eb9a9c0",
+						"type" : "device",
+						"is_open" : 1,
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "61a4fd9b28ac8f69ac0db718",
+								"type" : "io",
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "61a4fd9bb23a15502095b80d",
+										"type" : "audio",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61a4fd9b63209ce42990b31c",
+												"type" : "audio_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fd9b2a883c6b3f5b752a",
+														"type" : "audio_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61a4fd9b9c533d1d79e5931d",
+												"type" : "audio_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fd9b08a0b7fdd8198e4a",
+														"type" : "audio_output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "61a4fd9b0f5ff6d790540dc5",
+										"type" : "video",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61a4fd9b0f6825930f517e79",
+												"type" : "video_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fd9b650ca073d99fd139",
+														"type" : "video_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61a4fd9b9996420a21731a59",
+												"type" : "video_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fd9ba092a0b90e7373d1",
+														"type" : "video_output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "61a4fd9ba6aae1774b4dc19e",
+								"type" : "parameters",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "61a4fd9bbc8a737044159acc",
+										"type" : "parameter"
+									}
+ ]
+							}
+ ]
+					}
+, 					{
+						"name" : "3",
+						"id" : "61a4fda3717bf0819ef7f2bf",
+						"type" : "device",
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "61a4fda39c65836f1249f93a",
+								"type" : "io",
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "61a4fda31d3f4b2f9ec174d6",
+										"type" : "audio",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61a4fda3d87ebe9f4eda8368",
+												"type" : "audio_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fda3026b85e2017b6a16",
+														"type" : "audio_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61a4fda3a62fabc4ad6ef5f9",
+												"type" : "audio_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fda369b610e8a8a7b2e9",
+														"type" : "audio_output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "61a4fda34e0a88ea169751bf",
+										"type" : "video",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61a4fda3cb28bfe1361387b1",
+												"type" : "video_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fda3de9d641cb7374abd",
+														"type" : "video_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61a4fda319fa57966f9a1e85",
+												"type" : "video_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fda3205226c85c4b76eb",
+														"type" : "video_output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "61a4fda3a77397db9cb4f029",
+								"type" : "parameters",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "61a4fda3aeb82d1047d63541",
+										"type" : "parameter"
+									}
+ ]
+							}
+ ]
+					}
+, 					{
+						"name" : "4",
+						"id" : "61a4fdbed8cd5e4945aaeb65",
+						"type" : "device",
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "61a4fdbee7c80bcbfdda75be",
+								"type" : "io",
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "61a4fdbe3e045a30fa9bffe4",
+										"type" : "audio",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61a4fdbe0dd29c2b53b07a43",
+												"type" : "audio_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fdbe64d48cbe06a50da0",
+														"type" : "audio_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61a4fdbeda28e3bdc0e5672a",
+												"type" : "audio_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fdbefeba37a20e37e2ab",
+														"type" : "audio_output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "61a4fdbe7e8593170adf7c04",
+										"type" : "video",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61a4fdbea67b156eab17de6f",
+												"type" : "video_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fdbe92df7ae6530a2e67",
+														"type" : "video_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61a4fdbecebd23794b13d444",
+												"type" : "video_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fdbee019a93d29bea793",
+														"type" : "video_output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "61a4fdbed43456cf6e46ee93",
+								"type" : "parameters",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "61a4fdbe14484bb509e44fb0",
+										"type" : "parameter"
+									}
+ ]
+							}
+ ]
+					}
+, 					{
+						"name" : "5",
+						"id" : "61a4fffc1d910918afcd5306",
+						"type" : "device",
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "61a4fffc746a17a8459469b6",
+								"type" : "io",
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "61a4fffcece1460e41903ffb",
+										"type" : "audio",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61a4fffc5e50c5f3e7d1d9a9",
+												"type" : "audio_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fffca358d0db57c8b6d6",
+														"type" : "audio_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61a4fffcac9b8eea8e82981e",
+												"type" : "audio_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fffc2070b50de40cba18",
+														"type" : "audio_output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "61a4fffce66d6921dbe3d180",
+										"type" : "video",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61a4fffc73dba3e0064f8a66",
+												"type" : "video_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fffcce2744eb3c47b27b",
+														"type" : "video_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61a4fffc5343c92327649673",
+												"type" : "video_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a4fffc1c4ae7354ff649d8",
+														"type" : "video_output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "61a4fffcfa994183356acf86",
+								"type" : "parameters",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "61a4fffc855c05dba7bb5040",
+										"type" : "parameter"
+									}
+ ]
+							}
+ ]
+					}
+ ]
+			}
+ ]
+	}
+,
+	"parameters_list" : 	{
+		"61a5001a3a7e474bb078ce6b" : [ 			{
+				"id" : "61a4fd97ab328a007a7c5894",
+				"path" : "group/1/param_1"
+			}
+, 			{
+				"id" : "61a4fffc855c05dba7bb5040",
+				"path" : "group/5/param_1"
+			}
+ ],
+		"61a500267747ad5caafe9c90" : [ 			{
+				"id" : "61a4fd9bbc8a737044159acc",
+				"path" : "group/2/param_1"
+			}
+, 			{
+				"id" : "61a4fdbe14484bb509e44fb0",
+				"path" : "group/4/param_1"
+			}
+ ],
+		"61a5014adb9018d755f7adb6" : [ 			{
+				"id" : "61a4fd9bbc8a737044159acc",
+				"path" : "group/2/param_1"
+			}
+ ],
+		"61a5029b7d452aee2c38d58a" : [ 			{
+				"id" : "61a4fd9bbc8a737044159acc",
+				"path" : "group/2/param_1"
+			}
+ ],
+		"61a50333dcdd6c76c43d0d85" : [ 			{
+				"id" : "61a4fda3aeb82d1047d63541",
+				"path" : "group/3/param_1"
+			}
+, 			{
+				"id" : "61a4fdbe14484bb509e44fb0",
+				"path" : "group/4/param_1"
+			}
+ ],
+		"61a5038905a01ef99bed45dd" : [ 			{
+				"id" : "61a4fdbe14484bb509e44fb0",
+				"path" : "group/4/param_1"
+			}
+, 			{
+				"id" : "61a4fffc855c05dba7bb5040",
+				"path" : "group/5/param_1"
+			}
+ ],
+		"61a50675d9cd6d04238d8eed" : [ 			{
+				"id" : "61a4fdbe14484bb509e44fb0",
+				"path" : "group/4/param_1"
+			}
+, 			{
+				"id" : "61a4fffc855c05dba7bb5040",
+				"path" : "group/5/param_1"
+			}
+ ],
+		"61a506967c1be150ab3c9c9f" : [ 			{
+				"id" : "61a4fffc855c05dba7bb5040",
+				"path" : "group/5/param_1"
+			}
+ ],
+		"61a509c0a5272ab0296afa8c" : [ 			{
+				"id" : "61a4fd97ab328a007a7c5894",
+				"path" : "group/1/param_1"
+			}
+, 			{
+				"id" : "61a4fdbe14484bb509e44fb0",
+				"path" : "group/4/param_1"
+			}
+ ],
+		"61a50a0e3c2627dee309b0f3" : [ 			{
+				"id" : "61a4fdbe14484bb509e44fb0",
+				"path" : "group/4/param_1"
+			}
+, 			{
+				"id" : "61a4fffc855c05dba7bb5040",
+				"path" : "group/5/param_1"
+			}
+ ],
+		"61a50acb4c78b643c0d0a1e2" : [ 			{
+				"id" : "61a4fd97ab328a007a7c5894",
+				"path" : "group/1/param_1"
+			}
+, 			{
+				"id" : "61a4fd9bbc8a737044159acc",
+				"path" : "group/2/param_1"
+			}
+ ],
+		"61a50b1960b90981d6bb5588" : [ 			{
+				"id" : "61a4fd97ab328a007a7c5894",
+				"path" : "group/1/param_1"
+			}
+, 			{
+				"id" : "61a4fd9bbc8a737044159acc",
+				"path" : "group/2/param_1"
+			}
+ ],
+		"61a50b1e404bb9c44fbad6ac" : [ 			{
+				"id" : "61a4fdbe14484bb509e44fb0",
+				"path" : "group/4/param_1"
+			}
+, 			{
+				"id" : "61a4fffc855c05dba7bb5040",
+				"path" : "group/5/param_1"
+			}
+ ],
+		"61a50b443224c45aeebea615" : [ 			{
+				"id" : "61a4fda3aeb82d1047d63541",
+				"path" : "group/3/param_1"
+			}
+ ],
+		"61a50b8bed40221bcec2d2c0" : [ 			{
+				"id" : "61a4fd9bbc8a737044159acc",
+				"path" : "group/2/param_1"
+			}
+, 			{
+				"id" : "61a4fffc855c05dba7bb5040",
+				"path" : "group/5/param_1"
+			}
+ ]
+	}
+,
+	"presets" : 	{
+		"61a4fdd0bfc615b4bdfa61dd" : 		{
+			"presets" : 			{
+				"61a4fd97ab328a007a7c5894" : 				{
+					"value" : "1",
+					"name" : "param_1"
+				}
+,
+				"61a4fd9bbc8a737044159acc" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fda3aeb82d1047d63541" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fdbe14484bb509e44fb0" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+
+			}
+,
+			"onset" : 800,
+			"label" : "preset"
+		}
+,
+		"61a4fdf288964381d9e2715b" : 		{
+			"presets" : 			{
+				"61a4fd97ab328a007a7c5894" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fd9bbc8a737044159acc" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fda3aeb82d1047d63541" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fdbe14484bb509e44fb0" : 				{
+					"value" : "4",
+					"name" : "param_1"
+				}
+
+			}
+,
+			"onset" : 1900,
+			"label" : "preset"
+		}
+,
+		"61a50000be45e109c706b2e9" : 		{
+			"presets" : 			{
+				"61a4fd97ab328a007a7c5894" : 				{
+					"value" : "1",
+					"name" : "param_1"
+				}
+,
+				"61a4fd9bbc8a737044159acc" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fda3aeb82d1047d63541" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fdbe14484bb509e44fb0" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fffc855c05dba7bb5040" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+
+			}
+,
+			"onset" : 900,
+			"label" : "preset"
+		}
+,
+		"61a5000747c34f6d4b481f6a" : 		{
+			"presets" : 			{
+				"61a4fd97ab328a007a7c5894" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fd9bbc8a737044159acc" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fda3aeb82d1047d63541" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fdbe14484bb509e44fb0" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fffc855c05dba7bb5040" : 				{
+					"value" : "v",
+					"name" : "param_1"
+				}
+
+			}
+,
+			"onset" : 2400,
+			"label" : "preset"
+		}
+,
+		"61a50660f510759b567899c1" : 		{
+			"presets" : 			{
+				"61a4fd97ab328a007a7c5894" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fd9bbc8a737044159acc" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fda3aeb82d1047d63541" : 				{
+					"value" : "10",
+					"name" : "param_1"
+				}
+,
+				"61a4fdbe14484bb509e44fb0" : 				{
+					"value" : "20",
+					"name" : "param_1"
+				}
+,
+				"61a4fffc855c05dba7bb5040" : 				{
+					"value" : "30",
+					"name" : "param_1"
+				}
+
+			}
+,
+			"onset" : 9000,
+			"label" : "preset"
+		}
+,
+		"61a5071c3fc22c7a29cf15e9" : 		{
+			"presets" : 			{
+				"61a4fd97ab328a007a7c5894" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fd9bbc8a737044159acc" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fda3aeb82d1047d63541" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fdbe14484bb509e44fb0" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fffc855c05dba7bb5040" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+
+			}
+,
+			"onset" : 900,
+			"label" : "preset"
+		}
+,
+		"61a509a2ea314658d56521ce" : 		{
+			"presets" : 			{
+				"61a4fd97ab328a007a7c5894" : 				{
+					"value" : "1",
+					"name" : "param_1"
+				}
+,
+				"61a4fd9bbc8a737044159acc" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fda3aeb82d1047d63541" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fdbe14484bb509e44fb0" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fffc855c05dba7bb5040" : 				{
+					"value" : "5",
+					"name" : "param_1"
+				}
+
+			}
+,
+			"onset" : 1100,
+			"label" : "preset"
+		}
+,
+		"61a509a97759e2b3a533fdd5" : 		{
+			"presets" : 			{
+				"61a4fd97ab328a007a7c5894" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fd9bbc8a737044159acc" : 				{
+					"value" : "2",
+					"name" : "param_1"
+				}
+,
+				"61a4fda3aeb82d1047d63541" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fdbe14484bb509e44fb0" : 				{
+					"value" : "4",
+					"name" : "param_1"
+				}
+,
+				"61a4fffc855c05dba7bb5040" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+
+			}
+,
+			"onset" : 4000,
+			"label" : "preset"
+		}
+,
+		"61a509b623d9358b7956343b" : 		{
+			"presets" : 			{
+				"61a4fd97ab328a007a7c5894" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fd9bbc8a737044159acc" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fda3aeb82d1047d63541" : 				{
+					"value" : "3",
+					"name" : "param_1"
+				}
+,
+				"61a4fdbe14484bb509e44fb0" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fffc855c05dba7bb5040" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+
+			}
+,
+			"onset" : 6100,
+			"label" : "preset"
+		}
+,
+		"61a50aae5672ee87fb23ebad" : 		{
+			"presets" : 			{
+				"61a4fd97ab328a007a7c5894" : 				{
+					"value" : "1",
+					"name" : "param_1"
+				}
+,
+				"61a4fd9bbc8a737044159acc" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fda3aeb82d1047d63541" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fdbe14484bb509e44fb0" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fffc855c05dba7bb5040" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+
+			}
+,
+			"onset" : 500,
+			"label" : "preset"
+		}
+,
+		"61a50ab48e79f26ba36fbde2" : 		{
+			"presets" : 			{
+				"61a4fd97ab328a007a7c5894" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fd9bbc8a737044159acc" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fda3aeb82d1047d63541" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fdbe14484bb509e44fb0" : 				{
+					"value" : "0",
+					"name" : "param_1"
+				}
+,
+				"61a4fffc855c05dba7bb5040" : 				{
+					"value" : "5",
+					"name" : "param_1"
+				}
+
+			}
+,
+			"onset" : 9500,
+			"label" : "preset"
+		}
+
+	}
+,
+	"paths" : 	{
+		"61a4fd97ab328a007a7c5894" : "group/1/param_1",
+		"61a4fd9bbc8a737044159acc" : "group/2/param_1",
+		"61a4fda3aeb82d1047d63541" : "group/3/param_1",
+		"61a4fdbe14484bb509e44fb0" : "group/4/param_1",
+		"61a4fffc855c05dba7bb5040" : "group/5/param_1"
+	}
+,
+	"meigroll" : 	{
+		"header" : 		{
+			"slotinfo" : 			{
+				"1" : 				{
+					"name" : "function",
+					"type" : "function",
+					"key" : "f",
+					"range" : [ 0.0, 1.0 ],
+					"slope" : 0.0,
+					"domain" : [ 0.0, 1.0 ],
+					"domainslope" : 0.0,
+					"temporalmode" : "relative",
+					"extend" : 0,
+					"width" : "duration",
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"2" : 				{
+					"name" : "start values (floats)",
+					"type" : "floatlist",
+					"key" : "s",
+					"range" : [ 0.0, 1.0 ],
+					"slope" : 0.0,
+					"color" : [ 0.0213, 0.0213, 0.0231, 1.0 ],
+					"default" : 0.0,
+					"temporalmode" : "relative",
+					"extend" : 0,
+					"width" : 150.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"3" : 				{
+					"name" : "destination values (floats)",
+					"type" : "floatlist",
+					"key" : "d",
+					"range" : [ 0.0, 1.0 ],
+					"slope" : 0.0,
+					"color" : [ 0.6241, 0.637, 0.3704, 1.0 ],
+					"default" : 0.0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"4" : 				{
+					"name" : "start values (ints)",
+					"type" : "intlist",
+					"key" : "S",
+					"range" : [ 0.0, 127.0 ],
+					"slope" : 0.0,
+					"color" : [ 0.089, 0.0849, 0.0758, 1.0 ],
+					"default" : 0.0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"5" : 				{
+					"name" : "destination values (ints)",
+					"type" : "intlist",
+					"key" : "D",
+					"range" : [ 0.0, 127.0 ],
+					"slope" : 0.0,
+					"color" : [ 0.546, 0.5561, 0.3475, 1.0 ],
+					"default" : 1.0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"6" : 				{
+					"name" : "text",
+					"type" : "text",
+					"key" : "t",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 150.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"7" : 				{
+					"name" : "filelist",
+					"type" : "filelist",
+					"key" : "F",
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 150.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"8" : 				{
+					"name" : "config",
+					"type" : "llll",
+					"key" : "C",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 228.337678000000011,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"9" : 				{
+					"name" : "entity ID",
+					"type" : "text",
+					"key" : "i",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 150.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"10" : 				{
+					"name" : "automation ID",
+					"type" : "text",
+					"key" : "I",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"11" : 				{
+					"name" : "Label",
+					"type" : "text",
+					"key" : "l",
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"12" : 				{
+					"name" : "Comments",
+					"type" : "text",
+					"key" : "c",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"13" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"14" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"15" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"16" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"17" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"18" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"19" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"20" : 				{
+					"name" : "dynamics",
+					"type" : "none",
+					"key" : "d",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 110.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"21" : 				{
+					"name" : "lyrics",
+					"type" : "none",
+					"key" : "l",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"22" : 				{
+					"name" : "articulations",
+					"type" : "none",
+					"key" : "-",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 110.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"23" : 				{
+					"name" : "notehead",
+					"type" : "notehead",
+					"key" : "h",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 110.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"24" : 				{
+					"name" : "annotation",
+					"type" : "none",
+					"key" : "t",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"25" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"26" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"27" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"28" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"29" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"30" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+
+			}
+,
+			"commands" : 			{
+				"1" : 				{
+					"note" : "note",
+					"chord" : "chord",
+					"rest" : "rest",
+					"key" : 0
+				}
+,
+				"2" : 				{
+					"note" : "note",
+					"chord" : "chord",
+					"rest" : "rest",
+					"key" : 0
+				}
+,
+				"3" : 				{
+					"note" : "note",
+					"chord" : "chord",
+					"rest" : "rest",
+					"key" : 0
+				}
+,
+				"4" : 				{
+					"note" : "note",
+					"chord" : "chord",
+					"rest" : "rest",
+					"key" : 0
+				}
+,
+				"5" : 				{
+					"note" : "note",
+					"chord" : "chord",
+					"rest" : "rest",
+					"key" : 0
+				}
+
+			}
+,
+			"clefs" : [ "None", "None", "None", "None", "None", "None", "None" ],
+			"keys" : [ "CM", "CM", "CM", "CM", "CM", "CM", "CM" ],
+			"voicenames" : [ "presets", "events", "group/1/param_1", "group/2/param_1", "group/3/param_1", "group/4/param_1", "group/5/param_1" ],
+			"stafflines" : 			{
+				"1" : [ -1, 1, 3, 5, 7 ],
+				"2" : [ -1, 1, 3, 5, 7 ],
+				"3" : [ 1, 6 ],
+				"4" : [ 1, 6 ],
+				"5" : [ 1, 6 ],
+				"6" : [ 1, 6 ],
+				"7" : [ 1, 6 ]
+			}
+,
+			"midichannels" : [ 1, 2, 3, 4, 5, 6, 7 ],
+			"numparts" : [ 2, 1, 1, 1, 1, 1 ],
+			"loop" : [ 0.0, 0.0 ]
+		}
+,
+		"voices" : 		{
+			"presets" : 			{
+				"1" : 				{
+					"onset" : 500.0,
+					"pitch" : 7700.0,
+					"duration" : 0.0,
+					"slots" : 					{
+						"config" : 						{
+							"8" : 							{
+								"presetvalues" : 								{
+									"ids" : 									{
+										"1" : "61a4fd97ab328a007a7c5894",
+										"2" : "61a4fd9bbc8a737044159acc",
+										"3" : "61a4fda3aeb82d1047d63541",
+										"4" : "61a4fdbe14484bb509e44fb0",
+										"5" : "61a4fffc855c05dba7bb5040"
+									}
+,
+									"values" : 									{
+										"1" : 1,
+										"2" : 0,
+										"3" : 0,
+										"4" : 0,
+										"5" : 0
+									}
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a50aae5672ee87fb23ebad"
+						}
+,
+						"label" : 						{
+							"11" : "preset"
+						}
+,
+						"shape" : 						{
+							"23" : "blacksquare"
+						}
+
+					}
+
+				}
+,
+				"2" : 				{
+					"onset" : 9500.0,
+					"pitch" : 7500.0,
+					"duration" : 0.0,
+					"slots" : 					{
+						"config" : 						{
+							"8" : 							{
+								"" : 								{
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a50ab48e79f26ba36fbde2"
+						}
+,
+						"label" : 						{
+							"11" : "preset"
+						}
+,
+						"shape" : 						{
+							"23" : "blacksquare"
+						}
+
+					}
+
+				}
+
+			}
+,
+			"events" : 			{
+				"1" : 				{
+					"onset" : 2600.0,
+					"pitch" : 7700.0,
+					"duration" : 0.0,
+					"slots" : 					{
+						"config" : 						{
+							"8" : 							{
+								"event_params" : 								{
+									"ids" : 									{
+										"1" : "61a4fd97ab328a007a7c5894",
+										"2" : "61a4fd9bbc8a737044159acc"
+									}
+,
+									"values" : 									{
+										"1" : "group/1/param_1",
+										"2" : "group/2/param_1"
+									}
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a50b1960b90981d6bb5588"
+						}
+,
+						"label" : 						{
+							"11" : "event"
+						}
+,
+						"shape" : 						{
+							"23" : "blacktriangle"
+						}
+
+					}
+
+				}
+,
+				"2" : 				{
+					"onset" : 4100.0,
+					"pitch" : 7600.0,
+					"duration" : 0.0,
+					"slots" : 					{
+						"config" : 						{
+							"8" : 							{
+								"event_params" : 								{
+									"ids" : 									{
+										"1" : "61a4fda3aeb82d1047d63541"
+									}
+,
+									"values" : 									{
+										"1" : "group/3/param_1"
+									}
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a50b443224c45aeebea615"
+						}
+,
+						"label" : 						{
+							"11" : "event"
+						}
+,
+						"shape" : 						{
+							"23" : "blacktriangle"
+						}
+
+					}
+
+				}
+,
+				"3" : 				{
+					"onset" : 5900.0,
+					"pitch" : 7900.0,
+					"duration" : 0.0,
+					"slots" : 					{
+						"config" : 						{
+							"8" : 							{
+								"event_params" : 								{
+									"ids" : 									{
+										"1" : "61a4fdbe14484bb509e44fb0",
+										"2" : "61a4fffc855c05dba7bb5040"
+									}
+,
+									"values" : 									{
+										"1" : "group/4/param_1",
+										"2" : "group/5/param_1"
+									}
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a50b1e404bb9c44fbad6ac"
+						}
+,
+						"label" : 						{
+							"11" : "event"
+						}
+,
+						"shape" : 						{
+							"23" : "blacktriangle"
+						}
+
+					}
+
+				}
+,
+				"4" : 				{
+					"onset" : 10700.0,
+					"pitch" : 7000.0,
+					"duration" : 0.0,
+					"slots" : 					{
+						"config" : 						{
+							"8" : 							{
+								"event_params" : 								{
+									"ids" : 									{
+										"1" : "61a4fd9bbc8a737044159acc",
+										"2" : "61a4fffc855c05dba7bb5040"
+									}
+,
+									"values" : 									{
+										"1" : "group/2/param_1",
+										"2" : "group/5/param_1"
+									}
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a50b8bed40221bcec2d2c0"
+						}
+,
+						"label" : 						{
+							"11" : "event"
+						}
+,
+						"shape" : 						{
+							"23" : "blacktriangle"
+						}
+
+					}
+
+				}
+
+			}
+,
+			"group/1/param_1" : 			{
+				"1" : 				{
+					"onset" : 3100.0,
+					"pitch" : 6400.0,
+					"duration" : 1140.0,
+					"slots" : 					{
+						"config" : 						{
+							"8" : 							{
+								"" : 								{
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a50b1960b90981d6bb5588"
+						}
+,
+						"automID" : 						{
+							"10" : "61a50b2ff9f703233b750590"
+						}
+,
+						"label" : 						{
+							"11" : "group/1/param_1"
+						}
+,
+						"shape" : 						{
+							"23" : "cross"
+						}
+
+					}
+
+				}
+
+			}
+,
+			"group/2/param_1" : 			{
+				"1" : 				{
+					"onset" : 4000.0,
+					"pitch" : 6400.0,
+					"duration" : 1140.0,
+					"slots" : 					{
+						"function" : 						{
+							"1" : 							{
+								"1" : [ 0.0, 0.0, 0.0 ],
+								"2" : [ 1.0, 1.0, 0.0 ]
+							}
+
+						}
+,
+						"config" : 						{
+							"8" : 							{
+								"" : 								{
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a50b1960b90981d6bb5588"
+						}
+,
+						"automID" : 						{
+							"10" : "61a50b33b25d83b596ae6fd7"
+						}
+,
+						"label" : 						{
+							"11" : "group/2/param_1"
+						}
+,
+						"shape" : 						{
+							"23" : "cross"
+						}
+
+					}
+
+				}
+,
+				"2" : 				{
+					"onset" : 10700.0,
+					"pitch" : 6400.0,
+					"duration" : 1140.0,
+					"slots" : 					{
+						"config" : 						{
+							"8" : 							{
+								"" : 								{
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a50b8bed40221bcec2d2c0"
+						}
+,
+						"automID" : 						{
+							"10" : "61a50b9703645f9018fe5b3e"
+						}
+,
+						"label" : 						{
+							"11" : "group/2/param_1"
+						}
+,
+						"shape" : 						{
+							"23" : "cross"
+						}
+
+					}
+
+				}
+
+			}
+,
+			"group/3/param_1" : 			{
+				"1" : 				{
+					"onset" : 4100.0,
+					"pitch" : 6400.0,
+					"duration" : 1140.0,
+					"slots" : 					{
+						"config" : 						{
+							"8" : 							{
+								"" : 								{
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a50b443224c45aeebea615"
+						}
+,
+						"automID" : 						{
+							"10" : "61a50b4cd5e6f790921f4699"
+						}
+,
+						"label" : 						{
+							"11" : "group/3/param_1"
+						}
+,
+						"shape" : 						{
+							"23" : "cross"
+						}
+
+					}
+
+				}
+
+			}
+,
+			"group/4/param_1" : 			{
+				"1" : 				{
+					"onset" : 6700.0,
+					"pitch" : 6400.0,
+					"duration" : 1140.0,
+					"slots" : 					{
+						"config" : 						{
+							"8" : 							{
+								"" : 								{
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a50b1e404bb9c44fbad6ac"
+						}
+,
+						"automID" : 						{
+							"10" : "61a50b3705e51c568c22ac32"
+						}
+,
+						"label" : 						{
+							"11" : "group/4/param_1"
+						}
+,
+						"shape" : 						{
+							"23" : "cross"
+						}
+
+					}
+
+				}
+,
+				"2" : 				{
+					"onset" : 10900.0,
+					"pitch" : 6400.0,
+					"duration" : 1140.0,
+					"slots" : 					{
+						"config" : 						{
+							"8" : 							{
+								"" : 								{
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a50b8bed40221bcec2d2c0"
+						}
+,
+						"automID" : 						{
+							"10" : "61a50b9902be83172755485f"
+						}
+,
+						"label" : 						{
+							"11" : "group/4/param_1"
+						}
+,
+						"shape" : 						{
+							"23" : "cross"
+						}
+
+					}
+
+				}
+
+			}
+,
+			"group/5/param_1" : 			{
+				"1" : 				{
+					"onset" : 8200.0,
+					"pitch" : 6400.0,
+					"duration" : 1140.0,
+					"slots" : 					{
+						"config" : 						{
+							"8" : 							{
+								"" : 								{
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a50b1e404bb9c44fbad6ac"
+						}
+,
+						"automID" : 						{
+							"10" : "61a50b393eb228b2055b807a"
+						}
+,
+						"label" : 						{
+							"11" : "group/5/param_1"
+						}
+,
+						"comment" : 						{
+							"12" : "ciao miao "
+						}
+,
+						"shape" : 						{
+							"23" : "cross"
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
