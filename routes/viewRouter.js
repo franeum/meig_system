@@ -1,7 +1,7 @@
-const express = require("express");
-const { render } = require("pug");
-const device = require("../controllers/deviceController");
-const router = express.Router();
+const express = require("express")
+const { render } = require("pug")
+const device = require("../controllers/deviceController")
+const router = express.Router()
 
 /*************************************************************
  * GET DEVICE PAGE && TREE
@@ -14,11 +14,11 @@ const router = express.Router();
  * @path {GET} /device/tree
  **/
 router.get("/roll", (req, res) => {
-    res.render("roll");
-});
+    res.render("roll")
+})
 
 router.get("/filemenu", (req, res) => {
-    res.render("filemenu");
-});
+    res.render("filemenu")
+})
 
-module.exports = router;
+module.exports = router
