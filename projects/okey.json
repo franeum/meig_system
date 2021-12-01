@@ -1,0 +1,811 @@
+{
+	"metadata" : 	{
+		"filePath" : "SDD:/Users/Noja/Documents/meig_system/projects/okey.json",
+		"fileName" : "okey.json",
+		"created_at" : "Tue Nov 30 2021 15:44:16 GMT+0100 (CET)",
+		"last_save" : "Tue Nov 30 2021 15:44:16 GMT+0100 (CET)"
+	}
+,
+	"devices" : 	{
+		"name" : "devices",
+		"id" : "61a638a41670ec21d29eaef6",
+		"type" : "main",
+		"is_open" : 1,
+		"children" : [ 			{
+				"name" : "group",
+				"type" : "group",
+				"id" : "61a638a40c74ab7a204f217c",
+				"is_open" : 1,
+				"children" : [ 					{
+						"name" : "a",
+						"id" : "61a638c63fa67a977b098c77",
+						"type" : "device",
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "61a638c662b0e6fa0ac0292c",
+								"type" : "io",
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "61a638c6fa5e085c9b604222",
+										"type" : "audio",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61a638c6b4bf687b85bc7392",
+												"type" : "audio_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a638c6d5ab5fe7a7f85da9",
+														"type" : "audio_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61a638c68f4e1a37de096486",
+												"type" : "audio_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a638c6c0256944f3c8805a",
+														"type" : "audio_output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "61a638c6e121c50a2e94fa25",
+										"type" : "video",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61a638c60c207c9fae3e34ef",
+												"type" : "video_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a638c6486ac482b0c8d636",
+														"type" : "video_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61a638c69f553a2ca3e27faf",
+												"type" : "video_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a638c6074fcd46626179dc",
+														"type" : "video_output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "61a638c6c9dff16e6b7fb151",
+								"type" : "parameters",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "61a638c67f7334c51a5d5bb0",
+										"type" : "parameter"
+									}
+ ]
+							}
+ ]
+					}
+, 					{
+						"name" : "b",
+						"id" : "61a638cb745dba25a6023cb1",
+						"type" : "device",
+						"children" : [ 							{
+								"name" : "i/o",
+								"id" : "61a638cb62150a3730b6755e",
+								"type" : "io",
+								"children" : [ 									{
+										"name" : "audio",
+										"id" : "61a638cbc488f858240e537b",
+										"type" : "audio",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61a638cb029c59624482261e",
+												"type" : "audio_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a638cb445ef3a5a42ed958",
+														"type" : "audio_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61a638cb58b0b65ebd3d60c7",
+												"type" : "audio_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a638cb59d60c817079bcc1",
+														"type" : "audio_output_value"
+													}
+ ]
+											}
+ ]
+									}
+, 									{
+										"name" : "video",
+										"id" : "61a638cb2bca844be5290276",
+										"type" : "video",
+										"children" : [ 											{
+												"name" : "input",
+												"id" : "61a638cbbc86b81ba001074c",
+												"type" : "video_input",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a638cb5259eeb256cd275e",
+														"type" : "video_input_value"
+													}
+ ]
+											}
+, 											{
+												"name" : "output",
+												"id" : "61a638cbd6695e28df667b49",
+												"type" : "video_output",
+												"children" : [ 													{
+														"name" : "0",
+														"id" : "61a638cbed5d725b389cff72",
+														"type" : "video_output_value"
+													}
+ ]
+											}
+ ]
+									}
+ ]
+							}
+, 							{
+								"name" : "parameters",
+								"id" : "61a638cb18d9fa8309b2a512",
+								"type" : "parameters",
+								"children" : [ 									{
+										"name" : "param_1",
+										"id" : "61a638cb5be8d9bd03ab150c",
+										"type" : "parameter"
+									}
+ ]
+							}
+ ]
+					}
+ ]
+			}
+ ]
+	}
+,
+	"parameters_list" : 	{
+		"61a638cffb6517c2e723660c" : [ 			{
+				"id" : "61a638cb5be8d9bd03ab150c",
+				"path" : "group/b/param_1"
+			}
+, 			{
+				"id" : "61a638c67f7334c51a5d5bb0",
+				"path" : "group/a/param_1"
+			}
+ ]
+	}
+,
+	"presets" : 	{
+
+	}
+,
+	"paths" : 	{
+		"61a638c67f7334c51a5d5bb0" : "group/a/param_1",
+		"61a638cb5be8d9bd03ab150c" : "group/b/param_1"
+	}
+,
+	"meigroll" : 	{
+		"header" : 		{
+			"slotinfo" : 			{
+				"1" : 				{
+					"name" : "function",
+					"type" : "function",
+					"key" : "f",
+					"range" : [ 0.0, 1.0 ],
+					"slope" : 0.0,
+					"domain" : [ 0.0, 1.0 ],
+					"domainslope" : 0.0,
+					"temporalmode" : "relative",
+					"extend" : 0,
+					"width" : "duration",
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"2" : 				{
+					"name" : "start values (floats)",
+					"type" : "floatlist",
+					"key" : "s",
+					"range" : [ 0.0, 1.0 ],
+					"slope" : 0.0,
+					"color" : [ 0.0213, 0.0213, 0.0231, 1.0 ],
+					"default" : 0.0,
+					"temporalmode" : "relative",
+					"extend" : 0,
+					"width" : 150.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"3" : 				{
+					"name" : "destination values (floats)",
+					"type" : "floatlist",
+					"key" : "d",
+					"range" : [ 0.0, 1.0 ],
+					"slope" : 0.0,
+					"color" : [ 0.6241, 0.637, 0.3704, 1.0 ],
+					"default" : 0.0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"4" : 				{
+					"name" : "start values (ints)",
+					"type" : "intlist",
+					"key" : "S",
+					"range" : [ 0.0, 127.0 ],
+					"slope" : 0.0,
+					"color" : [ 0.089, 0.0849, 0.0758, 1.0 ],
+					"default" : 0.0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"5" : 				{
+					"name" : "destination values (ints)",
+					"type" : "intlist",
+					"key" : "D",
+					"range" : [ 0.0, 127.0 ],
+					"slope" : 0.0,
+					"color" : [ 0.546, 0.5561, 0.3475, 1.0 ],
+					"default" : 1.0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"6" : 				{
+					"name" : "text",
+					"type" : "text",
+					"key" : "t",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 150.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"7" : 				{
+					"name" : "filelist",
+					"type" : "filelist",
+					"key" : "F",
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 150.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"8" : 				{
+					"name" : "config",
+					"type" : "llll",
+					"key" : "C",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 228.337678000000011,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"9" : 				{
+					"name" : "entity ID",
+					"type" : "text",
+					"key" : "i",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 150.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"10" : 				{
+					"name" : "automation ID",
+					"type" : "text",
+					"key" : "I",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"11" : 				{
+					"name" : "Label",
+					"type" : "text",
+					"key" : "l",
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"12" : 				{
+					"name" : "Comments",
+					"type" : "text",
+					"key" : "c",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"13" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"14" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"15" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"16" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"17" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"18" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"19" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"20" : 				{
+					"name" : "dynamics",
+					"type" : "none",
+					"key" : "d",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 110.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"21" : 				{
+					"name" : "lyrics",
+					"type" : "none",
+					"key" : "l",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 0,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"22" : 				{
+					"name" : "articulations",
+					"type" : "none",
+					"key" : "-",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 110.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"23" : 				{
+					"name" : "notehead",
+					"type" : "notehead",
+					"key" : "h",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 110.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"24" : 				{
+					"name" : "annotation",
+					"type" : "none",
+					"key" : "t",
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"25" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"26" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"27" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"28" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"29" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+,
+				"30" : 				{
+					"name" : "slot",
+					"type" : "none",
+					"key" : 0,
+					"temporalmode" : "none",
+					"extend" : 0,
+					"width" : 100.0,
+					"height" : "auto",
+					"copywhensplit" : 1,
+					"access" : "readandwrite",
+					"follownotehead" : 0
+				}
+
+			}
+,
+			"commands" : 			{
+				"1" : 				{
+					"note" : "note",
+					"chord" : "chord",
+					"rest" : "rest",
+					"key" : 0
+				}
+,
+				"2" : 				{
+					"note" : "note",
+					"chord" : "chord",
+					"rest" : "rest",
+					"key" : 0
+				}
+,
+				"3" : 				{
+					"note" : "note",
+					"chord" : "chord",
+					"rest" : "rest",
+					"key" : 0
+				}
+,
+				"4" : 				{
+					"note" : "note",
+					"chord" : "chord",
+					"rest" : "rest",
+					"key" : 0
+				}
+,
+				"5" : 				{
+					"note" : "note",
+					"chord" : "chord",
+					"rest" : "rest",
+					"key" : 0
+				}
+
+			}
+,
+			"clefs" : [ "None", "None", "None", "None" ],
+			"keys" : [ "CM", "CM", "CM", "CM" ],
+			"voicenames" : [ "presets", "events", "group/a/param_1", "group/b/param_1" ],
+			"stafflines" : 			{
+				"1" : [ -1, 1, 3, 5, 7 ],
+				"2" : [ -1, 1, 3, 5, 7 ],
+				"3" : [ 1, 6 ],
+				"4" : [ 1, 6 ]
+			}
+,
+			"midichannels" : [ 1, 2, 3, 4 ],
+			"numparts" : [ 2, 1, 1 ],
+			"loop" : [ 0.0, 0.0 ]
+		}
+,
+		"voices" : 		{
+			"presets" : "empty",
+			"events" : 			{
+				"1" : 				{
+					"onset" : 1300.0,
+					"pitch" : 7700.0,
+					"duration" : 0.0,
+					"slots" : 					{
+						"config" : 						{
+							"8" : 							{
+								"event_params" : 								{
+									"ids" : 									{
+										"1" : "61a638cb5be8d9bd03ab150c",
+										"2" : "61a638c67f7334c51a5d5bb0"
+									}
+,
+									"values" : 									{
+										"1" : "group/b/param_1",
+										"2" : "group/a/param_1"
+									}
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a638cffb6517c2e723660c"
+						}
+,
+						"label" : 						{
+							"11" : "event"
+						}
+,
+						"shape" : 						{
+							"23" : "blacktriangle"
+						}
+
+					}
+
+				}
+
+			}
+,
+			"group/a/param_1" : 			{
+				"1" : 				{
+					"onset" : 2800.0,
+					"pitch" : 6400.0,
+					"duration" : 1146.0,
+					"slots" : 					{
+						"function" : 						{
+							"1" : 							{
+								"1" : [ 0.0, 0.0, 0.0 ],
+								"2" : [ 0.562953467739445, 1.0, 0.0 ],
+								"3" : [ 1.0, 0.0, 0.0 ]
+							}
+
+						}
+,
+						"config" : 						{
+							"8" : 							{
+								"" : 								{
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a638cffb6517c2e723660c"
+						}
+,
+						"automID" : 						{
+							"10" : "61a638d707724602b1362801"
+						}
+,
+						"label" : 						{
+							"11" : "group/a/param_1"
+						}
+,
+						"shape" : 						{
+							"23" : "cross"
+						}
+
+					}
+
+				}
+
+			}
+,
+			"group/b/param_1" : 			{
+				"1" : 				{
+					"onset" : 4600.0,
+					"pitch" : 6400.0,
+					"duration" : 1146.0,
+					"slots" : 					{
+						"config" : 						{
+							"8" : 							{
+								"" : 								{
+
+								}
+
+							}
+
+						}
+,
+						"preset/eventID" : 						{
+							"9" : "61a638cffb6517c2e723660c"
+						}
+,
+						"automID" : 						{
+							"10" : "61a638d8414cc8c35f2a3736"
+						}
+,
+						"label" : 						{
+							"11" : "group/b/param_1"
+						}
+,
+						"comment" : 						{
+							"12" : "ciao miao bao"
+						}
+,
+						"shape" : 						{
+							"23" : "cross"
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

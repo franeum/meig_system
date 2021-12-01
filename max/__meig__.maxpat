@@ -40,13 +40,72 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-90",
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2627.333382129669189, 1243.325123886974325, 43.0, 22.0 ],
+					"text" : "s rollin"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-91",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 2250.666733741760254, 918.666694045066833, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-73",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2095.99998939037323, 1076.185342788696289, 152.0, 74.0 ],
+					"text" : "levare il pipe e il gate a design roll quando node non manderà più 'paramslist' dopo il bang di parse-roll"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1924.468902786572471, 1146.666700839996338, 32.0, 22.0 ],
-					"text" : "gate"
+					"patching_rect" : [ 2450.666739702224731, 1145.033620178699493, 61.0, 22.0 ],
+					"text" : "pipe 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 2505.66666042804718, 1206.975847880752553, 19.0, 22.0 ],
+					"text" : "t i"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-72",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "dump" ],
+					"patching_rect" : [ 1936.864545623461709, 1080.325119476230611, 45.0, 22.0 ],
+					"text" : "t dump"
 				}
 
 			}
@@ -56,7 +115,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1924.604414502779036, 1206.666702628135681, 43.0, 22.0 ],
+					"patching_rect" : [ 1936.864545623461709, 1145.033620178699493, 43.0, 22.0 ],
 					"text" : "s rollin"
 				}
 
@@ -67,9 +126,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1924.604414502779036, 1176.000035047531128, 55.0, 22.0 ],
-					"text" : "pipe 100"
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1937.468902786572471, 1044.325118403347005, 67.0, 22.0 ],
+					"text" : "delay 1000"
 				}
 
 			}
@@ -79,32 +138,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "dump", "" ],
+					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 1937.468902786572471, 968.666666030883789, 87.000001072883606, 22.0 ],
-					"text" : "t dump l"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-49",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "DUMP" ],
-					"patching_rect" : [ 1224.000036478042603, 972.000028967857361, 50.0, 22.0 ],
-					"text" : "t DUMP"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1292.666705131530762, 976.00002908706665, 71.0, 22.0 ],
-					"text" : "print DUMP"
+					"text" : "t b l"
 				}
 
 			}
@@ -115,7 +151,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2508.666675925254822, 1044.325118403347005, 85.0, 22.0 ],
+					"patching_rect" : [ 2505.66666042804718, 1030.033621251583099, 85.0, 22.0 ],
 					"text" : "r rollout_dump"
 				}
 
@@ -224,7 +260,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1016.0, 199.0, 150.0, 20.0 ],
+					"patching_rect" : [ 2653.333382129669189, 1173.642513554008474, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1191.333333253860474, 38.333333134651184, 150.0, 20.0 ],
 					"text" : "show comments"
@@ -239,7 +275,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 990.0, 195.0, 24.0, 24.0 ],
+					"patching_rect" : [ 2627.333382129669189, 1169.642513554008474, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1144.333333253860474, 25.833333134651184, 45.0, 45.0 ]
 				}
@@ -252,7 +288,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 990.0, 233.0, 81.0, 22.0 ],
+					"patching_rect" : [ 2627.333382129669189, 1207.642513554008474, 81.0, 22.0 ],
 					"text" : "showlyrics $1"
 				}
 
@@ -1567,7 +1603,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2529.666661143302917, 1199.033620893955231, 60.0, 22.0 ],
+					"patching_rect" : [ 2537.66666042804718, 1197.700287520885468, 60.0, 22.0 ],
 					"text" : "s openfile"
 				}
 
@@ -1579,7 +1615,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2318.66666042804718, 968.666666030883789, 66.0, 22.0 ],
+					"patching_rect" : [ 2318.66666042804718, 907.333360314369202, 66.0, 22.0 ],
 					"text" : "r parse-roll"
 				}
 
@@ -1610,25 +1646,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-37",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 2529.666661143302917, 1161.033620655536652, 19.0, 22.0 ],
-					"text" : "t l"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-38",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "int", "", "clear", "int" ],
-					"patching_rect" : [ 2505.66666042804718, 1108.185343742370605, 67.0, 22.0 ],
-					"text" : "t 1 l clear 0"
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "int" ],
+					"patching_rect" : [ 2505.66666042804718, 1108.185343742370605, 83.0, 22.0 ],
+					"text" : "t 1 l 0"
 				}
 
 			}
@@ -1656,7 +1680,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "$voices = right($x2, 0 - length($x2.'voicenames'));\n##\t\t\t\t\t\t\t\t\t\t\t\t\tprint($voices, \"voices-dump = \")\r\n\r\n\n$sl = \nwrap('stafflines'\nfor $x in $x1.'meigroll'.'header'.'stafflines'\ncollect wrap(right(flat($x), 1)));\n\n\n$voicedict = for $x in $x1.'meigroll'.'voices' collect wrap(right(flat($x, @maxlevel 1), 1));\t\n\t\t\t##\tprint($voicedict, \"voicedict = \")\n\n$voicedict_thin = thin(for $x in $voicedict with @maxdepth 2 collect $x );\n\t\t\t##\tprint($voicedict_thin, \"voicedict_thin = \")\n\n\n$rollfromdict =\n\t\t\t\t'roll'\n\n\t\t\t\tsubs($x1.'meigroll'.'header', 6, $sl);\n\n\n\n\n\n\ndirectout(1, \n\t\t$rollfromdict\n\r\n\t\t\n\tleft(\n\t\tfor $y in \n\t\t\tgroup(\n\t\t\t\tfor $x in\n\t\t\t\t\t\t$voicedict_thin\n \t\t\t\t\t\t\n\n\t\tcollect\n\t\t\t\twrap(\n\t\t\t\t\tflat($x, @maxlevel 1).'onset'\n\t\t\t\twrap(\n\t\t\t\t\t(flat($x, @maxlevel 1).'pitch')\r\n\t\t\t\t\t(flat($x, @maxlevel 1).'duration') 1\r\n\r\n\r\n\r\n\t\t\t\twrap('slots'\r\n\t\t\t\t\t\t\t(flat($x, @maxlevel 1).'slots'.'preset/eventID')\r\n\t\t\t\t\t\t\t(flat($x, @maxlevel 1).'slots'.'automID')\r\n\t\t\t\t\t\t\t(flat($x, @maxlevel 1).'slots'.'label')\r\n\t\t\t\t\t\t\t(flat($x, @maxlevel 1).'slots'.'comment') \t\r\n\t\t\t\t\t\t\t(flat($x, @maxlevel 1).'slots'.'shape')\r\n\t\t\t\t\t\t\t(flat($x,  @maxlevel 1).'slots'.'text')\r\n\t\t\t\t\t\t\t(flat($x,  @maxlevel 1).'slots'.'start_values_FLOATS')\r\n\t\t\t\t\t\t\t(flat($x,  @maxlevel 1).'slots'.'start_values_INTS')\r\n\t\t\t\t\t\t\t(flat($x,  @maxlevel 1).'slots'.'destionation_values_FLOATS')\r\n\t\t\t\t\t\t\t(flat($x,  @maxlevel 1).'slots'.'destination_values_INTS')\t\t\t\t\t\t\t\r\n\r\n\t\t\twrap(\r\n\t\t\t\t1\r\n\t\t\t\tfor $u in flat(flat($x, @maxlevel 1).'slots'.'function', @maxlevel 1) collect wrap(right(flat($u), 1)) )\r\n\t\t\t\r\n\t\t\t\r\n\r\n\r\n\t\r\n\r\n\twrap(8\r\n\twrap(\r\n\t\t\tfor $u in\r\n\t\t\t\tflat($x, @maxlevel 1).'slots'.'config'.'8'\r\n\t\t\t\tdo\r\n\t\t\t\t\tflat($u, @maxlevel 1):1\r\n\twrap(\tfor $i in\r\n\t\t\t\tfor $u in\r\n\t\t\t\t\tflat($x, @maxlevel 1).'slots'.'config'.'8'\r\n\t\t\t\tdo \r\n\t\t\t\t\tflat($u, @maxlevel 1).'ids'\r\n\t\t\tcollect\t\r\n\t\t\t\tflat(right(flat($i), 1))\r\n\t)\r\n\twrap(\t\tfor $i in\r\n\t\t\t\tfor $u in\r\n\t\t\t\t\tflat($x, @maxlevel 1).'slots'.'config'.'8'\r\n\t\t\t\tdo \r\n\t\t\t\t\tflat($u, @maxlevel 1).'values'\r\n\t\t\tcollect\t\r\n\t\t\t\twrap(right(flat($i), 1))\r\n\t)\r\n\t)\r\n\t)\r\n\t\t\r\n\r\n)\r\n\r\n\n\r\n\r\n\r\n\t\t\t\t\twrap( 'name' (flat($x, @maxlevel 1).'slots'.'preset/eventID').'9')\t0 )\n \t\t\t\t\twrap( 'name' (flat($x, @maxlevel 1).'slots'.'automID').'10') 0 )\n\n\t\t\t,\n\n\t\t\t\tfor $x in $voicedict\n\t\t\t\tcollect\n\t\t\t\tlength(flat($x, @maxlevel 1))\n\t\t\t)\n\n\t\tcollect\n\t\twrap(flat($y, @maxlevel 1) 0)\n\n\t, length($voicedict) \n\t)\n\r\n\r\n\r\n) \n",
+					"code" : "##$voices = right($x2, 0 - length($x2.'voicenames'));\n##\t\t\t\t\t\t\t\t\t\t\t\t\tprint($voices, \"voices-dump = \")\r\n\r\n\n$sl = \nwrap('stafflines'\nfor $x in $x1.'meigroll'.'header'.'stafflines'\ncollect wrap(right(flat($x), 1)));\n\n\n$voicedict = for $x in $x1.'meigroll'.'voices' collect wrap(right(flat($x, @maxlevel 1), 1));\t\n\t\t\t##\tprint($voicedict, \"voicedict = \")\n\n##$voicedict_thin = thin(for $x in $voicedict with @maxdepth 2 collect $x );\n\t\t\t##\tprint($voicedict_thin, \"voicedict_thin = \")\r\n\r\n$voicedict_flat = for $x in $voicedict collect flat($x, @maxlevel 1);\n\n$rollfromdict =\n\t\t\t\t'roll'\n\n\t\t\t\tsubs($x1.'meigroll'.'header', 6, $sl);\n\t\t\ndirectout(1, 'clear');\n\ndirectout(1, \n\t\t$rollfromdict\n\r\n\t\t\n\tleft(\n\t\tfor $y in \n\t\t\tgroup(\n\t\t\t\tfor $x in\n\t\t\t\t\t\t$voicedict_flat\n \t\t\t\t\t\t\n\n\t\tcollect\n\t\t\t\twrap(\n\t\t\t\t\tflat($x, @maxlevel 1).'onset'\n\t\t\t\twrap(\n\t\t\t\t\t(flat($x, @maxlevel 1).'pitch')\r\n\t\t\t\t\t(flat($x, @maxlevel 1).'duration') 1\r\n\r\n\r\n\r\n\t\t\t\twrap('slots'\r\n\t\t\t\t\t\t\t(flat($x, @maxlevel 1).'slots'.'preset/eventID')\r\n\t\t\t\t\t\t\t(flat($x, @maxlevel 1).'slots'.'automID')\r\n\t\t\t\t\t\t\t(flat($x, @maxlevel 1).'slots'.'label')\r\n\t\t\t\t\t\t\t(flat($x, @maxlevel 1).'slots'.'comment') \t\r\n\t\t\t\t\t\t\t(flat($x, @maxlevel 1).'slots'.'shape')\r\n\t\t\t\t\t\t\t(flat($x,  @maxlevel 1).'slots'.'text')\r\n\t\t\t\t\t\t\t(flat($x,  @maxlevel 1).'slots'.'start_values_FLOATS')\r\n\t\t\t\t\t\t\t(flat($x,  @maxlevel 1).'slots'.'start_values_INTS')\r\n\t\t\t\t\t\t\t(flat($x,  @maxlevel 1).'slots'.'destionation_values_FLOATS')\r\n\t\t\t\t\t\t\t(flat($x,  @maxlevel 1).'slots'.'destination_values_INTS')\t\t\t\t\t\t\t\r\n\r\n\t\t\twrap(\r\n\t\t\t\t1\r\n\t\t\t\tfor $u in flat(flat($x, @maxlevel 1).'slots'.'function', @maxlevel 1) collect wrap(right(flat($u), 1)) )\r\n\t\t\t\r\n\t\t\t\r\n\r\n\r\n\t\r\n\r\n\twrap(8\r\n\twrap(\r\n\t\t\tfor $u in\r\n\t\t\t\tflat($x, @maxlevel 1).'slots'.'config'.'8'\r\n\t\t\t\tdo\r\n\t\t\t\t\tflat($u, @maxlevel 1):1\r\n\twrap(\tfor $i in\r\n\t\t\t\tfor $u in\r\n\t\t\t\t\tflat($x, @maxlevel 1).'slots'.'config'.'8'\r\n\t\t\t\tdo \r\n\t\t\t\t\tflat($u, @maxlevel 1).'ids'\r\n\t\t\tcollect\t\r\n\t\t\t\tflat(right(flat($i), 1))\r\n\t)\r\n\twrap(\t\tfor $i in\r\n\t\t\t\tfor $u in\r\n\t\t\t\t\tflat($x, @maxlevel 1).'slots'.'config'.'8'\r\n\t\t\t\tdo \r\n\t\t\t\t\tflat($u, @maxlevel 1).'values'\r\n\t\t\tcollect\t\r\n\t\t\t\twrap(right(flat($i), 1))\r\n\t)\r\n\t)\r\n\t)\r\n\t\t\r\n\r\n)\r\n\r\n\n\r\n\r\n\r\n\t\t\t\t\twrap( 'name' (flat($x, @maxlevel 1).'slots'.'preset/eventID').'9')\t0 )\n \t\t\t\t\twrap( 'name' (flat($x, @maxlevel 1).'slots'.'automID').'10') 0 )\n\n\t\t\t,\n\n\t\t\t\tfor $x in $voicedict\n\t\t\t\tcollect\n\t\t\t\tlength(flat($x, @maxlevel 1))\n\t\t\t)\n\n\t\tcollect\n\t\twrap(flat($y, @maxlevel 1) 0) \n\n\t, length($voicedict) \n\t)\n\r\n) \n\r\n\r\ndirectout(1, \"hidevoices\" 0 0 0:* length($voicedict)  -  2) ",
 					"id" : "obj-27",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -1706,7 +1730,7 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2475.66666042804718, 583.333328366279602, 430.66667652130127, 326.666673421859741 ]
+					"patching_rect" : [ 2347.666656613349915, 573.99999475479126, 430.66667652130127, 326.666673421859741 ]
 				}
 
 			}
@@ -1758,7 +1782,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "$voices = right($x1, 0 - length($x1.'voicenames'));\n\t\t\t\t\t\t\t\t\t\t\t\t##\t print($voices)\n\n$rollwithoutvoices = left($x1, 0 - length($x1.'voicenames'));\n\n\n######\n$stafflines = $rollwithoutvoices.'stafflines';\n\t\t\t\t\t\t\t\t\t\t## print($stafflines, \"stafflines = \")\n\n$sladdr = \nfor $x $xaddr in $stafflines\ncollect(wrap($xaddr flat($x)));\n\n\t\t\t\t\t\t\t\t\t\t\t##  print('stafflines' $sladdr)\n\n$rollheader = subs($rollwithoutvoices, 9,  wrap('stafflines' $sladdr));\n#######\r\n\r\n\r\n\r\n\r\n\r\n##############\r\n#############\r\n############\r\n\r\n$voices_parser = \n\nfor\n\t$x in $voices,\n\t$y in $x1.'voicenames'\n\t\twith @maxdepth 1\n\ncollect\n\n\t\twrap(\n\t\t\t$y\n\n\t\t\tfor\n\t\t\t\t$z $zaddr in $x with @maxdepth 2\n\t\t\tcollect\n\t\t\twrap(\n\t\t\t\t($zaddr:2)\n\t\t\n\t\t\twrap(\n\t\t\t\t'onset'\n\t\t\t\t$z:(1 1))\n\t\t\t\n\t\t\twrap(\n\t\t\t\t'pitch'\n\t\t\t\t$z:(1 2 1))\n\n\t\t\twrap(\n\t\t\t\t'duration'\n\t\t\t\t$z:(1 2 2))\n\n\t##\t\twrap(\n\t##\t\t\t'velocity (UNUSED)'\n\t##\t\t\t$z:(1 2 2))\r\n\r\n\t\t##\twrap( $slots_for_dict)\r\n\r\n\twrap(\r\n\r\n\t\tfor $h in flat($z:(1 2 4), @maxlevel 1)\r\n\t\tcollect\r\n\t\t\t\t\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:1\r\n\t\t\t\t\t\t\t\t\t== 'slots'\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\t'slots'\r\n\t\t\t################\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 8\r\n\t\t\t\t\t\t\tthen\r\n\r\n\r\n\t\twrap( 'config'\r\n\t\t\tinsert(\r\n\t\t\t\tinsert(\r\n\t\t\t\t\tsubs(\r\n\t\t\t\t\t\tsubs(\r\n\r\n\t\t\t\t\t\t\t$h,\r\n\r\n\t\t\t\t\t\t\t(1 2 2),\r\n\r\n\t\t\t\t\t\t\twrap(\r\n\t\t\t\t\t\t\t\tfor\r\n\t\t\t\t\t\t\t\t\t$w $waddr in\r\n\t\t\t\t\t\t\t\t\t\tflat($h:(1 2 2) @maxlevel 1)\r\n\t\t\t\t\t\t\t\tcollect\r\n\t\t\t\t\t\t\t\t\twrap($waddr $w))\r\n\t\t\t\t\t\t\t),\r\n\r\n\t\t\t\t\t\t(1 2 3),\r\n\r\n\t\t\t\t\t\twrap(\r\n\t\t\t\t\t\tfor\r\n\t\t\t\t\t\t\t$w $waddr in\r\n\t\t\t\t\t\t\t\tflat($h:(1 2 3) @maxlevel 1)\r\n\t\t\t\t\t\tcollect\r\n\t\t\t\t\t\t\t\twrap($waddr flat($w)))\r\n\t\t\t\t\t),\r\n\r\n\t\t\t\t(1 2 2 1),\r\n\t\t\t\t'ids'),\r\n\r\n\t\t\t(1 2 3 1),\r\n\t\t\t'values')\r\n)\r\n\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t################\r\n\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 9\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'preset/eventID'))\r\n\r\n\t\t\t\t\t\t################\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 10\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'automID' ))\r\n\r\n\t\t\t\t\t\t################\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 11\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'label'))\r\n\r\n\t\t\t\t\t\t################\r\n\t\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 12\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'comment'))\r\n\r\n\t\t\t\t\t\t################\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 23\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'shape'))\r\n\r\n\t\t\t\t\t\t################\r\n\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 6\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'text'))\r\n\r\n\t\t\t\t\t\t################\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 1\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(\r\n\t\t\t\t\t\t\t\t\tinsert(\r\n\t\t\t\t\t\t\t\t\t\t\twrap(\r\n\t\t\t\t\t\t\t\t\t\t\t\t1\r\n\t\t\t\t\t\t\t\t\t\t\t\tfor\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t$w $waddr\r\n\t\t\t\t\t\t\t\t\t\t\t\tin\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tright(flat($h, @maxlevel 1), 1)\r\n\t\t\t\t\t\t\t\t\t\t\t\tcollect\r\n\t\t\t\t\t\t\t\t\t\t\t\t\twrap($waddr flat($w))\r\n\t\t\t\t\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t\t\t\t, 1 , 'function' \r\n\t\t\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t\t\t)\r\n\r\n\t\t\t\t\r\n\r\n\r\n\t\t\t\t\t\t\t################\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 2\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'start_values_FLOATS'))\r\n\t\t\t\r\n\r\n\t\t\t\t\t\t\t################\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 4\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'start_values_INTS'))\r\n\t\t\t\r\n\r\n\t\t\t\t\t\t\t################\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 5\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'destination_values_INTS'))\r\n\t\t\t\r\n\r\n\t\t\t\t\t\t\t################\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 3\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'destination_values_FLOATS'))\r\n\t\t\t\r\n\r\n\t\t\t\t\t\t\t################\r\n\t\t\t\t\t##\t\telse\r\n\r\n\t\t\t\t\t##\t\t'null'\r\n\r\n\t\t)\t\t\t\t\t\r\n\r\n\t\r\n\t)\n\t)\n\t\t;\n\n\t\t\t\t\t\t##\t print($voices_parser);\r\n\r\n\r\n\r\n\r\n\r\n\ndirectout(1,\n\t\t\twrap('meigroll'\n\t\t\twrap('header' $rollheader)\n\t\t\twrap('voices'\r\n\t\t\t##\t\t\tfor $x in $voices_parser collect subs($x, -1 -1, null)\r\n\r\n\t\t\t\t\t\tfor $x in $voices_parser\r\n\t\t\t\t\t\t\t\t\tcollect \r\n\t\t\t\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t\t\t\tlength(flat(subs($x, -1 -1, null))) == 1\r\n\t\t\t\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\t\t\t\twrap(flat(subs($x, -1 -1, null)) flat(subs($x, -1 -1, null)) 'is empty')\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\t\t\t\t\tsubs($x, -1 -1, null)\r\n\r\n)))\n\r\n\t\t\t\t\t",
+					"code" : "$voices = right($x1, 0 - length($x1.'voicenames'));\n\t\t\t\t\t\t\t\t\t\t\t\t##\t print($voices)\n\n$rollwithoutvoices = left($x1, 0 - length($x1.'voicenames'));\n\n\n######\n$stafflines = $rollwithoutvoices.'stafflines';\n\t\t\t\t\t\t\t\t\t\t## print($stafflines, \"stafflines = \")\n\n$sladdr = \nfor $x $xaddr in $stafflines\ncollect(wrap($xaddr flat($x)));\n\n\t\t\t\t\t\t\t\t\t\t\t##  print('stafflines' $sladdr)\n\n$rollheader = subs($rollwithoutvoices, 9,  wrap('stafflines' $sladdr));\n#######\r\n\r\n\r\n\r\n\r\n\r\n##############\r\n#############\r\n############\r\n\r\n$voices_parser = \n\nfor\n\t$x in $voices,\n\t$y in $x1.'voicenames'\n\t\twith @maxdepth 1\n\ncollect\n\n\t\twrap(\n\t\t\t$y\n\n\t\t\tfor\n\t\t\t\t$z $zaddr in $x with @maxdepth 2\n\t\t\tcollect\n\t\t\twrap(\n\t\t\t\t($zaddr:2)\n\t\t\n\t\t\twrap(\n\t\t\t\t'onset'\n\t\t\t\t$z:(1 1))\n\t\t\t\n\t\t\twrap(\n\t\t\t\t'pitch'\n\t\t\t\t$z:(1 2 1))\n\n\t\t\twrap(\n\t\t\t\t'duration'\n\t\t\t\t$z:(1 2 2))\n\n\t##\t\twrap(\n\t##\t\t\t'velocity (UNUSED)'\n\t##\t\t\t$z:(1 2 2))\r\n\r\n\t\t##\twrap( $slots_for_dict)\r\n\r\n\twrap(\r\n\r\n\t\tfor $h in flat($z:(1 2 4), @maxlevel 1)\r\n\t\tcollect\r\n\t\t\t\t\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:1\r\n\t\t\t\t\t\t\t\t\t== 'slots'\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\t'slots'\r\n\t\t\t################\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 8\r\n\t\t\t\t\t\t\tthen\r\n\r\n\r\n\t\twrap( 'config'\r\n\t\t\tinsert(\r\n\t\t\t\tinsert(\r\n\t\t\t\t\tsubs(\r\n\t\t\t\t\t\tsubs(\r\n\r\n\t\t\t\t\t\t\t$h,\r\n\r\n\t\t\t\t\t\t\t(1 2 2),\r\n\r\n\t\t\t\t\t\t\twrap(\r\n\t\t\t\t\t\t\t\tfor\r\n\t\t\t\t\t\t\t\t\t$w $waddr in\r\n\t\t\t\t\t\t\t\t\t\tflat($h:(1 2 2) @maxlevel 1)\r\n\t\t\t\t\t\t\t\tcollect\r\n\t\t\t\t\t\t\t\t\twrap($waddr $w))\r\n\t\t\t\t\t\t\t),\r\n\r\n\t\t\t\t\t\t(1 2 3),\r\n\r\n\t\t\t\t\t\twrap(\r\n\t\t\t\t\t\tfor\r\n\t\t\t\t\t\t\t$w $waddr in\r\n\t\t\t\t\t\t\t\tflat($h:(1 2 3) @maxlevel 1)\r\n\t\t\t\t\t\tcollect\r\n\t\t\t\t\t\t\t\twrap($waddr flat($w)))\r\n\t\t\t\t\t),\r\n\r\n\t\t\t\t(1 2 2 1),\r\n\t\t\t\t'ids'),\r\n\r\n\t\t\t(1 2 3 1),\r\n\t\t\t'values')\r\n)\r\n\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t################\r\n\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 9\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'preset/eventID'))\r\n\r\n\t\t\t\t\t\t################\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 10\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'automID' ))\r\n\r\n\t\t\t\t\t\t################\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 11\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'label'))\r\n\r\n\t\t\t\t\t\t################\r\n\t\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 12\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'comment'))\r\n\r\n\t\t\t\t\t\t################\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 23\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'shape'))\r\n\r\n\t\t\t\t\t\t################\r\n\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 6\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'text'))\r\n\r\n\t\t\t\t\t\t################\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 1\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(\r\n\t\t\t\t\t\t\t\t\tinsert(\r\n\t\t\t\t\t\t\t\t\t\t\twrap(\r\n\t\t\t\t\t\t\t\t\t\t\t\t1\r\n\t\t\t\t\t\t\t\t\t\t\t\tfor\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t$w $waddr\r\n\t\t\t\t\t\t\t\t\t\t\t\tin\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tright(flat($h, @maxlevel 1), 1)\r\n\t\t\t\t\t\t\t\t\t\t\t\tcollect\r\n\t\t\t\t\t\t\t\t\t\t\t\t\twrap($waddr flat($w))\r\n\t\t\t\t\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t\t\t\t, 1 , 'function' \r\n\t\t\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t\t\t)\r\n\r\n\t\t\t\t\r\n\r\n\r\n\t\t\t\t\t\t\t################\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 2\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'start_values_FLOATS'))\r\n\t\t\t\r\n\r\n\t\t\t\t\t\t\t################\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 4\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'start_values_INTS'))\r\n\t\t\t\r\n\r\n\t\t\t\t\t\t\t################\r\n\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 5\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'destination_values_INTS'))\r\n\t\t\t\r\n\r\n\t\t\t\t\t\t\t################\r\n\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t$h:(1 1)\r\n\t\t\t\t\t\t\t\t\t== 3\r\n\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\twrap(insert($h, 1, 'destination_values_FLOATS'))\r\n\t\t\t\r\n\r\n\t\t\t\t\t\t\t################\r\n\t\t\t\t\t##\t\telse\r\n\r\n\t\t\t\t\t##\t\t'null'\r\n\r\n\t\t)\t\t\t\t\t\r\n\r\n\t\r\n\t)\n\t)\n\t\t;\n\n\t\t\t\t\t\t##\t print($voices_parser);\r\n\r\n\r\n\r\n\r\n\r\n\ndirectout(1,\n\t\t\twrap('meigroll'\n\t\t\twrap('header' $rollheader)\n\t\t\twrap('voices'\r\n\t\t\t##\t\t\tfor $x in $voices_parser collect subs($x, -1 -1, null)\r\n\r\n\t\t\t\t\t\tfor $x in $voices_parser\r\n\t\t\t\t\t\t\t\t\tcollect \r\n\t\t\t\t\t\t\t\t\t\tif\r\n\t\t\t\t\t\t\t\t\t\t\tlength(flat(subs($x, -1 -1, null))) == 1\r\n\t\t\t\t\t\t\t\t\t\tthen\r\n\t\t\t\t\t\t\t\t\t\t\twrap(flat(subs($x, -1 -1, null)) 'empty')\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\t\t\t\t\tsubs($x, -1 -1, null)\r\n\r\n)))\n\r\n\t\t\t\t\t",
 					"id" : "obj-45",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1855,21 +1879,21 @@
 					"bgslots" : [ 1, 2, 3, 4, 5, 6, 7, 11 ],
 					"bgslotzoom" : 80.0,
 					"bwcompatibility" : 80100,
-					"clefs" : [ "None", "None", "None", "None", "None", "None", "None" ],
+					"clefs" : [ "None", "None", "None", "None", "None" ],
 					"dblclicksendsvalues" : 1,
 					"defaultnoteslots" : [ "null" ],
 					"defaultvelocity" : 1,
 					"durationlinewidth" : 1.0,
-					"enharmonictable" : [ "default", "default", "default", "default", "default", "default", "default" ],
+					"enharmonictable" : [ "default", "default", "default", "default", "default" ],
 					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
+					"fontname" : "Courier",
+					"fontsize" : 15.0,
 					"grid" : 1,
 					"gridcolor" : [ 0.000111, 0.00176, 0.998218, 0.5 ],
-					"hidevoices" : [ 0, 0, 0, 0, 0, 0, 0 ],
+					"hidevoices" : [ 0, 0, 0, 1, 0 ],
 					"id" : "obj-55",
 					"inset" : 10,
-					"keys" : [ "CM", "CM", "CM", "CM", "CM", "CM", "CM" ],
+					"keys" : [ "CM", "CM", "CM", "CM", "CM" ],
 					"labelfamilies" : 3,
 					"linearedit" : 0,
 					"linklyricstoslot" : 12,
@@ -1879,17 +1903,17 @@
 					"lyricsfontsize" : 8.0,
 					"lyricsvadj" : -5.0,
 					"maxclass" : "bach.roll",
-					"midichannels" : [ 1, 2, 3, 4, 5, 6, 7 ],
+					"midichannels" : [ 1, 2, 3, 4, 5 ],
 					"numinlets" : 6,
 					"numoutlets" : 8,
-					"numparts" : [ 2, 1, 1, 1, 1, 1 ],
-					"numvoices" : 7,
+					"numparts" : [ 2, 1, 1, 1 ],
+					"numvoices" : 5,
 					"out" : "nnnnnnn",
 					"outlettype" : [ "", "", "", "", "", "", "", "bang" ],
-					"patching_rect" : [ 1130.468902786572471, 285.0, 833.0, 654.532446384429932 ],
+					"patching_rect" : [ 1130.468902786572471, 285.0, 905.0, 654.532446384429932 ],
 					"pitcheditrange" : [ "[", "[", 5600, 8500, "]", "]", "[", "[", 5600, 8500, "]", "]", "[", 6400, "]" ],
 					"presentation" : 1,
-					"presentation_rect" : [ 557.999999642372131, 99.808795273303986, 1253.0, 859.617589592933655 ],
+					"presentation_rect" : [ 557.999999642372131, 99.808795273303986, 1261.0, 859.617589592933655 ],
 					"preventedit" : [ "[", "notes", "create", "]" ],
 					"ruler" : 3,
 					"rulerlabelsfontsize" : 6.0,
@@ -1897,23 +1921,22 @@
 					"showclefs" : 0,
 					"showgroups" : 2,
 					"showledgerlines" : 0,
-					"showlyrics" : 0,
 					"showplayhead" : 1,
 					"showstems" : 0,
 					"showtails" : 0,
 					"snapmarkers" : 1,
 					"snaponset" : 1,
 					"staffcolor" : [ 0.151979, 0.428666, 0.475687, 1.0 ],
-					"stafflines" : [ "[", -1, 1, 3, 5, 7, "]", "[", -1, 1, 3, 5, 7, "]", "[", 1, 6, "]", "[", 1, 6, "]", "[", 1, 6, "]", "[", 1, 6, "]", "[", 1, 6, "]" ],
+					"stafflines" : [ "[", -1, 1, 3, 5, 7, "]", "[", -1, 1, 3, 5, 7, "]", "[", 1, 6, "]", "[", 1, 6, "]", "[", 1, 6, "]" ],
 					"subdivisiongridcolor" : [ 0.0, 0.0, 0.0, 0.095623 ],
-					"textcolor" : [ 0.151979, 0.428666, 0.475687, 1.0 ],
+					"textcolor" : [ 0.1, 0.1, 0.1, 1.0 ],
 					"versionnumber" : 80100,
-					"voicenames" : [ "presets", "events", "group/1/param_1", "group/2/param_1", "group/3/param_1", "group/4/param_1", "group/5/param_1" ],
+					"voicenames" : [ "presets", "events", "group/sss/param_1", "group/ccc/param_1", "group/bbb/param_1" ],
 					"voicenamesalign" : 2,
 					"voicenamesfontsize" : 8.0,
-					"voicespacing" : [ 50.0, 50.0, 50.0, 8.0, 8.0, 8.0, 8.0, 8.0 ],
+					"voicespacing" : [ 50.0, 50.0, 50.0, 8.0, 8.0, 8.0 ],
 					"vzoom" : 160.0,
-					"whole_roll_data_0000000000" : [ "roll", "[", "slotinfo", "[", 1, "[", "name", "function", "]", "[", "type", "function", "]", "[", "key", "f", "]", "[", "range", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "slope", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "representation", "]", "[", "grid", "]", "[", "ysnap", "]", "[", "domain", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "domainslope", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "temporalmode", "relative", "]", "[", "extend", 0, "]", "[", "width", "duration", "]", "[", "height", "auto", "]", "[", "copywhensplit", 0, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 2, "[", "name", "start values (floats)", "]", "[", "type", "floatlist", "]", "[", "key", "s", "]", "[", "range", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "slope", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "representation", "]", "[", "color", "_x_x_x_x_bach_float64_x_x_x_x_", 3449717732, 1066782634, "_x_x_x_x_bach_float64_x_x_x_x_", 3449717732, 1066782634, "_x_x_x_x_bach_float64_x_x_x_x_", 3257303197, 1066903430, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "default", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "temporalmode", "relative", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1080213504, "]", "[", "height", "auto", "]", "[", "copywhensplit", 0, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 3, "[", "name", "destination values (floats)", "]", "[", "type", "floatlist", "]", "[", "key", "d", "]", "[", "range", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "slope", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "representation", "]", "[", "color", "_x_x_x_x_bach_float64_x_x_x_x_", 2418925581, 1071904928, "_x_x_x_x_bach_float64_x_x_x_x_", 3539053052, 1071931981, "_x_x_x_x_bach_float64_x_x_x_x_", 865865407, 1071101090, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "default", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 4, "[", "name", "start values (ints)", "]", "[", "type", "intlist", "]", "[", "key", "S", "]", "[", "range", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1080016896, "]", "[", "slope", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "representation", "]", "[", "color", "_x_x_x_x_bach_float64_x_x_x_x_", 962072674, 1068943540, "_x_x_x_x_bach_float64_x_x_x_x_", 2741907122, 1068874753, "_x_x_x_x_bach_float64_x_x_x_x_", 4178144186, 1068722080, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "default", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 5, "[", "name", "destination values (ints)", "]", "[", "type", "intlist", "]", "[", "key", "D", "]", "[", "range", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1080016896, "]", "[", "slope", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "representation", "]", "[", "color", "_x_x_x_x_bach_float64_x_x_x_x_", 4260607558, 1071741140, "_x_x_x_x_bach_float64_x_x_x_x_", 975816570, 1071762322, "_x_x_x_x_bach_float64_x_x_x_x_", 2748779069, 1071005040, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "default", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 6, "[", "name", "text", "]", "[", "type", "text", "]", "[", "key", "t", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1080213504, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 7, "[", "name", "filelist", "]", "[", "type", "filelist", "]", "[", "key", "F", "]", "[", "color", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1080213504, "]", "[", "height", "auto", "]", "[", "copywhensplit", 0, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 8, "[", "name", "config", "]", "[", "type", "llll", "]", "[", "key", "C", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 1108857477, 1080855246, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 9, "[", "name", "entity ID", "]", "[", "type", "text", "]", "[", "key", "i", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1080213504, "]", "[", "height", "auto", "]", "[", "copywhensplit", 0, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 10, "[", "name", "automation ID", "]", "[", "type", "text", "]", "[", "key", "I", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 0, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 11, "[", "name", "Label", "]", "[", "type", "text", "]", "[", "key", "l", "]", "[", "color", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 12, "[", "name", "Comments", "]", "[", "type", "text", "]", "[", "key", "c", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 13, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 14, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 15, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 16, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 17, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 18, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 19, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 20, "[", "name", "dynamics", "]", "[", "type", "none", "]", "[", "key", "d", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079738368, "]", "[", "height", "auto", "]", "[", "copywhensplit", 0, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 21, "[", "name", "lyrics", "]", "[", "type", "none", "]", "[", "key", "l", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 0, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 22, "[", "name", "articulations", "]", "[", "type", "none", "]", "[", "key", "-", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079738368, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 23, "[", "name", "notehead", "]", "[", "type", "notehead", "]", "[", "key", "h", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079738368, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 24, "[", "name", "annotation", "]", "[", "type", "none", "]", "[", "key", "t", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 25, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 26, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 27, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 28, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 29, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 30, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "]", "[", "commands", "[", 1, "[", "note", "note", "]", "[", "chord", "chord", "]", "[", "rest", "rest", "]", "[", "key", 0, "]", "]", "[", 2, "[", "note", "note", "]", "[", "chord", "chord", "]", "[", "rest", "rest", "]", "[", "key", 0, "]", "]", "[", 3, "[", "note", "note", "]", "[", "chord", "chord", "]", "[", "rest", "rest", "]", "[", "key", 0, "]", "]", "[", 4, "[", "note", "note", "]", "[", "chord", "chord", "]", "[", "rest", "rest", "]", "[", "key", 0, "]", "]", "[", 5, "[", "note", "note", "]", "[", "chord", "chord", "]", "[", "rest", "rest", "]", "[", "key", 0, "]", "]", "]", "[", "groups", "]", "[", "markers", "]", "[", "midichannels", 1, 2, 3, 4, 5, 6, 7, "]", "[", "articulationinfo", "]", "[", "noteheadinfo", "]", "[", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1082081280, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1086198784, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, 1, "[", "slots", "[", 8, "[", "presetvalues", "[", "61a4fd97ab328a007a7c5894", "61a4fd9bbc8a737044159acc", "61a4fda3aeb82d1047d63541", "61a4fdbe14484bb509e44fb0", "61a4fffc855c05dba7bb5040", "]", "[", "[", 1, "]", "[", 0, "]", "[", 0, "]", "[", 0, "]", "[", 0, "]", "]", "]", "]", "[", 9, "61a50aae5672ee87fb23ebad", "]", "[", 11, "preset", "]", "[", 23, "blacksquare", "]", "]", "[", "name", "61a50aae5672ee87fb23ebad", "]", 0, "]", 0, "]", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1086492160, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1086147584, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, 1, "[", "slots", "[", 8, "[", "[", "]", "[", "]", "]", "]", "[", 9, "61a50ab48e79f26ba36fbde2", "]", "[", 11, "preset", "]", "[", 23, "blacksquare", "]", "]", "[", "name", "61a50ab48e79f26ba36fbde2", "]", 0, "]", 0, "]", 0, "]", "[", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1084510208, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1086198784, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, 1, "[", "slots", "[", 8, "[", "event_params", "[", "61a4fd97ab328a007a7c5894", "61a4fd9bbc8a737044159acc", "]", "[", "[", "group/1/param_1", "]", "[", "group/2/param_1", "]", "]", "]", "]", "[", 9, "61a50b1960b90981d6bb5588", "]", "[", 11, "event", "]", "[", 23, "blacktriangle", "]", "]", "[", "name", "61a50b1960b90981d6bb5588", "]", 0, "]", 0, "]", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085277184, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1086173184, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, 1, "[", "slots", "[", 8, "[", "event_params", "[", "61a4fda3aeb82d1047d63541", "]", "[", "[", "group/3/param_1", "]", "]", "]", "]", "[", 9, "61a50b443224c45aeebea615", "]", "[", 11, "event", "]", "[", 23, "blacktriangle", "]", "]", "[", "name", "61a50b443224c45aeebea615", "]", 0, "]", 0, "]", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085737984, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1086249984, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, 1, "[", "slots", "[", 8, "[", "event_params", "[", "61a4fdbe14484bb509e44fb0", "61a4fffc855c05dba7bb5040", "]", "[", "[", "group/4/param_1", "]", "[", "group/5/param_1", "]", "]", "]", "]", "[", 9, "61a50b1e404bb9c44fbad6ac", "]", "[", 11, "event", "]", "[", 23, "blacktriangle", "]", "]", "[", "name", "61a50b1e404bb9c44fbad6ac", "]", 0, "]", 0, "]", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1086645760, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1086019584, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, 1, "[", "slots", "[", 8, "[", "event_params", "[", "61a4fd9bbc8a737044159acc", "61a4fffc855c05dba7bb5040", "]", "[", "[", "group/2/param_1", "]", "[", "group/5/param_1", "]", "]", "]", "]", "[", 9, "61a50b8bed40221bcec2d2c0", "]", "[", 11, "event", "]", "[", 23, "blacktriangle", "]", "]", "[", "name", "61a50b8bed40221bcec2d2c0", "]", 0, "]", 0, "]", 0, "]", "[", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1084766208, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085865984, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1083297792, 1, "[", "slots", "[", 8, "[", "[", "]", "[", "]", "]", "]", "[", 9, "61a50b1960b90981d6bb5588", "]", "[", 10, "61a50b2ff9f703233b750590", "]", "[", 11, "group/1/param_1", "]", "[", 23, "cross", "]", "]", "[", "name", "61a50b1960b90981d6bb5588", "]", 0, "]", "[", "name", "61a50b2ff9f703233b750590", "]", 0, "]", 0, "]", "[", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085227008, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085865984, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1083297792, 1, "[", "slots", "[", 1, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "]", "[", 8, "[", "[", "]", "[", "]", "]", "]", "[", 9, "61a50b1960b90981d6bb5588", "]", "[", 10, "61a50b33b25d83b596ae6fd7", "]", "[", 11, "group/2/param_1", "]", "[", 23, "cross", "]", "]", "[", "name", "61a50b1960b90981d6bb5588", "]", 0, "]", "[", "name", "61a50b33b25d83b596ae6fd7", "]", 0, "]", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1086645760, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085865984, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1083297792, 1, "[", "slots", "[", 8, "[", "[", "]", "[", "]", "]", "]", "[", 9, "61a50b8bed40221bcec2d2c0", "]", "[", 10, "61a50b9703645f9018fe5b3e", "]", "[", 11, "group/2/param_1", "]", "[", 23, "cross", "]", "]", "[", "name", "61a50b8bed40221bcec2d2c0", "]", 0, "]", "[", "name", "61a50b9703645f9018fe5b3e", "]", 0, "]", 0, "]", "[", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085277184, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085865984, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1083297792, 1, "[", "slots", "[", 8, "[", "[", "]", "[", "]", "]", "]", "[", 9, "61a50b443224c45aeebea615", "]", "[", 10, "61a50b4cd5e6f790921f4699", "]", "[", 11, "group/3/param_1", "]", "[", 23, "cross", "]", "]", "[", "name", "61a50b443224c45aeebea615", "]", 0, "]", "[", "name", "61a50b4cd5e6f790921f4699", "]", 0, "]", 0, "]", "[", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085942784, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085865984, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1083297792, 1, "[", "slots", "[", 8, "[", "[", "]", "[", "]", "]", "]", "[", 9, "61a50b1e404bb9c44fbad6ac", "]", "[", 10, "61a50b3705e51c568c22ac32", "]", "[", 11, "group/4/param_1", "]", "[", 23, "cross", "]", "]", "[", "name", "61a50b1e404bb9c44fbad6ac", "]", 0, "]", "[", "name", "61a50b3705e51c568c22ac32", "]", 0, "]", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1086671360, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085865984, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1083297792, 1, "[", "slots", "[", 8, "[", "[", "]", "[", "]", "]", "]", "[", 9, "61a50b8bed40221bcec2d2c0", "]", "[", 10, "61a50b9902be83172755485f", "]", "[", 11, "group/4/param_1", "]", "[", 23, "cross", "]", "]", "[", "name", "61a50b8bed40221bcec2d2c0", "]", 0, "]", "[", "name", "61a50b9902be83172755485f", "]", 0, "]", 0, "]", "[", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1086325760, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085865984, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1083297792, 1, "[", "slots", "[", 8, "[", "[", "]", "[", "]", "]", "]", "[", 9, "61a50b1e404bb9c44fbad6ac", "]", "[", 10, "61a50b393eb228b2055b807a", "]", "[", 11, "group/5/param_1", "]", "[", 12, "ciao miao ", "]", "[", 23, "cross", "]", "]", "[", "name", "61a50b1e404bb9c44fbad6ac", "]", 0, "]", "[", "name", "61a50b393eb228b2055b807a", "]", 0, "]", 0, "]" ],
+					"whole_roll_data_0000000000" : [ "roll", "[", "slotinfo", "[", 1, "[", "name", "function", "]", "[", "type", "function", "]", "[", "key", "f", "]", "[", "range", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "slope", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "representation", "]", "[", "grid", "]", "[", "ysnap", "]", "[", "domain", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "domainslope", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "temporalmode", "relative", "]", "[", "extend", 0, "]", "[", "width", "duration", "]", "[", "height", "auto", "]", "[", "copywhensplit", 0, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 2, "[", "name", "start values (floats)", "]", "[", "type", "floatlist", "]", "[", "key", "s", "]", "[", "range", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "slope", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "representation", "]", "[", "color", "_x_x_x_x_bach_float64_x_x_x_x_", 3449717732, 1066782634, "_x_x_x_x_bach_float64_x_x_x_x_", 3449717732, 1066782634, "_x_x_x_x_bach_float64_x_x_x_x_", 3257303197, 1066903430, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "default", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "temporalmode", "relative", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1080213504, "]", "[", "height", "auto", "]", "[", "copywhensplit", 0, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 3, "[", "name", "destination values (floats)", "]", "[", "type", "floatlist", "]", "[", "key", "d", "]", "[", "range", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "slope", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "representation", "]", "[", "color", "_x_x_x_x_bach_float64_x_x_x_x_", 2418925581, 1071904928, "_x_x_x_x_bach_float64_x_x_x_x_", 3539053052, 1071931981, "_x_x_x_x_bach_float64_x_x_x_x_", 865865407, 1071101090, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "default", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 4, "[", "name", "start values (ints)", "]", "[", "type", "intlist", "]", "[", "key", "S", "]", "[", "range", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1080016896, "]", "[", "slope", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "representation", "]", "[", "color", "_x_x_x_x_bach_float64_x_x_x_x_", 962072674, 1068943540, "_x_x_x_x_bach_float64_x_x_x_x_", 2741907122, 1068874753, "_x_x_x_x_bach_float64_x_x_x_x_", 4178144186, 1068722080, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "default", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 5, "[", "name", "destination values (ints)", "]", "[", "type", "intlist", "]", "[", "key", "D", "]", "[", "range", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1080016896, "]", "[", "slope", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "representation", "]", "[", "color", "_x_x_x_x_bach_float64_x_x_x_x_", 4260607558, 1071741140, "_x_x_x_x_bach_float64_x_x_x_x_", 975816570, 1071762322, "_x_x_x_x_bach_float64_x_x_x_x_", 2748779069, 1071005040, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "default", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 6, "[", "name", "text", "]", "[", "type", "text", "]", "[", "key", "t", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1080213504, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 7, "[", "name", "filelist", "]", "[", "type", "filelist", "]", "[", "key", "F", "]", "[", "color", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1080213504, "]", "[", "height", "auto", "]", "[", "copywhensplit", 0, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 8, "[", "name", "config", "]", "[", "type", "llll", "]", "[", "key", "C", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 1108857477, 1080855246, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 9, "[", "name", "entity ID", "]", "[", "type", "text", "]", "[", "key", "i", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1080213504, "]", "[", "height", "auto", "]", "[", "copywhensplit", 0, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 10, "[", "name", "automation ID", "]", "[", "type", "text", "]", "[", "key", "I", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 0, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 11, "[", "name", "Label", "]", "[", "type", "text", "]", "[", "key", "l", "]", "[", "color", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 12, "[", "name", "Comments", "]", "[", "type", "text", "]", "[", "key", "c", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 13, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 14, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 15, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 16, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 17, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 18, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 19, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 20, "[", "name", "dynamics", "]", "[", "type", "none", "]", "[", "key", "d", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079738368, "]", "[", "height", "auto", "]", "[", "copywhensplit", 0, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 21, "[", "name", "lyrics", "]", "[", "type", "none", "]", "[", "key", "l", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 0, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 22, "[", "name", "articulations", "]", "[", "type", "none", "]", "[", "key", "-", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079738368, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 23, "[", "name", "notehead", "]", "[", "type", "notehead", "]", "[", "key", "h", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079738368, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 24, "[", "name", "annotation", "]", "[", "type", "none", "]", "[", "key", "t", "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 25, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 26, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 27, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 28, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 29, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "[", 30, "[", "name", "slot", "]", "[", "type", "none", "]", "[", "key", 0, "]", "[", "temporalmode", "none", "]", "[", "extend", 0, "]", "[", "width", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1079574528, "]", "[", "height", "auto", "]", "[", "copywhensplit", 1, "]", "[", "access", "readandwrite", "]", "[", "follownotehead", 0, "]", "]", "]", "[", "commands", "[", 1, "[", "note", "note", "]", "[", "chord", "chord", "]", "[", "rest", "rest", "]", "[", "key", 0, "]", "]", "[", 2, "[", "note", "note", "]", "[", "chord", "chord", "]", "[", "rest", "rest", "]", "[", "key", 0, "]", "]", "[", 3, "[", "note", "note", "]", "[", "chord", "chord", "]", "[", "rest", "rest", "]", "[", "key", 0, "]", "]", "[", 4, "[", "note", "note", "]", "[", "chord", "chord", "]", "[", "rest", "rest", "]", "[", "key", 0, "]", "]", "[", 5, "[", "note", "note", "]", "[", "chord", "chord", "]", "[", "rest", "rest", "]", "[", "key", 0, "]", "]", "]", "[", "groups", "]", "[", "markers", "]", "[", "midichannels", 1, 2, 3, 4, 5, "]", "[", "articulationinfo", "]", "[", "noteheadinfo", "]", "[", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085073408, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1086198784, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, 1, "[", "slots", "[", 8, "[", "presetvalues", "[", "61a68a0ee8a4d79f22c92919", "61a68a13c2c33d8e98e89b92", "61a68a18ffacf2207cf72659", "]", "[", "[", 1, "]", "[", "ciao", "]", "[", "mbuto", "cacca", "piscia", 3, "]", "]", "]", "]", "[", 9, "61a68a6c080d97a3be829e8e", "]", "[", 11, "preset", "]", "[", 23, "blacksquare", "]", "]", "[", "name", "61a68a6c080d97a3be829e8e", "]", 0, "]", 0, "]", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085661184, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1086198784, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, 1, "[", "slots", "[", 8, "[", "presetvalues", "[", "61a68a0ee8a4d79f22c92919", "61a68a13c2c33d8e98e89b92", "61a68a18ffacf2207cf72659", "]", "[", 12, 22, "e.5", "]", "]", "]", "[", 9, "61a68ade9a9ca3e437c550ac", "]", "[", 11, "preset", "]", "[", 23, "blacksquare", "]", "]", "[", "name", "61a68ade9a9ca3e437c550ac", "]", 0, "]", 0, "]", 0, "]", "[", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1081671680, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1086198784, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, 1, "[", "slots", "[", 8, "[", "event_params", "[", "61a68a0ee8a4d79f22c92919", "61a68a18ffacf2207cf72659", "]", "[", "[", "group/sss/param_1", "]", "[", "group/bbb/param_1", "]", "]", "]", "]", "[", 9, "61a68a3b03f1673e4ab01cec", "]", "[", 11, "evnt", "]", "[", 23, "blacktriangle", "]", "]", "[", "name", "61a68a3b03f1673e4ab01cec", "]", 0, "]", 0, "]", 0, "]", "[", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1083129856, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085865984, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1083290624, 1, "[", "slots", "[", 1, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 906082321, 1067507281, "_x_x_x_x_bach_float64_x_x_x_x_", 3624475174, 1072319734, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 769344944, 1071560177, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1072693248, "_x_x_x_x_bach_float64_x_x_x_x_", 818429880, 1072683241, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 0, "]", "]", "[", 8, "[", "]", "]", "[", 9, "61a68a3b03f1673e4ab01cec", "]", "[", 10, "61a68a58340c850d4b665530", "]", "[", 11, "group/sss/param_1", "]", "[", 23, "cross", "]", "]", "[", "name", "61a68a3b03f1673e4ab01cec", "]", 0, "]", "[", "name", "61a68a58340c850d4b665530", "]", 0, "]", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1084715008, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085865984, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1083290624, 1, "[", "slots", "[", 9, "61a68a3b03f1673e4ab01cec", "]", "[", 10, "61a694ba1bb21c99d9c966f7", "]", "[", 11, "group/sss/param_1", "]", "[", 23, "cross", "]", "]", "[", "name", "61a694ba1bb21c99d9c966f7", "]", 0, "]", "[", "name", "61a68a3b03f1673e4ab01cec", "]", 0, "]", 0, "]", "[", 0, "]", "[", "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1084254208, "[", "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1085865984, "_x_x_x_x_bach_float64_x_x_x_x_", 0, 1083290624, 1, "[", "slots", "[", 6, "io sono una lista di stringhe", "]", "[", 8, "[", "]", "]", "[", 9, "61a68a3b03f1673e4ab01cec", "]", "[", 10, "61a68a650d473085c85b884b", "]", "[", 11, "group/bbb/param_1", "]", "[", 23, "cross", "]", "]", "[", "name", "61a68a3b03f1673e4ab01cec", "]", 0, "]", "[", "name", "61a68a650d473085c85b884b", "]", 0, "]", 0, "]" ],
 					"whole_roll_data_count" : [ 1 ],
 					"zoom" : 55.692968999999998
 				}
@@ -1928,7 +1951,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 2019.999985098838806, 418.975824396522512, 24.0, 24.0 ],
+					"patching_rect" : [ 2303.66666042804718, 1206.975847880752553, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 932.999999642372131, 27.308795273303986, 45.0, 45.0 ]
 				}
@@ -1938,7 +1961,7 @@
 				"box" : 				{
 					"id" : "obj-57",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patcher" : 					{
@@ -1952,7 +1975,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 79.0, 1372.0, 807.0 ],
+						"rect" : [ 408.0, 108.0, 562.0, 685.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1982,13 +2005,98 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 98.0, 71.0, 70.0, 22.0 ],
+									"text" : "loadmess 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 452.0, 245.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 197.732703506946564, 156.0, 111.0, 22.0 ],
+									"text" : "prepend paramslist"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 197.732703506946564, 126.0, 94.0, 22.0 ],
+									"text" : "route paramslist"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "dump" ],
+									"patching_rect" : [ 152.732703506946564, 243.0, 247.267296493053436, 22.0 ],
+									"text" : "t l dump"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-5",
+									"index" : 2,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 152.732703506946564, 134.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 152.732703506946564, 207.0, 64.0, 22.0 ],
+									"text" : "gate"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-23",
 									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 199.732703506946564, 313.0, 30.0, 30.0 ]
+									"patching_rect" : [ 339.732703506946564, 386.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1999,7 +2107,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 110.232703506946564, 64.0, 126.0, 22.0 ],
+									"patching_rect" : [ 10.232703506946564, 181.0, 126.0, 22.0 ],
 									"text" : "prepend viewallvoices"
 								}
 
@@ -2013,19 +2121,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 110.232703506946564, 24.0, 30.0, 30.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-15",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "dump" ],
-									"patching_rect" : [ 110.232703506946564, 119.0, 233.0, 22.0 ],
-									"text" : "t l dump"
+									"patching_rect" : [ 10.232703506946564, 141.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -2035,7 +2131,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 230.732703506946564, 279.308080196380615, 43.0, 22.0 ],
+									"patching_rect" : [ 381.0, 359.308080196380615, 43.0, 22.0 ],
 									"text" : "s rollin"
 								}
 
@@ -2047,7 +2143,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 16.732703506946564, 64.0, 71.0, 22.0 ],
+									"patching_rect" : [ 197.732703506946564, 82.0, 71.0, 22.0 ],
 									"text" : "fromsymbol"
 								}
 
@@ -2060,7 +2156,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 16.732703506946564, 32.0, 67.0, 22.0 ],
+									"patching_rect" : [ 197.732703506946564, 50.0, 67.0, 22.0 ],
 									"text" : "r fromnode"
 								}
 
@@ -2072,7 +2168,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 437.088241357924176, 171.293105393318228, 245.0, 47.0 ],
+									"patching_rect" : [ 573.088241357924176, 251.293105393318228, 245.0, 47.0 ],
 									"text" : "DESIGN ROLL with PARAMS LIST\nand\nHIDE/VIEW all"
 								}
 
@@ -2084,20 +2180,20 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 110.232703506946564, 171.293105393318228, 85.0, 22.0 ],
+									"patching_rect" : [ 246.232703506946564, 276.293105393318228, 85.0, 22.0 ],
 									"text" : "r rollout_dump"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"code" : "if $x1:1 == 'paramslist' then directout(1, 'dump');\r\n\r\n\r\n$paramslist = wrap($x1).'paramslist';\t\t\t\t\t### paramslist received fromnode, edited with devices_tree_ui\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t### formatted as: paramslist [ list of params IDs ] [ list of params label with path)\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t### ex: paramslist [ 617d3b70ab50c8dc4800eece 617d3d0343cca80bd3a6239b ] [ group/_device/1 group/_device/2 ]\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t## print($paramslist, \"paramslist fromNODE = \");\n\r\n$dumpedroll =  $x2;\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t### fullroll LLLL received from bach.roll after dumping it\r\n\r\n\r\nif $past = 'null' then unkeep $past = $paramslist:1;\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t## print($past, \"past, paramsIDs received before = \");\r\n\t\t$present =\n\t\t\t\tif\n\t\t\t\t\t$paramslist:1 != $past\n\t\t\t\tthen\n\t\t\t\t\tfor\n\t\t\t\t\t\t$x in flat($paramslist:1)\n\t\t\t\t\tcollect\n\t\t\t\t\t\twrap($x)\n\t\t\t\telse\n\t\t\t\t\t$past;\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t## print($present, \"present, current paramsIDs = \");\r\n###############\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t### comparing paramsIDs lists (common and different elements)\r\n\t\t\t$cmmn_addrs =\n\t\t\t\twrap(\n\t\t\t\t\tfor\n\t\t\t\t\t\t$x in $present\n\t\t\t\t\tcollect\n\t\t\t\t\t\tflat(findaddrs($past, $x))\n\t\t\t\t\t);\r\n\r\n\t\t\t$diff_addrs =\n\t\t\t\tflat(\n\t\t\t\t\tfor\n\t\t\t\t\t\t$x in diff($present, $past) with @maxdepth 1\n\t\t\t\t\tcollect\n\t\t\t\t\t\tfindaddrs($present, $x)\n\t\t\t\t\t);\r\n\r\n\r\n\r\n#################\r\n\n\t\t\t$past_len = 0-length($past);\n\t\t\t$present_len = length($present);\n\t\t\t$pastMINUSpresent = $past_len + $present_len;\r\n\r\n################\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t## keep past for next evaluation\r\nif $paramslist:1 != $past then unkeep $past;\r\ninit $past = for\n\t\t\t\t$x in flat($paramslist:1)\n\t\t\t\t\tcollect\n\t\t\t\t\t\twrap($x);\r\nkeep $past;\r\n\r\n\r\n\r\n#####\r\n\r\n\r\n\r\n###############################################\t\n\t\t\t\t\t\t\t\t\t\t\t   #### create full roll with new voices\r\n###############################################\r\n\t\r\n############\t\r\n\t\t\t$voices_past = right($dumpedroll, $past_len);\r\n\r\n############\n\t\t\t$voices_cmmn = nth($voices_past, $cmmn_addrs);\r\n############\r\n\t\t\t$voices_present =\n\t\t\t\tif\r\n\t\t\t\t\t$pastMINUSpresent == 0\n\t\t\t\t&&\n\t\t\t\t\tdiff_addrs != null\n\t\t\t\tthen\n\t\t\t\t\t$voices_cmmn\n\t\t\t\telse\n\t\t\t\t\tsubs(\n\t\t\t\t\t\t$ins = insert(\n\t\t\t\t\t\t\t$voices_cmmn, $diff_addrs, 0, $diff_addrs, 1234567890\n\t\t\t\t\t\t), findaddrs($ins, 1234567890), wrap(wrap(0)), 1, 1);\r\n##########\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t### there's a bach.BUG in eval_function insert (so i was troggling it with subs)\r\n\r\n\r\n\r\n############\n\t\t\t$fullROLL = left($dumpedroll, $past_len) $voices_present;\r\n############\n\r\n#### MESSAGES FOR ROLL:\r\n\r\n\t\t\t$numvoices = wrap(\"numvoices\" 2+length(flat($present)));\n\t\t\t$voicespacing = wrap(\"voicespacing\" 50 50 50 8:*length(flat($present)));\n\t\t\t$numparts = wrap(\"numparts\" 2 1:*length((flat($present)));\n\t\t\t$stafflines = wrap(\"stafflines\" wrap(-1 1 3 5 7) wrap(-1 1 3 5 7) wrap(1 6) :* length(flat($present)));\r\n\t\t\t$voicenames = wrap(\"voicenames\" \"presets\" \"events\" flat($paramslist:2))) ;\r\n\r\n\t$all = wrap($fullROLL) $numvoices $voicespacing $stafflines $numparts ;\r\n\r\n\r\n\r\nif $x1:1 == 'paramslist' then\r\n\tfor\n\t\t\t\t$l in $all with @maxdepth 1\n\t\t\tdo\n\t\t\t\tdirectout(1, flat($l @maxlevel 1))\r\n;\r\n\r\n\r\n\r\nif $x1:1 == 'paramslist' then\r\n\tdirectout(1, \"hidevoices\" 0 0 0:* length($dumpedroll.'voicenames') - 2)\r\n\tdirectout(2, 'set' 1)\r\n;\r\n\r\n\r\n\r\n\r\n\r\n\n#############################################################################################################\n################################################\t\t\t\t\t\t\t\t\tVIEW ALL VOICES Toggle\n#############################################################################################################\n\n\n############\t\t\t\t\t\t\t\t\n\t\t\t$viewallvoices = wrap($x1).'viewallvoices';\r\n\t\t##\t print($viewallvoices, \"viewallvoices = \")\r\n\r\n################################################\r\n\r\nif $x1:1 == 'viewallvoices' then directout(1, 'dump');\r\n\r\n############\n\t\t\tdirectout(1,\n\t\t\t\tif\n\t\t\t\t\t$viewallvoices == 1\n\t\t\t##\t||\n\t\t\t##\t\t$viewallvoices == null\n\t\t\t\tthen\r\n\t\t\t\t\t\"hidevoices\" 0 0 0:* length($dumpedroll.'voicenames') - 2\n\t\t\t\telse\r\n\t\t\t\tif \r\n\t\t\t\t\t$viewallvoices == 0\r\n\t\t\t\tthen\n\t\t\t\t\t\"hidevoices\" 0 0 1:* length($dumpedroll.'voicenames') - 2\r\n\t\t\t)\r\n##;\r\n############\r\n\t\t##\tif $viewallvoices == null then directout(2, 'set' 1)\r\n############\r\n",
+									"code" : "##if $x1:1 == 'paramslist' then directout(1, 'dump');\r\n\r\n$paramslist = wrap($x1).'paramslist';\t\t\t\t\t### paramslist received fromnode, edited with devices_tree_ui\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t### formatted as: paramslist [ list of params IDs ] [ list of params label with path)\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t### ex: paramslist [ 617d3b70ab50c8dc4800eece 617d3d0343cca80bd3a6239b ] [ group/_device/1 group/_device/2 ]\n\t\t\t\t\t\t\t\t\t\t\t\t\t \t##print($paramslist, \"paramslist fromNODE = \");\n\r\n$dumpedroll =  $x2;\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t### fullroll LLLL received from bach.roll after dumping it\r\n\r\n\r\nif $past == 'null' then unkeep $past = $paramslist:1;\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t## print($past, \"past, paramsIDs received before = \");\r\n\t\t$present =\n\t\t\t\tif\n\t\t\t\t\t$paramslist:1 != $past\n\t\t\t\tthen\n\t\t\t\t\tfor\n\t\t\t\t\t\t$x in flat($paramslist:1)\n\t\t\t\t\tcollect\n\t\t\t\t\t\twrap($x)\n\t\t\t\telse\n\t\t\t\t\t$past;\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t##\t print($present, \"present, current paramsIDs = \");\r\n###############\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t### comparing paramsIDs lists (common and different elements)\r\n\t\t\t$cmmn_addrs =\n\t\t\t\twrap(\n\t\t\t\t\tfor\n\t\t\t\t\t\t$x in $present\n\t\t\t\t\tcollect\n\t\t\t\t\t\tflat(findaddrs($past, $x))\n\t\t\t\t\t);\r\n\r\n\t\t\t$diff_addrs =\n\t\t\t\tflat(\n\t\t\t\t\tfor\n\t\t\t\t\t\t$x in diff($present, $past) with @maxdepth 1\n\t\t\t\t\tcollect\n\t\t\t\t\t\tfindaddrs($present, $x)\n\t\t\t\t\t);\r\n\r\n\r\n\r\n#################\r\n\n\t\t\t$past_len = 0-length($past);\n\t\t\t$present_len = length($present);\n\t\t\t$pastMINUSpresent = $past_len + $present_len;\r\n\r\n################\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t## keep past for next evaluation\r\nif $paramslist:1 != $past then unkeep $past;\r\ninit $past = for\n\t\t\t\t$x in flat($paramslist:1)\n\t\t\t\t\tcollect\n\t\t\t\t\t\twrap($x);\r\nkeep $past;\r\n\r\n\r\n\r\n#####\r\n\r\n\r\n\r\n###############################################\t\n\t\t\t\t\t\t\t\t\t\t\t   #### create full roll with new voices\r\n###############################################\r\n\t\r\n############\t\r\n\t\t\t$voices_past = right($dumpedroll, $past_len);\r\n\r\n############\n\t\t\t$voices_cmmn = nth($voices_past, $cmmn_addrs);\r\n############\r\n\t\t\t$voices_present =\n\t\t\t\tif\r\n\t\t\t\t\t$pastMINUSpresent == 0\n\t\t\t\t&&\n\t\t\t\t\tdiff_addrs != null\n\t\t\t\tthen\n\t\t\t\t\t$voices_cmmn\n\t\t\t\telse\n\t\t\t\t\tsubs(\n\t\t\t\t\t\t$ins = insert(\n\t\t\t\t\t\t\t$voices_cmmn, $diff_addrs, 0, $diff_addrs, 1234567890\n\t\t\t\t\t\t), findaddrs($ins, 1234567890), wrap(wrap(0)), 1, 1);\r\n##########\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t### there's a bach.BUG in eval_function insert (so i was troggling it with subs)\r\n##print($voices_past);\r\n##print($voices_cmnn);\r\n##print($voices_present);\r\n\r\n\r\n############\n\t\t\t$fullROLL = left($dumpedroll, $past_len) $voices_present;\r\n############\n\r\n#### MESSAGES FOR ROLL:\r\n\r\n\t\t\t$numvoices = wrap(\"numvoices\" 2+length(flat($present)));\n\t\t\t$voicespacing = wrap(\"voicespacing\" 50 50 50 8:*length(flat($present)));\n\t\t\t$numparts = wrap(\"numparts\" 2 1:*length((flat($present)));\n\t\t\t$stafflines = wrap(\"stafflines\" wrap(-1 1 3 5 7) wrap(-1 1 3 5 7) wrap(1 6) :* length(flat($present)));\r\n\t\t\t$voicenames = wrap(\"voicenames\" \"presets\" \"events\" flat($paramslist:2))) ;\r\n\r\n\t$all = wrap($fullROLL) $numvoices $voicespacing $stafflines $numparts ;\r\n\r\n\r\n\r\nif $x1:1 == 'paramslist' then\r\n\tfor\n\t\t\t\t$l in $all with @maxdepth 1\n\t\t\tdo\n\t\t\t\tdirectout(1, flat($l @maxlevel 1))\r\n;\r\n\r\n\r\n\r\nif $x1:1 == 'paramslist' then\r\n\tdirectout(1, \"hidevoices\" 0 0 0:* length($dumpedroll.'voicenames'))\r\n\tdirectout(2, 'set' 1)\r\n;\r\n\r\n\r\n\r\n\r\n\r\n\n#############################################################################################################\n################################################\t\t\t\t\t\t\t\t\tVIEW ALL VOICES Toggle\n#############################################################################################################\n\n\n############\t\t\t\t\t\t\t\t\n\t\t\t$viewallvoices = wrap($x1).'viewallvoices';\r\n\t\t##\t print($viewallvoices, \"viewallvoices = \")\r\n\r\n################################################\r\n\r\n##if $x1:1 == 'viewallvoices' then directout(1, 'dump');\r\n\r\n############\n\t\t\tdirectout(1,\n\t\t\t\tif\n\t\t\t\t\t$viewallvoices == 1\n\t\t\t##\t||\n\t\t\t##\t\t$viewallvoices == null\n\t\t\t\tthen\r\n\t\t\t\t\t\"hidevoices\" 0 0 0:* length($dumpedroll.'voicenames') - 2\n\t\t\t\telse\r\n\t\t\t\tif \r\n\t\t\t\t\t$viewallvoices == 0\r\n\t\t\t\tthen\n\t\t\t\t\t\"hidevoices\" 0 0 1:* length($dumpedroll.'voicenames') - 2\r\n\t\t\t)\r\n##;\r\n############\r\n\t\t##\tif $viewallvoices == null then directout(2, 'set' 1)\r\n############\r\n",
 									"id" : "obj-54",
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 16.732703506946564, 229.622504591941833, 206.0, 22.0 ],
+									"patching_rect" : [ 152.732703506946564, 309.622504591941833, 206.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 1,
 										"versionnumber" : 80100
@@ -2110,7 +2206,7 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-54", 0 ],
+									"destination" : [ "obj-6", 0 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -2124,22 +2220,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-14", 0 ],
-									"disabled" : 1,
-									"source" : [ "obj-15", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-54", 0 ],
-									"source" : [ "obj-15", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
+									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-16", 0 ]
 								}
 
@@ -2161,6 +2242,43 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-3", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-54", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"order" : 0,
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"order" : 1,
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
 									"source" : [ "obj-54", 1 ]
 								}
 
@@ -2169,6 +2287,27 @@
 								"patchline" : 								{
 									"destination" : [ "obj-23", 0 ],
 									"source" : [ "obj-54", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 1 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -2199,7 +2338,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 2019.999985098838806, 457.461032133014669, 155.0, 22.0 ],
+					"patching_rect" : [ 2303.66666042804718, 1245.46105561724471, 225.666668772697449, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3064,7 +3203,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2055.468887885411277, 418.975824396522512, 123.333332538604736, 20.0 ],
+					"patching_rect" : [ 2339.135563214619651, 1206.975847880752553, 123.333332538604736, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 977.999999642372131, 39.808795273303986, 123.333332538604736, 20.0 ],
 					"text" : "hide/view all params"
@@ -3461,13 +3600,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-23",
-					"linecount" : 9,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 399.802246292431846, 777.333335041999817, 231.0, 129.0 ],
-					"text" : "\"paramslist [ 61a4fd97ab328a007a7c5894 61a4fd9bbc8a737044159acc 61a4fda3aeb82d1047d63541 61a4fdbe14484bb509e44fb0 61a4fffc855c05dba7bb5040 ] [ group/1/param_1 group/2/param_1 group/3/param_1 group/4/param_1 group/5/param_1 ]\""
+					"patching_rect" : [ 399.802246292431846, 777.333335041999817, 240.0, 22.0 ],
+					"text" : "randomID 61a694bc01e3828828975913"
 				}
 
 			}
@@ -3648,14 +3786,13 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 12.66665244102478, 216.4754598736763, 525.0, 604.000001907348633 ],
 					"rendermode" : 0,
-					"url" : "http://127.0.0.1:3000/api/v1/preset/tree?id=61a5071c3fc22c7a29cf15e9&onset=900&label=preset",
+					"url" : "http://127.0.0.1:3000/api/v1/preset/tree?id=61a68ade9a9ca3e437c550ac&onset=5600&label=preset",
 					"varname" : "presets-ui"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"hidden" : 1,
 					"id" : "obj-3",
 					"maxclass" : "jweb",
 					"numinlets" : 1,
@@ -3665,13 +3802,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 12.66665244102478, 220.4754598736763, 525.0, 604.000001907348633 ],
 					"rendermode" : 0,
-					"url" : "http://127.0.0.1:3000/api/v1/params/tree?id=61a506967c1be150ab3c9c9f&label=event",
+					"url" : "http://127.0.0.1:3000/api/v1/params/tree?id=61a68a3b03f1673e4ab01cec&label=evnt",
 					"varname" : "params-ui"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-2",
 					"maxclass" : "jweb",
 					"numinlets" : 1,
@@ -3737,6 +3875,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-57", 1 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
 					"source" : [ "obj-143", 0 ]
 				}
@@ -3744,7 +3889,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-55", 0 ],
+					"destination" : [ "obj-37", 0 ],
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -3797,9 +3942,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 1 ],
-					"midpoints" : [ 409.302246292431846, 731.333335041999817, 621.302246292431846, 731.333335041999817 ],
+					"midpoints" : [ 409.302246292431846, 731.333335041999817, 630.302246292431846, 731.333335041999817 ],
 					"order" : 0,
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -3850,38 +4002,41 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-69", 0 ],
-					"source" : [ "obj-37", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
+					"destination" : [ "obj-14", 0 ],
+					"midpoints" : [ 2579.16666042804718, 1178.747262796119685, 2515.16666042804718, 1178.747262796119685 ],
+					"order" : 0,
 					"source" : [ "obj-38", 2 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"source" : [ "obj-38", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-90", 0 ],
-					"midpoints" : [ 2563.16666042804718, 1137.926022291183472, 1933.968902786572471, 1137.926022291183472 ],
-					"source" : [ "obj-38", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-90", 0 ],
-					"midpoints" : [ 2515.16666042804718, 1137.926022291183472, 1933.968902786572471, 1137.926022291183472 ],
+					"destination" : [ "obj-19", 0 ],
+					"order" : 0,
 					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"order" : 1,
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"order" : 1,
+					"source" : [ "obj-38", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 0 ],
+					"source" : [ "obj-38", 1 ]
 				}
 
 			}
@@ -3947,13 +4102,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-49", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
 					"disabled" : 1,
 					"source" : [ "obj-54", 0 ]
@@ -3976,16 +4124,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-49", 0 ],
-					"order" : 0,
-					"source" : [ "obj-55", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-53", 0 ],
-					"order" : 1,
 					"source" : [ "obj-55", 0 ]
 				}
 
@@ -4007,7 +4146,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-56", 0 ],
-					"midpoints" : [ 2029.499985098838806, 489.461032133014669, 2001.499984264373779, 489.461032133014669, 2001.499984264373779, 407.975824396522512, 2029.499985098838806, 407.975824396522512 ],
+					"midpoints" : [ 2313.16666042804718, 1277.46105561724471, 2285.166659593582153, 1277.46105561724471, 2285.166659593582153, 1195.975847880752553, 2313.16666042804718, 1195.975847880752553 ],
 					"source" : [ "obj-57", 0 ]
 				}
 
@@ -4095,6 +4234,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-89", 0 ],
+					"source" : [ "obj-72", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-74", 0 ]
 				}
@@ -4123,7 +4269,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-89", 0 ],
+					"destination" : [ "obj-72", 0 ],
 					"source" : [ "obj-79", 0 ]
 				}
 
@@ -4137,7 +4283,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-90", 1 ],
+					"destination" : [ "obj-79", 0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -4209,14 +4355,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 1 ],
+					"disabled" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-79", 0 ],
-					"source" : [ "obj-90", 0 ]
+					"destination" : [ "obj-86", 0 ],
+					"source" : [ "obj-91", 0 ]
 				}
 
 			}

@@ -103,8 +103,10 @@ Dall'albero dei _Devices_ derivano le altre due strutture, _Preset_ ed _Event_, 
 
 ## TODO
 
--   Implementazione di un motore di play (unità di misura del tempo, scalatura della velocità di riproduzione, etc...)
+-   Implementazione marker (queue)
+-   Implementazione matrice
+-   Implementazione di un sistema per "inizializzare" eventi e preset sulla base dell'ultimo evento precedente
+-   Implementazione di un motore di play (unità di misura del tempo, scalatura della velocità di riproduzione, playback su queue, etc...)
 -   Formalizzazione di un sistema di messaggistica OSC
--   Messaggistica MIDI
--   Sistema distribuito (centralizzato o decentralizzato) -> Sistema di condivisione e sincronizzazione dei files in tempo reale
+-   Sistema distribuito (centralizzato o decentralizzato) -> Sistema di condivisione e sincronizzazione dei progetti in tempo reale
 -   Connessione con interfacce _reali_ audio, video, MIDI e physical computing (Arduino, Raspberry, ESP32, Bèla)
