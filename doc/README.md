@@ -2,7 +2,14 @@
 
 ## Introduzione
 
-_mEiG system_ nasce per fornire agli artisti multimediali uno strumento per sviluppare, gestire e fissare un progetto che coinvolga strumenti interattivi audio, video e di physical computing. Si tratta di un sistema di controllo integrato che permette di rappresentare diversi _device_ e di definirne il comportamento nel tempo grazie a specifiche configurazioni statiche (_preset_) e dinamiche (_automazioni_).  
+_mEiG system_ nasce per fornire agli artisti multimediali uno strumento per sviluppare, gestire e fissare un progetto che coinvolga strumenti interattivi (audio, video, physical computing). Attraverso questo sistema è possibile approcciare tutte le fasi del lavoro, dalla concezione, alla messa in produzione, passando per la gestione delle fasi intermedie.
+
+Si tratta di un sistema di controllo integrato che permette di rappresentare e modellare divere entità (_device_) e di definirne il comportamento nel tempo grazie a specifiche configurazioni statiche (_preset_) e dinamiche (_automation_). Tali comportamenti e impostazioni possono essere aggregati per l'esecuzione in macrostrutture adatte alla messa in playback (_marker_/_cue_).
+
+Il luogo in cui le entità vengono posizionate è il _roll_ che appare simile a una convenzionale timeline, ma che in realtà permette di gestire le componenti in modo non-lineare: i raggruppamenti (sia a livello di _cue_ che di _event_ - aggregatore di _automations_) possono essere _estrapolati_ dal contesto globale e gestite come universi temporali a sé. In questo modo la timeline è piuttosto un contenitore di moduli temporali identificati da _markers_, che possono essere diversamente arrangiati in fase di esecuzione (_cue list_).
+
+Il _mEiG_ è un sistema distribuito e condiviso, sia in editing che playing-side. Utenti connessi in rete possono visualizzare, apportare modifiche e salvare un progetto in tempo reale, mentre in fase di esecuzione tutti i messaggi in uscita dal sistema sono formattati come messaggi OSC (Open Sound Control) e instradati verso macchine diverse sulla base di una topologia definita in fase di configurazione.
+
 Per rendere più agevole le azioni dell'utente, l'attuale implementazione di _mEiG_, che coinvolge diverse tecnologie, è ospite di una patch di **Max 8** (_Cycling74_), da cui è possibile installare tutti i componenti alla pressione di un pulsante e compiere le operazioni più comuni sui files di progetto.
 
 ## Tecnologia
@@ -22,6 +29,10 @@ La scelta di non utilizzare un _db engine_ come sql nasce dall'esigenza di snell
 
 Max integra al suo interno un motore javascript basato sulla versione ES5 (ormai vecchia) e impedisce l'importazione di packages esterni. Per questo motivo, piuttosto che utilizzare il javascript integrato, si è preferito scrivere dei moduli esterni in html/js/css che vengono importati in Max tramite l'oggetto **jweb**. Questo scelta ha garantito la possibilità di importare alcuni packages esterni sia per la gestione grafica delle interfacce (jquery e bootstrap), sia per la manipolazione delle strutture dati (jqtree).
 Inoltre l'html con javascript permette di implementare un'architettura non sono scalabile, ma traslabile su altre piattaforme che non siano Max. Allo stato attuale del progetto in effetti il solo oggetto che implementa la timeline e le entità da temporizzare (**roll** e **slot** rispettivamente) non sono agnostici rispetto alla piattaforma. Tutte le strutture dati e le altre entità sono basate di linguaggi e tecnologie standard del web.
+
+## bach
+
+...
 
 ## Infrastruttura
 
@@ -101,7 +112,11 @@ Dall'albero dei _Devices_ derivano le altre due strutture, _Preset_ ed _Event_, 
 ![](presetTree.png)
 ![](eventTree.png)
 
-## TODO
+## roll
+
+...
+
+# TODO
 
 -   Implementazione marker (queue)
 -   Implementazione matrice
