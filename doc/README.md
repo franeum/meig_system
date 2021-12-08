@@ -2,15 +2,13 @@
 
 ## Introduzione
 
-_mEiG system_ nasce per fornire agli artisti multimediali uno strumento per sviluppare, gestire e fissare un progetto che coinvolga strumenti interattivi (audio, video, physical computing). Attraverso questo sistema è possibile approcciare tutte le fasi del lavoro, dalla concezione, alla messa in produzione, passando per la gestione delle fasi intermedie.
+_mEiG system_ nasce per fornire agli artisti multimediali uno strumento di sviluppo, gestione e produzione di progetti che coinvolgono strumenti interattivi (audio, video, physical computing). Con il _mEiG_ è possibile tracciare tutte le fasi del lavoro, dalla concezione alla messa in esecuzione. Si tratta di un sistema di controllo integrato che permette di rappresentare e modellare divere entità (_device_) e di definirne il comportamento nel tempo grazie a specifiche configurazioni statiche (_preset_) e dinamiche (_automation_). Tali comportamenti e impostazioni possono essere aggregati per l'esecuzione in macrostrutture adatte alla messa in riproduzione (_marker_/_cue_).
 
-Si tratta di un sistema di controllo integrato che permette di rappresentare e modellare divere entità (_device_) e di definirne il comportamento nel tempo grazie a specifiche configurazioni statiche (_preset_) e dinamiche (_automation_). Tali comportamenti e impostazioni possono essere aggregati per l'esecuzione in macrostrutture adatte alla messa in playback (_marker_/_cue_).
+Il luogo in cui le entità vengono posizionate è il _roll_ che appare simile a una convenzionale timeline, ma che in realtà permette di gestire le componenti in modo non-lineare: i raggruppamenti (sia a livello di _cue_ che di _event_ - aggregatori di _automations_) possono essere _estrapolati_ dal contesto globale e gestite come universi temporali a sé. In questo modo la timeline è piuttosto un contenitore di moduli identificati da _markers_, che possono essere diversamente arrangiati per l'esecuzione (_cue list_).
 
-Il luogo in cui le entità vengono posizionate è il _roll_ che appare simile a una convenzionale timeline, ma che in realtà permette di gestire le componenti in modo non-lineare: i raggruppamenti (sia a livello di _cue_ che di _event_ - aggregatore di _automations_) possono essere _estrapolati_ dal contesto globale e gestite come universi temporali a sé. In questo modo la timeline è piuttosto un contenitore di moduli temporali identificati da _markers_, che possono essere diversamente arrangiati in fase di esecuzione (_cue list_).
+Il _mEiG_ è un sistema distribuito e condiviso, sia in editing che playing-side. Utenti connessi in rete possono visualizzare, apportare modifiche e salvare uno stesso progetto in tempo reale, mentre all'atto dell'esecuzione tutti i messaggi in uscita dal sistema sono formattati come messaggi OSC (Open Sound Control) e instradati verso macchine diverse sulla base di una topologia definita in fase di configurazione (_network graph_).
 
-Il _mEiG_ è un sistema distribuito e condiviso, sia in editing che playing-side. Utenti connessi in rete possono visualizzare, apportare modifiche e salvare un progetto in tempo reale, mentre in fase di esecuzione tutti i messaggi in uscita dal sistema sono formattati come messaggi OSC (Open Sound Control) e instradati verso macchine diverse sulla base di una topologia definita in fase di configurazione.
-
-Per rendere più agevole le azioni dell'utente, l'attuale implementazione di _mEiG_, che coinvolge diverse tecnologie, è ospite di una patch di **Max 8** (_Cycling74_), da cui è possibile installare tutti i componenti alla pressione di un pulsante e compiere le operazioni più comuni sui files di progetto.
+L'attuale implementazione del sistema, che coinvolge tecnologie diverse basate su un'infrastruttura client-server, è ospite di una patch di **Max 8** (_Cycling74_), da cui è possibile gestire le pagine del front-end e installare il server alla pressione di un pulsante.
 
 ## Tecnologia
 
@@ -19,11 +17,19 @@ Il sistema mEiG usa invece un ecosistema tecnologico che garantisce portabilità
 
 ### SQL/noSQL
 
-La scelta di non utilizzare un _db engine_ come sql nasce dall'esigenza di snellire la portata dell'applicazione e di velocizzare le operazioni di interrogazione e di scambio dei dati. La struttura relazionale è sembrata eccessiva rispetto alla mole di dati richiesti da un singolo progetto. Come si sa, sql tende ad essere molto efficiente su una grande mole di dati, ma perde la sua efficacia in presenza di un rapporto basso fra numero di righe e numero di colonne. Per arrivare alla soluzione adottata sono stati fatti alcuni passaggi concettuali (e pratici):
+La scelta di non utilizzare un _db engine_ come SQL nasce dall'esigenza di snellire la portata dell'applicazione e di velocizzare le operazioni di interrogazione e di scambio dei dati. La struttura relazionale è sembrata eccessiva rispetto alla mole di dati richiesti da un singolo progetto. SQL tende ad essere molto efficiente su una grande mole di dati, ma perde la sua efficacia in presenza di un rapporto basso fra numero di righe e numero di colonne. Per arrivare alla soluzione adottata sono stati eseguiti alcuni passaggi concettuali (e pratici), condizionati dal punto di osservazione del problema:
 
--   Inizialmente è stato risolto il problema della portabilità utilizzando un'istanza di sqlite integrata nel server, ma questo non ha risolto il problema della scalabilità e dell'efficienza delle query. Anzi, l'impossibilità di scrivere delle _stored procedures_ all'interno del _db engine_ ha aumentato considerevolmente le quantità di _join_ e rallentato di conseguenza la velocità di interrogazione.
--   A questo punto ci si è rivolti verso una struttura più adatta al tipo di dati presenti: il database a grafo. Una struttura dati che rappresenti l'informazione con nodi e archi è sembrata garantire maggiore velocità di interrogazione in grafi non troppo complessi come quelli di mEiG. Le _join_ qui vengono sostituite da meccanismi di attraversamento (_traversing_), evitando lentissimi prodotti cartesiani fra le righe delle teballe relazionali. Purtroppo però questo è andato a discapito della portabilità, visto che la maggior parte dei database a grafo (OrientDB, Neo4J, etc...) non sono integrati, ma sussitono come _engine_ standalone, quindi vanno installati e configurati autonomamente.
--   Il grafo comunque è sembrata la struttura dati più vicina alla rappresentazione naturale dei dati di mEiG. In particolare l'_albero_ (che di fatto è una forma di grafo orientato) sembrava sufficiente a rappresentare i dati e le loro relazioni. L'ultimo passo quindi è stato quello di implementare degli alberi tramite il formato JSON. Grazie alla possibilità di usare **array associativi** come tipo di dato primitivo, intrinseca nel JSON, rappresentare un albero tramite JSON è stato abbastanza immediato. Il JSON inoltre, oltre a garantire arbitrari livelli di innesto, è il formato di interscambio nel web per eccellenza, e in prospettiva, sembra la struttura più adeguata per rendere il mEiG una piattaforma distribuita.
+-   _Portabilità_: sqlite
+
+    -   PRO: sembrava sufficiente utilizzare un'istanza di _sqlite_ integrata nel server. In questo modo si evita il problema di una gestione separata del database (con tutto quello che ne consegue: accesso, utenti, installazione).
+    -   CONTRO: difficile scalabilità e inefficientza delle query. L'impossibilità di scrivere _stored procedures_ all'interno del _db engine_ aumenta considerevolmente le quantità di _join_ lato query e rallenta di conseguenza la velocità di risposta alle interrogazioni.
+
+-   _Efficienza_: graph database
+
+    -   PRO: l'attenzione si è rivolta a una struttura di conservazione dei dati più flessibile e veloce: il database a grafo. Una struttura dati che rappresenti l'informazione con nodi e archi è sembrata garantire maggiore velocità di interrogazione in grafi come quelli di _mEiG_. Le _join_ vengono sostituite da meccanismi di attraversamento (_traversing_), evitando lentissimi prodotti cartesiani fra le righe delle teballe relazionali.
+    -   CONTRO: la maggior parte dei database a grafo (OrientDB, Neo4J, etc...) non sono integrati, ma sussitono come _engine_ standalone, quindi vanno installati e configurati autonomamente.
+
+-   _Soluzione adottata_: JSON _dictionaries_. Il grafo è sembrata comunque la struttura dati più vicina alla rappresentazione naturale dei dati di _mEiG_. In particolare l'_albero_ (che di fatto è una forma di grafo orientato) sembrava sufficiente a rappresentare i dati e le loro relazioni. L'ultimo passo quindi è stato quello di implementare degli alberi tramite il formato JSON. Grazie alla possibilità di usare **array associativi** come tipo di dato primitivo, intrinseca nel JSON, rappresentare un albero tramite JSON è stato immediato. Il JSON inoltre, oltre a garantire arbitrari livelli di innesto, è il formato di interscambio nel web per eccellenza, e in prospettiva, sembra la struttura più adeguata per rendere il _mEiG_ una piattaforma distribuita.
 
 ### html/javascript
 
@@ -32,6 +38,9 @@ Inoltre l'html con javascript permette di implementare un'architettura non sono 
 
 ## bach
 
+strutture dati: _llll_
+conversione _llll_ to _JSON_
+...
 ...
 
 ## Infrastruttura
@@ -102,6 +111,10 @@ Tali strutture dati vengono gestite sia lato client che lato server con _package
 
 ## Graphical User Interfaces
 
+### roll
+
+...
+
 ### Devices, Preset, Event
 
 Allo stato attuale del progetto, l'entità che rappresenta l'albero dei _Devices_ ha una rappresentazione grafica realizzata in html/css/javascript e contenuta all'interno della _patch_ di Max nell'oggetto **jweb**. A partire da questa entità vengono creati altri due alberi, _Presets_ ed _Events_, con strutture grafiche analoghe. L'albero dei _Devices_ viene servito all'utente all'atto dell'apertura di un file esistente o della creazione di un file nuovo e permette di inserire nel sistema nuovi dispositivi. L'entità centrale di questa struttura è il **device** che contiene gli input/output e i parametri, e che può essere a sua volta contenuto in gruppi o sottogruppi. Per aggiungere, rimuovere o rinominare un'entità dall'albero è sufficiente usare i menu contestuali attivabili col destro del mouse.
@@ -111,10 +124,6 @@ Dall'albero dei _Devices_ derivano le altre due strutture, _Preset_ ed _Event_, 
 ![](devicesTree.png)
 ![](presetTree.png)
 ![](eventTree.png)
-
-## roll
-
-...
 
 # TODO
 
